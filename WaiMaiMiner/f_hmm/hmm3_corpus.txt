@@ -1,0 +1,630 @@
+送餐/n/B-E	师傅/n/E-E	很/d/B-P1	好/a/E-P1	，/w/OT	味道/n/I-E	好极/v/B-P1	啦/y/E-P1	
+快递/n/I-E	很/d/B-P1	靠/v/E-P1	谱/w/OT	哦/e/OT	～/w/OT	～/d/OT	不错/a/I-P1
+﻿超级/r/B-P1	快/d/E-P1	就/d/OT	送到/v/OT	了/y/OT	，/w/OT	谢谢/v/I-P2	骑士/n/I-E	很快/d/I-P1	，/w/OT	感谢/v/B-P2	骑士/n/M-P2	这种/r/M-P2	天气/n/M-P2	还/d/M-P2	在/p/M-P2	工作/n/E-P2	！/w/OT	
+里面/f/OT	有/v/OT	蘑菇/n/OT	。/w/OT	总体/n/I-E	不错/a/I-P1	啦/y/OT
+味道/n/I-E	，/w/OT	服务/n/I-E	很/d/B-P1	不错/a/E-P1
+好吃/a/I-P1	，/w/OT	很/d/B-P1	清淡/a/E-P1
+粉/n/I-E	太/d/B-N1	淡/a/E-N1	没味/n/OT	，/w/OT	没上/m/OT	次/q/OT	好吃/a/I-P1	了/y/OT	，/w/OT	也/d/OT	不/d/OT	辣/a/OT	。/w/OT
+就是/d/OT	量/v/I-E	有点/d/B-N1	少/a/E-N1	，/w/OT	吃不/d/OT	饱/a/OT	啊/y/OT
+不好/a/B-N1	吃/v/E-N1	,/w/OT	太/d/B-N1	腻/v/M-N1	了/u/E-N1	,/n/OT	饼/n/OT	还/d/OT	很/d/B-N1	厚/a/E-N1	,/u/OT	皮蛋/n/OT	粥/n/OT	就是/d/OT	白/a/OT	粥/n/OT	,/n/OT	等/u/B-N2	了/u/M-N2	一个/m/M-N2	多/m/M-N2	小时/n/E-N2
+手/n/B-E	撕/v/M-E	包/v/M-E	菜/n/E-E	大半/m/B-N2	盒/q/M-N2	油/n/E-N2	，/w/OT	我/r/OT	还/d/OT	特意/d/OT	写/v/OT	了/u/OT	少油/n/OT	
+快递/n/I-E	很/d/B-P1	不错/a/E-P1	。/w/OT	饭/n/I-E	没/v/B-N2	啥味/m/M-N2	道/q/E-N2	！/w/OT	！/w/OT	太/d/B-N1	淡/a/M-N1	了/y/E-N1	！/w/OT	！/w/OT	
+都/d/OT	打电话/v/OT	确认/v/OT	两次/v/OT	了/y/OT	，/w/OT	跟我/d/OT	说/v/OT	已经/d/OT	取消/v/OT	了/y/OT	，/w/OT	结果/n/OT	还是/c/OT	送/v/B-N2	了/y/E-N2	。/w/OT	本着/p/OT	助人为乐/i/OT	的/u/OT	原则/n/OT	，/w/OT	我/r/OT	还是/d/OT	付款/v/OT	了/y/OT	。/w/OT
+一个半/m/B-N2	小时/n/E-N2	才/d/OT	送到/v/OT	，/w/OT	货/n/OT	没/d/OT	送到/v/OT	还/d/OT	不能/v/OT	取消/v/OT	订单/n/OT	，/w/OT	打/v/OT	拒/vg/OT	接/v/OT
+送/v/B-N2	了/u/M-N2	俩/m/M-N2	个/q/M-N2	小时/n/E-N2	,/n/OT	,/n/OT	坑/n/OT	爹/n/OT	啊/y/OT	./w/OT	./v/OT	./u/OT	./n/OT
+很/d/B-P1	好吃/a/E-P1	，/w/OT	忘记/v/OT	拍照/v/OT	了/u/OT	～/n/OT
+肉/n/I-E	太/d/B-N1	多/a/E-N1	了/y/OT	，/w/OT	送餐/n/B-E	速度/n/E-E	有待/v/B-P1	提高/v/E-P1	！/w/OT
+今天/t/OT	真是/d/OT	超级/a/B-P1	快/a/E-P1	，/w/OT	感觉/n/B-P2	刚/d/M-P2	下单/v/M-P2	就/d/M-P2	送到/v/M-P2	啦/y/E-P2	哈哈哈/w/OT	
+鱼香肉丝/r/OT	卷饼/d/OT	不如/v/OT	纯/a/OT	肉/n/I-E	的/u/OT	好吃/a/I-P1	,/n/OT	有点/d/B-N1	咸/a/M-N1
+配送/v/I-E	很快/d/I-P1	，/w/OT	服务/n/B-E	态度/n/E-E	很/d/B-P1	好/a/E-P1	，/w/OT	五星/n/I-E	好评/n/I-P1
+味道/n/I-E	一般般/n/I-P1	，/w/OT	饼/n/OT	大/a/I-P1	，/w/OT	肘子/n/OT	肉/n/I-E	少/a/I-P1	。/w/OT
+非常/d/B-P1	快/a/E-P1	，/w/OT	味道/n/I-E	好/a/I-P1
+一般般/n/I-P1	。/w/OT	。/w/OT	。/w/OT
+豆/n/B-P1	皮/n/E-P1	还/d/OT	挺/d/B-P1	好吃/a/E-P1	的/u/OT	，/w/OT	热/a/OT	干面/n/OT	也/d/OT	还/d/B-P1	行/v/E-P1
+应该/v/B-N2	不会/w/M-N2	在/p/M-N2	点/n/M-N2	第二次/n/M-N2	了/u/E-N2
+包装/n/I-E	牛/n/I-P1	逼/v/OT	，/w/OT	送餐/n/B-E	速度/n/E-E	…/n/OT	…/n/OT	咳咳/n/OT	…/n/OT	…/n/OT
+说得/r/OT	再/d/OT	好/a/I-P1	也/d/OT	是/v/OT	虚/a/OT	的/u/OT	，/w/OT	只有/c/OT	自己/r/OT	吃/v/OT	了/u/OT	才/d/OT	知道/v/OT	。/w/OT
+一如既往/i/I-P1	的/u/OT	好吃/a/I-P1	。/w/OT	。/w/OT	哈哈/o/OT	。/w/OT	。/w/OT	粥/n/OT	也/d/OT	不错/a/I-P1
+味道/n/I-E	好/a/I-P1	，/w/OT	配送/v/I-E	快/a/I-P1	～/n/OT
+不错/a/I-P1	,/u/OT	包装/n/I-E	也/d/OT	很/d/B-P1	好/a/E-P1
+144/m/I-P1	分钟/q/OT	，/w/OT	足足/d/B-N2	两个/v/M-N2	多/a/M-N2	小时/n/E-N2	。/w/OT	木/ng/OT	有/v/OT	筷子/n/OT	。/w/OT	不会/n/B-N2	再/d/M-N2	定/v/E-N2	。/w/OT
+送餐/n/B-E	态度/n/E-E	恶劣/a/OT	，/w/OT	非常/d/B-P1	非常/d/E-P1	不好/a/OT
+就是/c/OT	时间/n/OT	晚/tg/OT	每次/r/B-N2	都/d/M-N2	晚/a/M-N2
+送餐/r/I-E	太/d/B-N1	慢/a/E-N1	，/w/OT	饼/n/OT	也/d/OT	不好/a/B-N1	吃/v/E-N1	，/w/OT	里边/f/OT	都/d/OT	是/v/OT	肥肉/n/OT
+快点/r/B-N2	就/d/M-N2	更好/v/M-N2	了/u/E-N2	~/n/OT	~/n/OT	~/n/OT	~/n/OT
+东西/n/I-E	不错/a/I-P1	，/w/OT	挺/d/B-P1	好吃/a/E-P1	的/u/OT	。/w/OT
+打电话/v/OT	让/v/OT	快点/n/OT	，/w/OT	还是/c/OT	十一/m/OT	点/q/OT	送到/v/OT	的/u/OT	，/w/OT	，/w/OT	，/w/OT	，/w/OT
+很快/d/I-P1	，/w/OT	还/d/OT	挺/d/B-P1	好吃/a/E-P1	的/u/OT	，/w/OT	下回/t/B-P2	还/d/M-P2	会/v/M-P2	买/v/E-P2	。/w/OT
+不错/a/I-P1	就是/d/OT	太/d/B-N1	慢/a/E-N1	了/u/OT
+真/a/B-P1	泥/n/E-P1	马/nr/OT	难吃/nr/OT	。/w/OT	没有/d/OT	酱/v/OT	。/w/OT	一星/m/OT	都/d/OT	不想/v/OT	给/p/OT	,/n/OT	送/v/B-E	的/u/E-E	又/d/B-N1	慢/a/E-N1
+最/d/OT	难吃/v/OT	的/u/OT	外卖/w/OT	之一/r/OT
+太/d/B-N1	慢/a/E-N1	，/w/OT	太/d/B-N1	慢/a/E-N1	，/w/OT	实在/d/OT	太/d/B-N1	慢/a/E-N1	。/w/OT	而且/c/OT	也/d/OT	不好/a/B-N1	吃/v/E-N1	。/w/OT
+点/v/B-P2	了/u/M-P2	太/d/M-P2	多次/m/M-P2	了/y/E-P2	，/w/OT	味道/n/I-E	很/d/B-P1	香/a/E-P1	
+排骨/p/I-E	不错/a/I-P1	！/w/OT
+挺/d/B-P1	好吃/a/E-P1	的/u/OT	，/w/OT	比较/d/B-P1	实惠/a/E-P1	。/w/OT
+送餐/n/I-E	人/n/OT	服务/n/B-E	态度/n/E-E	很/d/B-P1	好/a/E-P1	,/n/OT	很/d/B-P1	朴实/a/E-P1
+送/v/B-E	的/u/E-E	有点/d/B-N1	慢/a/E-N1	…/u/OT	酱香/m/OT	卷/q/OT	还是/d/OT	很/d/B-P1	好吃/a/E-P1	的/u/OT
+皮/n/B-N1	厚/a/E-N1	,/u/OT	菜/n/I-E	少/a/I-P1	粥/n/OT	不满/n/OT
+很/d/B-P1	好吃/a/E-P1	，/w/OT	推荐/v/OT	他家/r/OT	的/u/OT	土豆丝/n/OT	卷饼/n/OT	！/w/OT
+好吃/a/I-P1	,/u/OT	不错/a/I-P1
+配送/v/I-E	竟然/d/B-N2	没/d/M-N2	经过/p/M-N2	我/r/M-N2	同意/v/M-N2	让/v/M-N2	别人/r/M-N2	代收/v/M-N2	了/y/E-N2	，/w/OT	我/r/OT	不知/v/OT	道/v/OT	，/w/OT	导致/v/OT	我/r/OT	收到/v/OT	饭/n/OT	比/p/B-N2	预定/v/M-N2	时间/n/M-N2	晚/a/M-N2	了/u/M-N2	一个/m/M-N2	多/m/M-N2	小时/n/E-N2	。/w/OT	饭/n/B-E	的/u/M-E	味道/n/E-E	还/d/B-P1	可以/v/E-P1	，/w/OT	只是/d/OT	凉/v/B-N1	了/u/E-N1	
+味道/n/I-E	稍微/d/B-N1	咸/a/M-N1	点/n/E-N1	！/w/OT	整体/n/I-E	不错/a/I-P1	！/w/OT
+挺/d/B-P1	好吃/a/E-P1	个/q/OT	额/n/OT
+皮蛋/n/OT	粥/n/OT	不如/v/OT	上一/m/OT	次/q/OT	的/u/OT	，/w/OT	有点/d/B-N1	稀/v/E-N1
+不错/a/B-P1	不错/a/E-P1	，/w/OT	卷饼/m/OT	卷/q/OT	的/u/OT	很/d/B-P1	圆/vg/E-P1
+觉得/v/OT	酱香/n/OT	更好/w/OT	吃/v/OT
+送/v/B-N2	错/v/M-N2	了/y/E-N2	，/w/OT	投诉/n/OT	完/v/OT	没/d/OT	人理/v/OT	，/w/OT	要/v/OT	的/u/OT	鸡柳/n/OT	的/u/OT	送/v/B-E	的/u/E-E	最/d/OT	便宜/a/B-P1	的/u/E-P1
+比/p/B-N2	预计/v/M-N2	时间/n/M-N2	晚/a/M-N2	了/u/E-N2	十分钟/n/OT	，/w/OT	还/d/B-P1	算/v/M-P1	准时/d/E-P1
+少/a/I-P1	了/u/OT	南瓜/n/I-P1	粥/n/OT
+口感/n/I-E	好/a/B-P1	的/u/M-P1	很/d/E-P1	，/w/OT	速度/n/I-E	快/a/I-P1	！/w/OT	
+就是/d/OT	没/v/OT	菜/n/OT	，/w/OT	都/d/OT	是/v/OT	肉/n/I-E	有点儿/w/B-N1	腻/v/M-N1
+卷饼/r/I-E	很/d/B-P1	不错/a/E-P1	，/w/OT	就是/c/OT	粥/n/OT	太/d/B-N1	淡/a/M-N1	了/y/E-N1	，/w/OT	应该/v/OT	咸/a/OT	一点/m/OT	。/w/OT	。/w/OT	。/w/OT	可能/v/OT	是/v/OT	我/r/OT	个人/n/OT	的/u/OT	口味/n/I-E	。/w/OT	。/w/OT	。/w/OT
+很/d/B-P1	好/a/E-P1	，/w/OT	很/d/B-P1	不错/a/E-P1	，/w/OT	速度/n/I-E	超/v/B-P1	快/a/E-P1	，/w/OT	超/v/B-P1	好吃/a/E-P1	。/w/OT	。/w/OT	吃/v/OT	了/u/OT	一个月/n/OT	了/u/OT	还/d/B-P1	想/v/E-P1	吃/v/OT
+明明/d/OT	点/v/OT	的/u/OT	是/v/OT	土豆/n/B-E	红烧肉/w/M-E	盖饭/d/E-E	送来/v/OT	的/u/OT	却是/n/OT	土豆/n/B-E	牛肉/n/M-E	盖饭/n/E-E	，/w/OT	是/v/OT	店家/n/I-E	太/d/B-N1	忙/v/E-N1	还是/d/OT	认/v/B-N2	不清/u/M-N2	字/n/E-N2	啊/y/OT	！/w/OT	两个/n/OT	盖饭/w/I-E	也/d/OT	不是/v/B-N2	一个/m/M-N2	价格/n/E-N2	,/w/OT	多收/v/B-N2	了/u/M-N2	我/r/M-N2	4/m/M-N2	元钱/q/E-N2	。/w/OT	
+粥/n/OT	里面/f/OT	有/v/OT	皮蛋/v/B-P1	的/u/E-P1	蛋壳/n/OT	，/w/OT	不干/d/OT	净/a/OT
+还/d/B-P1	不错/a/E-P1	，/w/OT	就是/d/OT	太/d/B-N1	慢/a/E-N1
+凑/v/B-P1	活/a/E-P1	吧/y/OT	，/w/OT	随便/d/OT	吃吃/v/OT	，/w/OT	比/p/OT	合利/n/OT	屋/n/B-P1	好/a/E-P1	一百/m/OT	倍/q/OT	！/w/OT
+不错/a/I-P1	～/n/OT	很/d/B-P1	好/a/E-P1	！/w/OT	！/w/OT	点/v/OT	了/u/OT	两/m/OT	份/q/OT	，/w/OT	中午/t/OT	下午/t/OT	都/d/OT	有/v/OT	了/u/OT	～/n/OT
+送餐/r/I-E	很快/d/I-P1	,/v/OT	态度/n/I-E	也/d/OT	很/d/B-P1	好/a/E-P1	,/n/OT	谢谢/v/I-P2	
+评价/v/B-N2	晚/tg/M-N2	了/y/E-N2	，/w/OT	袋子/n/OT	好高/w/I-E	大/a/I-P1	上/f/OT	，/w/OT	东西/n/I-E	也好/y/I-P1	吃/v/OT	，/w/OT	快递/v/B-E	员/q/M-E	态度/n/E-E	也好/y/I-P1	，/w/OT	五星/n/I-E	好评/n/I-P1
+非常/d/B-P1	好吃/a/E-P1	，/w/OT	包装/n/I-E	很/d/B-P1	严密/a/E-P1
+态度/n/I-E	很/d/B-P1	好/a/E-P1	,/u/OT	地址/n/OT	填/v/OT	错/v/OT	了/u/OT	还是/d/OT	给/p/OT	我/r/OT	跑/v/OT	了/u/OT	一/m/OT	趟/q/OT	,/w/OT	没有/d/OT	表现/v/OT	出/v/OT	不/d/OT	愿意/v/OT	的/u/OT	样子/n/OT	,/w/OT	为了/p/OT	这个/r/OT	快递/v/B-E	员/ng/E-E	,/w/OT	我/r/OT	写/v/OT	了/u/OT	评论/n/OT	
+真/d/B-P1	难吃/v/E-P1	,/w/OT	全/d/OT	是/v/OT	肥肉/n/OT
+很/d/B-P1	好吃/a/E-P1	，/w/OT	就/d/OT	有点/d/B-N1	小/a/E-N1
+中/f/OT	份/q/OT	感觉/n/OT	男生/w/OT	吃不/d/OT	饱/a/OT
+便宜/a/B-P1	实惠/n/E-P1	,/w/OT	好吃/a/I-P1	不/d/OT	贵/a/OT
+餐盒/p/I-E	好看/a/I-P1	，/w/OT	菜/n/B-E	量/n/E-E	也/d/OT	多/a/I-P1	，/w/OT	但是/c/OT	吃/v/B-N2	完/v/M-N2	后/f/M-N2	下午/t/M-N2	反胃/n/E-N2	，/w/OT	应该/v/B-N2	不会/w/M-N2	再/d/M-N2	订/v/M-N2	了/u/E-N2	
+这个/r/OT	味道/n/I-E	一般/a/I-P1	，/w/OT	不/d/OT	喜欢/v/OT
+超级/a/B-N1	差/a/E-N1	，/w/OT	南瓜/n/I-P1	粥/n/OT	已/d/OT	变质/v/OT	，/w/OT	馊/v/OT	了/u/OT
+还/d/B-P1	行/v/E-P1	，/w/OT	肘子/d/OT	吃/v/OT	完/v/OT	有点儿/u/B-N1	恶心/a/E-N1	，/w/OT	送餐/n/I-E	太/d/B-N1	慢/a/E-N1
+送/v/B-E	的/u/E-E	超级/a/B-P1	快/a/E-P1	，/w/OT	太/d/B-N1	开心/a/M-N1	了/u/E-N1
+除了/p/B-E	速度/n/E-E	有待/v/B-P1	加强/v/E-P1	，/w/OT	其他/r/OT	都/d/OT	不错/a/I-P1
+味道/n/I-E	不错/a/I-P1	，/w/OT	肉/n/I-E	还/d/OT	挺/d/B-P1	多/a/E-P1	的/u/OT
+饼子/n/I-P1	里/f/OT	卷/v/OT	的/u/OT	肥肉/n/OT	太/d/B-N1	多/a/E-N1
+辛苦/a/B-P1	了/y/E-P1	，/w/OT	味道/n/I-E	不错/a/I-P1	，/w/OT	比/p/B-N2	想象/v/M-N2	的/u/E-N2	还要/v/OT	好/a/I-P1	呢/y/OT	！/w/OT	速度/n/I-E	巨/ag/B-P1	快/a/E-P1	！/w/OT
+非常/d/B-P1	好/a/E-P1	，/w/OT	还有/v/OT	很多/m/I-P1	赠送/v/OT	的/u/OT	，/w/OT	结果/n/OT	我们/r/OT	一家/n/OT	三口/w/OT	都/d/OT	没有/d/OT	吃/v/OT	完/v/OT	。/w/OT
+口味/n/I-E	还/d/B-P1	可以/v/E-P1	,/w/OT	就是/d/OT	送/v/B-E	的/u/E-E	有点/d/B-N1	慢/a/E-N1	./u/OT	./n/OT	./n/OT
+老板/n/B-E	态度/n/E-E	非常/d/B-P1	好/a/E-P1
+骑士/n/I-E	非常/d/B-P1	负责/v/E-P1	，/w/OT	谢谢/v/I-P2	您/r/OT	，/w/OT	辛苦/v/B-P1
+好吃/a/I-P1	,/n/OT	喜欢/v/OT	,/w/OT	他家/r/OT	的/u/OT	卷饼/n/I-E	一向/d/B-P1	实惠/a/E-P1	,/u/OT	服务/n/I-E	也/d/OT	贴心/a/OT
+味道/n/I-E	就/p/OT	那样/r/OT	把/p/OT	,/n/OT	盖浇饭/w/OT	挺/d/B-P1	难吃/v/E-P1	的/u/OT
+土豆丝/r/B-P1	可以/v/E-P1	做/v/OT	的/u/OT	咸/a/OT	点儿/q/OT	吗/y/OT	？/w/OT
+很快/d/I-P1	，/w/OT	不错/a/I-P1	。/w/OT
+骑士/n/OT	送餐/w/I-E	很快/d/I-P1	，/w/OT	饭菜/n/I-E	太/d/B-N1	难吃/v/M-N1
+11/m/OT	点/q/OT	半/m/OT	订餐/v/OT	，/w/OT	2/m/B-N2	小时/n/E-N2	才/d/OT	送到/v/OT
+很/d/B-P1	好吃/a/E-P1	而且/c/OT	有/v/OT	优惠/n/OT	买/v/OT	完/v/OT	9/m/OT	块钱/q/OT	一个/m/OT	。/w/OT	超值/n/OT	。/w/OT
+很快/d/I-P1	，/w/OT	服务/n/I-E	很/d/B-P1	好/a/E-P1
+和舍/r/B-P1	友/ng/E-P1	一起/d/OT	定/v/OT	的/u/OT	，/w/OT	他/r/OT	先来/n/OT	，/w/OT	等/v/B-N2	了/u/M-N2	20min/n/E-N2	我的/w/OT	才/d/OT	来/v/OT	，/w/OT	还/d/OT	又/d/OT	给/p/OT	舍友/n/OT	送/v/B-N2	了/u/E-N2	一/m/OT	份/q/OT
+很/d/B-P1	好/a/E-P1	,/n/OT	送餐员/w/I-E	也/d/OT	很/d/B-P1	好/a/E-P1	
+味道/n/I-E	不错/a/I-P1	，/w/OT	份量/nz/I-E	很/d/B-P1	足/a/E-P1	，/w/OT	建议/n/OT	都/d/OT	点/v/OT	小/a/OT	份/q/OT	。/w/OT	红薯/n/I-E	超/v/B-P1	好吃/a/E-P1	就是/d/OT	太/d/B-N1	烂/a/M-N1	了/u/E-N1	容易/a/B-N2	碎/a/E-N2	
+挺/d/B-P1	不错/a/M-P1	的/u/E-P1	！/w/OT	
+东西/n/I-E	还/d/B-P1	可以/v/E-P1	但是/c/OT	送餐/n/B-E	速度/n/E-E	太/d/B-N1	慢/a/E-N1	了/u/OT
+好吃/a/I-P1	但是/c/OT	速度/n/I-E	太/d/B-N1	慢/a/E-N1	。/w/OT	。/w/OT	。/w/OT	。/w/OT
+送/v/B-E	的/u/E-E	很快/d/I-P1	，/w/OT	味道/n/I-E	不错/a/I-P1	，/w/OT	不咸/v/OT
+好/a/I-P1	干/v/OT	,/w/OT	吃/v/OT	腻/v/OT	了/u/OT	./n/OT	./n/OT	./n/OT
+恶心/a/I-N1	没/d/OT	rou/v/OT	
+就是/d/OT	有点/d/B-N1	慢/a/E-N1
+提前/v/B-N2	了/u/M-N2	半/m/M-N2	小时/n/E-N2	。/w/OT	。/w/OT	也/d/OT	太/d/B-N1	早/a/M-N1	了/y/E-N1	。/w/OT	。/w/OT	真是/d/OT	醉/v/OT	了/y/OT	。/w/OT	。/w/OT
+卷饼/p/I-E	不错/a/I-P1	,/n/OT	就是/d/OT	有/v/OT	肘子/w/OT	有点/d/B-N1	肥/a/E-N1
+有点/d/B-N1	偏/d/E-N1	甜/a/OT	。/w/OT	。/w/OT
+微波炉/n/B-P1	加热/n/E-P1	后/f/OT	，/w/OT	超/v/B-P1	好吃/a/E-P1
+速度/n/I-E	快/a/I-P1	，/w/OT	好/a/I-P1	！/w/OT
+送餐/n/B-E	时间/n/E-E	有点/d/B-N1	长/a/E-N1
+太/d/B-N1	慢/a/E-N1	了/y/OT	，/w/OT	，/w/OT	。/w/OT
+量/n/I-E	大/a/I-P1	味道/n/I-E	好/a/I-P1	，/w/OT	送餐/n/B-E	师傅/n/E-E	都/d/OT	很/d/B-P1	好/a/E-P1	
+我/r/OT	能说/v/OT	什么/r/OT	,/n/OT	不/d/OT	喜欢/v/OT	吃/v/OT	没有/v/OT	味道/n/I-E	的/u/OT	肉/n/I-E	吧/y/OT
+道菜/n/I-P1	的/u/OT	味道/n/I-E	还/d/B-P1	可以/v/E-P1	，/w/OT	配送/v/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	服务/n/I-E	很/d/B-P1	好/a/E-P1	。/w/OT
+家乡/n/OT	味道/n/I-E	，/w/OT	真心/d/OT	不错/a/I-P1	。/w/OT
+味道/n/I-E	很/d/B-P1	棒/a/E-P1	，/w/OT	服务/n/I-E	也/d/OT	很/d/B-P1	棒/a/E-P1
+百度/m/B-E	外卖/q/E-E	不错/a/I-P1	，/w/OT
+让/v/OT	我/r/OT	出去/v/OT	自取/n/OT	。/w/OT	卷饼/v/OT	的/u/OT	肌肉/n/OT	有点/d/B-N1	发臭/v/E-N1	。/w/OT	皮蛋/v/B-P1	瘦肉/u/E-P1	粥/n/OT	只是/c/OT	大米粥/n/OT	上面/f/OT	放/v/OT	了/u/OT	几/m/OT	块/q/OT	皮蛋/n/OT	。/w/OT
+挺/d/B-P1	好得/v/E-P1	。/w/OT	买/v/OT	完了/v/OT	皮蛋/u/B-P1	瘦肉/n/E-P1	粥/n/OT	还给/v/OT	我/r/OT	打电话/v/OT	问问/v/OT	要不/c/OT	要/v/OT	南瓜/n/I-P1	粥/n/OT	。/w/OT	赞/j/OT
+量/n/I-E	少/a/I-P1	，/w/OT	味道/n/I-E	不错/a/I-P1	，/w/OT	微/ag/OT	贵/a/OT
+好吃/a/I-P1	，/w/OT	评/v/B-N2	晚/tg/M-N2	了/y/E-N2	。/w/OT
+好吃/a/I-P1	不/d/OT	贵/a/OT	，/w/OT	经济/n/B-P1	实惠/n/E-P1	！/w/OT
+等/v/B-N2	了/u/M-N2	一个/m/M-N2	多/m/M-N2	小时/n/E-N2	，/w/OT	确实/d/OT	不好/a/B-N1	吃/v/E-N1
+送货/n/B-E	时间/n/E-E	太/d/B-N1	长/a/E-N1	！/w/OT	！/w/OT	！/w/OT
+味道/n/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	鸡肉/n/I-E	很/d/B-P1	嫩/a/E-P1	，/w/OT	下次/t/B-P2	还/d/M-P2	会/v/M-P2	来/v/E-P2
+﻿很快/n/I-P1	，/w/OT	好吃/a/I-P1	，/w/OT	味道/n/I-E	足/a/I-P1	，/w/OT	量/n/I-E	大/a/I-P1	
+卷饼/r/I-E	真的/d/OT	不错/a/I-P1	！/w/OT	拌饭/n/OT	也/d/OT	还/d/B-P1	可以/v/E-P1
+稍有/m/I-P1	点/q/OT	贵/j/OT	哈/j/OT	～/w/OT	其他/r/OT	的/u/OT	不错/a/I-P1	！/w/OT
+鱼头/n/I-E	感觉/n/OT	比/p/B-P2	以前/f/M-P2	多/a/M-P2	了/y/E-P2	，/w/OT	虾/n/I-E	感觉/n/OT	有点/d/B-N1	不大/d/M-N1	新鲜/a/E-N1	。/w/OT	
+大雪/n/I-P1	天/n/OT	还/d/OT	能/v/OT	送/v/OT	，/w/OT	太/d/B-N1	赞/vg/M-N1	了/y/E-N1	！/w/OT
+速度/n/I-E	很/d/B-N1	慢/a/E-N1	！/w/OT	卷饼/d/I-E	很难/v/B-N1	吃/v/E-N1	，/w/OT	还/d/OT	20/m/OT	块钱/q/OT	，/w/OT	里面/f/OT	全/d/OT	是/v/OT	肥肉/n/OT	，/w/OT	坑/n/OT	死/v/OT	了/y/OT	！/w/OT
+太/d/B-N1	差/a/M-N1	了/y/E-N1	，/w/OT	曲奇/v/B-E	奶茶/u/M-E	味道/n/E-E	很/d/B-N1	怪/a/E-N1	，/w/OT	像/p/B-N2	粉/n/M-N2	泡/v/M-N2	的/u/E-N2	，/w/OT	大满贯/n/B-N2	根本/d/M-N2	没有/v/M-N2	几/m/M-N2	粒/q/M-N2	东西/n/E-N2	，/w/OT	珍珠/n/B-E	奶茶/w/E-E	也/d/OT	不好/a/B-N1	喝/v/E-N1	。/w/OT	
+还/d/OT	挺/d/B-P1	好吃/a/E-P1	的/u/OT	，/w/OT	还好/v/I-P1	给/p/OT	我/r/OT	放/v/OT	了/u/OT	平时/t/OT	一半/m/OT	的/u/OT	酱/n/OT	~/n/OT
+速度/n/I-E	有点/d/B-N1	慢/a/E-N1
+去/v/OT	你/r/OT	大爷/n/OT	,/w/OT	送/v/B-E	的/u/E-E	晚/tg/OT	,/w/OT	电话/n/OT	不/d/OT	接/v/OT	,/w/OT	接/v/OT	了/u/OT	屁/n/OT	用/v/OT	没有/d/OT	,/v/OT	做/v/OT	毛/nr/OT	服务业/n/OT
+10/m/OT	点/q/OT	40/m/OT	的/u/OT	立即/d/B-P1	送达/v/E-P1	也/d/OT	能/v/OT	到/v/OT	一点/m/OT	才/d/OT	送到/v/OT
+非常/d/B-P1	美味/n/E-P1	，/w/OT	下次/t/B-P2	还/d/M-P2	会/v/M-P2	再/d/M-P2	来/v/E-P2	！/w/OT
+送餐/p/I-E	超级/a/B-N1	慢/a/E-N1	啊/y/OT	，/w/OT	味道/n/I-E	很/d/B-P1	好/a/E-P1
+无敌/v/B-N1	慢/a/E-N1	！/w/OT	！/w/OT	！/w/OT	！/w/OT	！/w/OT	！/w/OT	！/w/OT	昨天/t/OT	2/m/B-N2	小时/n/E-N2	，/w/OT	今天/t/OT	依旧/d/OT	2/m/B-N2	个/q/M-N2	半/m/M-N2	小时/n/E-N2	都/d/OT	，/w/OT	居然/d/OT	还/d/OT	没/d/OT	送到/v/OT
+食物/n/B-P1	干净/a/E-P1	，/w/OT	包装/n/I-E	不错/a/I-P1	，/w/OT	有点/d/B-N1	品牌/n/E-N1	，/w/OT	可以/v/OT
+全/d/OT	是/v/OT	肉/n/I-E	。/w/OT	有点/d/B-N1	干/v/E-N1
+东西/n/I-E	还/d/B-P1	不错/a/E-P1	，/w/OT	但是/c/OT	送餐/n/B-E	速度/n/E-E	太/d/B-N1	慢/a/E-N1	了/y/OT	，/w/OT	不能/n/OT	按时/d/B-P1	送达/v/E-P1	，/w/OT	第二/m/OT	单/a/OT	两个/u/OT	多/m/I-P1	小时了/q/OT	，/w/OT	还/d/OT	没有/d/OT	到/v/OT	，/w/OT	这/r/OT	速度/n/I-E	真是/d/OT	醉/v/OT	了/u/OT
+挺/d/B-P1	好吃/a/E-P1	，/w/OT	不过/c/OT	有一/m/OT	点/q/OT	咸/a/OT
+第二次/r/OT	订/v/OT	这家/r/OT	的/u/OT	饭/n/OT	，/w/OT	但/c/OT	明显/a/B-N2	和/c/M-N2	上次/t/M-N2	不一/v/M-N2	样/ng/E-N2	。/w/OT	上次/t/OT	订/v/OT	的/u/OT	很/d/OT	好吃/a/OT	，/w/OT	但/c/OT	这次/r/OT	像/v/B-N2	剩饭/n/E-N2	，/w/OT	包装/n/B-E	上/f/M-E	的/u/M-E	地址/n/E-E	也/d/B-N2	不对/a/E-N2	。/w/OT	
+粥/n/OT	尚可/n/OT	，/w/OT	饼/n/OT	一般/d/I-P1
+卷饼/n/I-E	皮/n/OT	是/v/OT	真/d/B-N1	厚/a/E-N1	,/n/OT	土豆丝/w/OT	太/d/B-N1	少/a/E-N1	了/u/OT
+送餐员/n/B-E	态度/n/E-E	很/d/B-P1	好/a/E-P1	，/w/OT	虽然/c/B-N2	晚/tg/M-N2	了/y/E-N2	，/w/OT	但/c/OT	还是/c/OT	好评/n/I-P1
+还/d/B-P1	可以/v/E-P1	吧/y/OT	。/w/OT	没有/d/OT	土豆丝/v/OT	的/u/OT	好吃/a/I-P1	。/w/OT	个人/n/OT	感觉/n/OT	。/w/OT	哈哈/o/OT
+木耳/n/OT	的/u/OT	味道/n/I-E	真的/d/OT	不错/a/I-P1
+南瓜/n/I-P1	粥/n/OT	凉/v/B-N1	了/y/E-N1	，/w/OT	鸡肉/n/I-E	卷/ng/OT	有点/d/B-N1	腻/v/E-N1	人/n/OT	，/w/OT	建议/n/OT	加/v/OT	些/q/OT	番茄酱/n/OT	。/w/OT
+送/v/B-E	的/u/E-E	太/d/B-N1	早/a/M-N1	了/u/E-N1
+炒菜/v/B-N2	都/d/M-N2	不/d/M-N2	放/v/M-N2	盐/n/M-N2	的/u/E-N2	？/w/OT	咖喱/n/B-E	炒饭/w/E-E	没/d/B-N2	吃/v/M-N2	就/d/M-N2	扔/v/M-N2	了/y/E-N2	！/w/OT	太/d/B-N2	失望/a/E-N2	，/w/OT	差/a/I-N1	
+不错/a/I-P1	，/w/OT	第二次/d/OT	吃/v/OT	了/u/OT
+很快/d/I-P1	，/w/OT	包装/n/I-E	很/d/B-P1	好/a/E-P1
+纯/a/B-E	素/ng/M-E	的/u/E-E	太/d/B-N1	难吃/v/E-N1	，/w/OT	太/d/B-N1	淡/a/M-N1	了/y/E-N1	，/w/OT	其它/r/I-E	不错/a/I-P1
+没有/d/OT	想/v/OT	的/u/OT	那么/r/OT	好吃/a/I-P1	～/u/OT	～/n/OT	～/n/OT
+鱼香肉丝/n/OT	味道/n/I-E	一般/a/I-P1	，/w/OT	南瓜/n/I-P1	粥/n/OT	太/d/B-N1	淡/a/M-N1	了/u/E-N1
+下/v/OT	了/u/OT	两/m/OT	单/a/OT	，/w/OT	第二/m/OT	单/a/OT	慢/a/OT	了/u/OT	点/n/OT	，/w/OT	味道/n/I-E	还是/c/OT	不错/a/I-P1	的/u/OT
+挺/d/B-P1	好吃/a/E-P1	的/u/OT	,/n/OT	就是/d/OT	太/d/B-N1	慢/a/E-N1	太/d/B-N1	慢/a/E-N1	了/y/OT	！/w/OT	！/w/OT	(/nr/OT	*/nr/OT	>/nr/OT	./nr/OT	</nr/OT	*/nr/OT	)/nr/OT	,/nr/OT	两个/w/B-N2	半/m/M-N2	小时/n/E-N2	！/w/OT
+还/d/B-P1	可以/v/E-P1	，/w/OT	附赠/v/OT	了/u/OT	手套/n/OT	和/c/OT	纸巾/n/OT
+超/v/B-P1	快/a/E-P1	，/w/OT	很/d/B-P1	好/a/E-P1
+这次/r/OT	味道/n/I-E	不错/a/I-P1	，/w/OT	下次/t/B-P2	购买/v/M-P2
+第一次/r/OT	吃/v/OT	宇宙/n/OT	卷饼/n/OT	，/w/OT	好吃/a/I-P1	~/n/OT
+里面/f/OT	竟然/d/OT	有大/m/OT	片/q/OT	肥肉/n/OT	皮/n/OT	，/w/OT	说好/v/OT	的/u/OT	鸡肉/n/I-E	卷/v/OT	啊/y/OT	。/w/OT	。/w/OT	。/w/OT
+最/d/OT	喜欢/v/OT	吃/v/OT	土豆丝/w/OT	炒/v/OT	肉/n/I-E	煎饼/n/OT
+菜/n/I-E	做/v/OT	的/u/OT	咸/a/OT	了/y/OT	，/w/OT	味道/n/I-E	也/d/OT	一般/a/I-P1
+都/d/OT	很/d/B-P1	满意/v/E-P1	，/w/OT	挺/d/B-P1	好吃/a/E-P1	的/u/OT
+酱/r/OT	有点/d/B-N1	多/a/E-N1	，/w/OT	速度/n/I-E	挺/d/B-P1	快/a/E-P1	的/u/OT
+又/d/OT	没/d/OT	送餐/v/I-E	具/vg/I-P1	，/w/OT	非/d/OT	要/v/OT	让/v/OT	我们/r/OT	当/p/OT	原始人/n/OT	，/w/OT	上手/d/OT	抓/v/OT	啊/y/OT	？/w/OT
+这个/r/OT	单子/n/OT	,/w/OT	我/r/OT	没/d/B-N2	拿到/v/E-N2	餐/ng/OT	，/w/OT	钱/n/OT	也/d/OT	扣/v/OT	了/y/OT	，/w/OT	你/r/OT	说/v/OT	怎么办/v/OT	吧/y/OT	。/w/OT
+土豆/n/I-E	不错/a/I-P1	，/w/OT	肉丝/n/OT	太/d/B-N1	少/a/E-N1
+中规中矩/n/I-P1	。/w/OT
+味道/n/I-E	不错/a/I-P1	速度/n/I-E	快/a/I-P1
+已经/d/OT	点/v/OT	过/u/OT	很多/m/I-P1	次/q/OT	了/y/OT	，/w/OT	每次/r/OT	都/d/OT	还/d/OT	挺/d/B-P1	好/a/E-P1	的/u/OT	，/w/OT	速度/n/I-E	快/a/I-P1	，/w/OT	点/v/OT	两/m/OT	份/q/OT	能/v/OT	吃/v/OT	饱/a/OT	，/w/OT	好评/n/I-P1	！/w/OT	！/w/OT	！/w/OT
+非常/d/B-P1	实惠/a/E-P1	，/w/OT	不错/a/I-P1	！/w/OT
+里面/f/OT	不是/v/OT	京/j/OT	酱肉/m/OT	丝/q/OT	的/u/OT	肉丝/n/OT	…/w/OT	…/d/OT	肥/a/OT	,/n/OT	腻/v/OT
+皮蛋/n/OT	粥/n/OT	，/w/OT	没有/d/OT	瘦肉/v/OT
+好/a/I-P1	难吃/n/OT	，/w/OT	什么/r/OT	味/ng/OT	都/d/OT	没有/v/OT	，/w/OT	还/d/B-P1	被/p/E-P1	店/n/OT	摆/v/B-N2	了/u/M-N2	个/q/M-N2	乌龙/n/E-N2	。/w/OT	。/w/OT
+味道/n/I-E	还好/n/I-P1	，/w/OT	可惜/v/OT	凉/v/B-N1	了/y/E-N1	。/w/OT
+送/v/B-E	的/u/E-E	及时/a/I-P2	，/w/OT	饮料/n/I-E	很/d/B-P1	好喝/w/M-P1	哦/e/E-P1	
+味道/n/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	鸡肉/n/I-E	很多/m/I-P1	，/w/OT	包装用/n/OT	心/n/OT
+配送/v/B-E	速度/n/E-E	日/j/B-N1	了/u/E-N1	动物园/n/OT	了/y/OT	，/w/OT	快/a/I-P1	3/m/OT	小时了/q/OT
+太/d/B-N1	慢/a/E-N1	了/y/OT	，/w/OT	气死/v/OT	了/u/OT
+不错/a/I-E	挺/d/B-P1	好吃/a/E-P1
+不错/a/I-P1	，/w/OT	还/d/OT	挺/d/B-P1	好/a/E-P1	的/u/OT	。/w/OT	百度/v/OT	送餐员/u/B-E	态度/n/E-E	挺/d/B-P1	好/a/E-P1	的/u/OT
+一个/m/B-N2	卷饼/q/M-N2	一碗/n/E-N2	粥/n/OT	,/w/OT	刚刚/d/B-P1	好/a/E-P1
+很/d/B-P1	酷/v/E-P1	的/u/OT	宇宙/n/OT	卷饼/n/OT	，/w/OT	包装/n/I-E	高级/a/I-P1	，/w/OT	分量/n/I-E	足/a/I-P1
+太/d/B-N1	难吃/v/M-N1	了/y/E-N1	。/w/OT	大米/n/I-E	不好/a/I-N1	,/n/OT	蒸/v/B-N2	的/u/M-N2	也/d/E-N2	不好/a/I-N1	。/w/OT	鸡/n/I-E	都/d/OT	是/v/OT	碎/a/B-E	的/u/E-E	。/w/OT	
+好香/v/I-P1	啊/y/OT	，/w/OT	就是/d/OT	稍微/d/OT	有一/m/OT	点/q/OT	辣/a/OT
+今天/t/OT	还是/d/OT	很快/d/I-P1	的/u/OT	。/w/OT	。/w/OT	。/w/OT	。/w/OT
+挺/d/OT	辣/a/OT	的/u/OT	，/w/OT	吃着/n/OT	还/d/B-P1	可以/v/E-P1	吧/y/OT	
+味道/n/I-E	一般/a/I-P1	。/w/OT	没有/d/OT	想象/v/B-E	的/u/E-E	好吃/a/I-P1	。/w/OT
+用/v/OT	的/u/OT	是/v/OT	地沟/u/B-N1	油/n/E-N1	做/v/OT	的/u/OT	东西/n/I-E	，/w/OT	越/d/OT	吃/v/OT	越/d/B-N1	恶心/a/E-N1	，/w/OT	在/p/OT	去/v/OT	订/v/OT	的/u/OT	就是/v/OT	个/q/OT	傻/a/OT	B/n/OT
+好吃/a/I-P1	,/n/OT	就是/d/OT	有点/d/OT	贵/a/OT
+特别快/r/I-P1	就/d/OT	送到/v/OT	了/u/OT	…/n/OT	而且/c/OT	特别/d/B-P1	好吃/a/E-P1	，/w/OT	包装/n/I-E	很/d/B-P1	漂亮/a/E-P1
+店里/r/OT	送/v/B-N1	错/v/M-N1	了/u/E-N1	餐/ng/I-E	,/w/OT	给/p/OT	店里/n/OT	打电话/v/OT	,/u/OT	话/n/OT	还/d/OT	没有说/v/OT	完/v/OT	,/u/OT	对方/n/OT	就/d/OT	挂断/v/OT	了/u/OT	,/n/OT	特别/d/B-N1	没有/v/M-N1	礼貌/n/E-N1	,/w/OT	实在/d/B-N1	是/v/M-N1	差/a/E-N1	
+宇宙/n/OT	卷饼/n/OT	，/w/OT	不是/c/OT	盖/v/OT	的/u/OT
+包装/n/I-E	高大/a/I-P1	上/f/OT	，/w/OT	味道/n/I-E	不错/a/I-P1
+送餐/n/B-E	速度/n/E-E	很快/d/I-P1	，/w/OT	味道/n/I-E	还/d/B-P1	可以/v/E-P1
+真心/n/OT	的/u/OT	难吃/n/OT
+这个/r/OT	好吃/a/I-P1	，/w/OT	大/d/I-P1	赞/vg/OT
+一般/a/I-P1	吧/y/OT	味道/n/I-E
+都/d/OT	什么/r/OT	啊/y/OT	,/w/OT	这么/r/B-P1	难吃/d/E-P1	吃/v/OT	,/w/OT	醉/v/OT	了/u/OT
+这个/r/OT	套餐/n/OT	太/d/B-N1	值/v/M-N1	了/y/E-N1	，/w/OT	从/p/OT	下单/n/OT	到/v/OT	到达/v/OT	，/w/OT	简直/d/OT	是/v/OT	空运/v/OT	的/u/OT	速度/n/I-E
+味道/n/I-E	一般/d/I-P1	,/v/OT	送餐/w/I-E	也/d/OT	太/d/B-N1	慢/a/E-N1	了/u/OT	…/n/OT	…/n/OT
+有点/d/B-N1	辣/a/E-N1	，/w/OT	送来/v/OT	时有/m/OT	点/q/OT	凉/a/B-N1	了/y/E-N1	，/w/OT	其他/r/I-E	还好/v/I-P1
+妈妈/n/I-E	很/d/B-P1	喜欢/v/E-P1	他家/r/OT	的/u/OT	泡菜/n/OT	,/w/OT	当/p/OT	宝贝/n/OT	一样/u/OT
+领导/n/I-P1	说/v/OT	这是/v/OT	一个/m/OT	非常/d/B-P1	适合/v/E-P1	加班/v/OT	时候/n/OT	吃/v/OT	的/u/OT	略带/v/OT	文艺/n/OT	的/u/OT	小卷/n/OT	饼/n/OT
+好吃/a/I-P1	不/d/OT	贵/a/OT	还/d/B-P1	可以/v/E-P1	送到/v/OT	楼上/s/OT	，/w/OT	绝对/a/I-E	好评/n/I-P1
+太/d/B-N1	慢/a/E-N1	了/y/OT	呀/y/OT	。/w/OT	。/w/OT	。/w/OT
+迟到/v/B-N2	3/m/M-N2	小时/n/E-N2	,/w/OT	配送/v/I-E	不知/v/OT	道/v/OT	是/v/OT	哪家/r/B-E	得/u/E-E	,/n/OT	很/d/B-P1	混乱/a/E-P1
+吃出/r/OT	来/v/OT	一根/u/OT	头发丝/n/OT	,/w/OT	太/d/B-N1	恶心/a/E-N1	了/u/OT	,/n/OT	卷饼/n/OT	太油/n/OT	,/w/OT	都/d/OT	漏/v/OT	出来/v/OT	了/u/OT
+服务/n/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	套装/n/OT	明明/d/OT	是/v/OT	奶茶/n/I-E	，/w/OT	为什么/r/OT	送来/v/OT	是/v/OT	豆浆/u/OT	…/n/OT
+很快/d/I-P1	很/d/OT	好/a/I-P1	很快/d/OT	很/d/B-P1	好吃/a/E-P1
+昨天/t/OT	送/v/B-E	的/u/E-E	肉丝/n/OT	的/u/OT	大/a/I-P1
+锡纸/n/OT	包装/n/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	但是/c/OT	今天/t/OT	的/u/OT	卷饼/n/OT	里面/f/OT	有/v/OT	不锈钢丝/n/OT	。/w/OT
+唉/n/I-P1	，/w/OT	等/v/B-N2	了/u/M-N2	好久/m/M-N2
+豆腐脑/r/OT	太/d/B-N1	少/a/E-N1	，/w/OT	应该/v/OT	5/m/OT	块/q/OT
+作为/p/B-P1	湖北人/n/E-P1	觉得/v/OT	还是/c/OT	也/d/OT	很/d/B-P1	正宗/a/E-P1	的/u/OT	！/w/OT
+一般/a/I-P1	，/w/OT	PIZAZ/d/OT	料/v/OT	不足/a/OT
+很/d/B-P1	棒/a/E-P1	！/w/OT	下次/t/B-P2	还/d/M-P2	来/v/E-P2	！/w/OT
+菜/n/I-E	少/a/I-P1	，/w/OT	口味/n/I-E	一般/d/I-P1
+送/v/B-E	的/u/E-E	太/d/B-N1	慢/a/E-N1	了/u/OT	1/m/B-N2	个/q/M-N2	半/m/M-N2	小时/n/E-N2
+太/d/B-N1	甜/a/M-N1	了/u/E-N1	觉得/v/OT
+味道/n/I-E	很/d/B-P1	好/a/E-P1	也/d/OT	很/d/B-P1	负责/v/E-P1
+服务/n/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	昨天/t/OT	吃/v/OT	的/u/OT	，/w/OT	今天/t/OT	补/v/OT	单/a/OT	的/u/OT	。/w/OT
+很/d/B-P1	不错/a/E-P1	，/w/OT	味道/n/I-E	好/a/I-P1	，/w/OT	送餐/nr/I-E	服务好/nr/I-P1	～/nr/OT	～/nr/OT	～/nr/OT
+总是/d/OT	不能/v/OT	按时/d/OT	到/v/OT
+味道/n/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	就是/d/OT	送/v/OT	太/d/B-N1	慢/a/E-N1	了/u/OT
+外卖/n/B-E	大哥/n/M-E	态度/n/E-E	很/d/B-P1	好/a/E-P1	，/w/OT
+好吃/a/I-P1	，/w/OT	包装/n/I-E	好/a/I-P1	，/w/OT	干净/a/I-P1	卫生/n/OT
+不是/c/OT	高峰期/n/OT	订餐/v/OT	，/w/OT	还是/c/OT	很快/d/I-P1	滴/v/OT	！/w/OT
+味道/n/I-E	太/d/B-N1	淡/a/E-N1	，/w/OT	建议/v/OT	多/m/I-P1	些/q/OT	酱料/n/OT	，/w/OT	辣椒/n/OT	太/d/B-N1	辣/a/E-N1	，/w/OT	不如/v/OT	换成/v/OT	黄瓜/n/OT	或者/c/OT	土豆丝/n/OT
+是/v/OT	有点/d/B-N1	辣/a/E-N1	。/w/OT	味道/n/I-E	还/d/B-P1	不错/a/E-P1
+饼/n/OT	还是/c/OT	挺/d/B-P1	袖珍/a/E-P1	的/u/OT	，/w/OT	味道/n/I-E	不错/a/I-P1
+好喝/n/I-P1	，/w/OT	不/d/B-P1	贵/a/E-P1	,/n/OT	红红火火/d/I-P2	哈哈哈/o/OT	
+还/d/OT	没有/d/OT	吃/v/OT	,/u/OT	感觉/n/OT	不错/a/I-P1
+说好/n/OT	的/u/OT	王老吉/n/OT	、/w/OT	、/w/OT
+两个/p/M-N2	多/a/M-N2	小时/n/E-N2	才/d/OT	送到/v/OT
+味道/n/I-E	有点/d/B-N1	淡/a/E-N1	，/w/OT	不过/c/OT	服务/n/I-E	很/d/B-P1	好/a/E-P1	。/w/OT
+新年/t/B-P1	第一/m/E-P1	天/q/OT	速度/n/I-E	依然/d/OT	超级/a/B-P1	快/a/E-P1
+味道/n/I-E	还/d/B-P1	不错/a/E-P1	，/w/OT	但是/c/OT	觉得/v/OT	还是/d/OT	肉松/v/OT	煎饼/n/OT	更好/w/OT	吃/v/OT
+肘子/m/OT	卷/q/OT	太油/n/B-N1	腻/v/E-N1	,/w/OT	可能/v/OT	个人/n/OT	不/d/OT	太/d/B-N1	适应/v/E-N1	这个/r/OT	肥肉/v/OT	,/u/OT	味道/n/I-E	真贵/n/OT	还好/n/I-P1
+送/v/B-E	的/u/E-E	慢/a/OT	还是/c/OT	凉/v/OT	的/u/OT
+很难/r/B-N1	吃/v/E-N1	的/u/OT	饼/n/OT
+再也/d/M-N2	不定/d/M-N2	了/y/E-N2	。/w/OT
+很/d/B-P1	好/a/E-P1	～/u/OT	不错/a/I-P1
+帮/v/B-P1	同事/n/E-P1	订/v/OT	的/u/OT	，/w/OT	很/d/B-P1	好/a/E-P1	！/w/OT
+肘子/m/OT	卷/q/OT	真的/d/OT	难吃/v/OT	啊/y/OT
+等/v/B-N2	了/u/M-N2	2/m/M-N2	个/q/M-N2	小时/n/E-N2	，/w/OT	送餐员/d/I-E	找不/v/B-N2	到/v/M-N2	餐厅/n/E-N2	，/w/OT	菜/n/I-E	等/u/B-N2	得/v/M-N2	都/d/M-N2	凉/v/M-N2	了/y/E-N2	。/w/OT	希望/v/B-N2	改进/v/E-N2	。/w/OT	
+在/p/OT	做大/v/OT	一点/m/OT
+还/d/B-P1	行/v/E-P1	，/w/OT	就是/c/OT	速度/n/I-E	好/a/I-P1	慢/a/OT	，/w/OT	一个/m/B-N2	多/m/M-N2	小时/n/E-N2
+快递/n/B-E	小哥/w/E-E	很快/d/I-P1	就/d/OT	送到/v/OT	了/y/OT	！/w/OT	赞/vg/I-P2	！/w/OT	水煮/n/B-E	牛肉/n/M-E	肉质/n/E-E	鲜嫩/a/I-P1	，/w/OT	辣/a/B-P2	的/u/M-P2	恰到好处/i/E-P2	，/w/OT	也/d/OT	很/d/B-P1	入味/v/E-P1	。/w/OT	不错/a/I-P1	，/w/OT	挺/d/B-P1	好吃/a/M-P1	的/u/E-P1	！/w/OT	
+木耳/n/I-E	不好/a/B-N1	吃/v/E-N1	，/w/OT	辣/a/OT	白菜/n/OT	还好/n/I-P1	，/w/OT	皮蛋/v/B-P1	瘦肉/u/E-P1	粥/n/OT	太/d/B-N1	淡/a/M-N1
+东西/n/I-E	不错/a/I-P1	,/n/OT	就是/d/OT	送餐/v/I-E	时/ng/OT	少/d/B-N2	给/v/M-N2	了/u/E-N2	两个/n/OT	煎饼/n/OT	,/n/OT	结果/n/OT	又/d/OT	等/v/B-N2	了/u/M-N2	一个/m/M-N2	小时/n/E-N2	才/d/OT	来/v/OT	的/u/OT	,/n/OT	同事/n/OT	已/d/OT	饿/v/OT	晕/v/OT
+我要/n/B-N2	投诉/n/E-N2	。/w/OT	奶茶/n/I-E	里/f/OT	有/v/B-N2	虫子/n/E-N2	
+没/d/B-N2	给/p/M-N2	我/r/M-N2	可乐/nz/M-N2
+包装/n/I-E	好/a/I-P1	漂亮/a/OT	！/w/OT
+一杯/r/B-N2	送来/v/M-N2	都/d/M-N2	漏/v/M-N2	了/u/E-N2	
+非常/d/B-P1	快/d/E-P1	非常/d/B-P1	好/a/E-P1
+还/d/B-P1	可以/v/E-P1	，/w/OT	就是/c/OT	米饭/n/I-E	偏/d/B-N1	硬/a/E-N1	了/u/OT	点/n/OT
+今天/t/OT	来/f/OT	的/u/OT	也/d/OT	太/d/B-N1	晚/a/E-N1	了/y/OT	。/w/OT
+还/d/B-P1	可以/v/E-P1	，/w/OT	就是/d/OT	量小/m/OT	点/q/OT
+太/d/B-N1	慢/a/E-N1	了/y/OT	。/w/OT	。/w/OT	。/w/OT
+感觉/n/OT	不/d/B-N1	太/d/M-N1	好吃/a/E-N1	，/w/OT	价格/n/I-E	贵/a/I-N1	。/w/OT	但是/c/OT	百度/n/B-E	外卖/n/M-E	的/u/M-E	送餐/n/M-E	人员/n/M-E	态度/n/E-E	很/d/B-P1	好/a/E-P1	！/w/OT	
+尝/v/B-N1	了/u/E-N1	尝新/m/OT	款/q/OT	，/w/OT	凑合/v/OT	吧/y/OT
+都/d/OT	不错/a/I-P1	，/w/OT	配送/v/B-E	员/ng/E-E	很/d/B-P1	负责/v/E-P1
+送餐/n/B-E	时间/n/E-E	比/p/B-N2	预定/v/M-N2	时间/n/M-N2	晚/a/M-N2	了/u/M-N2	一个/m/M-N2	小时/n/E-N2	，/w/OT	盖饭/n/I-E	味道/n/B-N1	淡/a/M-N1	了/u/E-N1	些/q/OT	，/w/OT	皮蛋/v/B-P1	瘦肉/u/E-P1	粥/n/OT	还/d/B-P1	不错/a/E-P1
+不说/c/OT	别的/r/OT	这次/r/OT	速度/n/I-E	满分/n/I-P1	，/w/OT	希望/v/OT	加大/v/OT	量/n/I-E	吧/y/OT	。/w/OT
+潜力/n/B-P1	股/n/E-P1	，/w/OT	你/r/OT	值得/v/OT	拥有/v/OT
+方便/a/I-P1	，/w/OT	快捷/d/I-P1	，/w/OT	味道/n/I-E	可口/a/I-P1	，/w/OT	快递/v/I-E	给/p/B-P1	力/n/E-P1	
+两个/r/M-N2	半/m/M-N2	小时/n/E-N2	，/w/OT	不是/c/OT	一般/d/I-P1	慢/a/OT	啊/y/OT
+送餐员/n/B-E	态度/n/E-E	点/v/OT	32/m/B-P2	个/q/M-P2	赞/j/E-P2
+很/d/B-P1	好吃/a/E-P1	,/u/OT	外卖/n/OT	包装/n/I-E	赞/vg/I-P1
+看看/v/OT	送餐/u/B-E	时间/n/E-E
+很/d/B-P1	好吃/a/E-P1	，/w/OT	就是/d/OT	泡菜/v/OT	太/d/B-N1	咸/a/M-N1
+非常/d/B-P1	好/a/E-P1	，/w/OT	夏天/t/OT	正/d/OT	合适/a/OT
+每次/r/OT	叮嘱/v/OT	别/d/OT	放/v/OT	姜/nr/I-E	，/w/OT	回回/n/B-N2	都/d/M-N2	不当/a/M-N2	个/q/M-N2	事/n/E-N2	
+美味/n/I-P1	，/w/OT	送餐/n/B-E	人员/n/M-E	态度/n/E-E	很/d/B-P1	不错/a/E-P1	。/w/OT	
+非常/d/B-P1	好吃/a/E-P1	。/w/OT
+粥/n/OT	有些/r/B-N1	腥/n/E-N1	，/w/OT	饼/n/OT	有点/d/B-N1	腻/v/M-N1
+送餐/r/I-E	太/d/B-N1	慢/a/E-N1	。/w/OT	。/w/OT	。/w/OT	，/w/OT	我/r/OT	觉得/v/OT	是/v/OT	太/d/B-N1	饿/v/M-N1	了/y/E-N1	，/w/OT	才/d/OT	感觉/v/OT	好吃/a/I-P1	。/w/OT
+送/v/B-E	得/u/E-E	太/d/B-N1	慢/a/E-N1	了/u/OT
+有点/d/B-N1	慢/a/E-N1	,/n/OT	送来/v/OT	都/d/OT	凉/v/B-N1	了/u/E-N1	,/n/OT	而且/c/OT	也/d/OT	不/d/OT	太/d/B-N1	好吃/a/E-N1
+下雨天/n/B-P2	小哥/w/M-P2	还/d/M-P2	提前/v/M-P2	送/v/M-P2	过来/v/E-P2	了P2/n/OT	，/w/OT	好/a/B-P1	辛苦/n/E-P1	，/w/OT	好评/n/I-P1	
+猪手/p/B-P1	好吃/a/E-P1	啊/y/OT	，/w/OT	包/v/OT	菜/n/I-E	一般/d/I-P1	,/v/OT	没什么/l/OT	可说/v/OT	的/u/OT
+送餐/n/B-E	速度/n/E-E	太/d/B-N1	慢/a/E-N1	10/m/OT	点多/q/OT	下单/n/OT	，/w/OT	最终/d/OT	送到/v/OT	12/m/OT	点/q/OT	半/m/OT	。/w/OT	。/w/OT	。/w/OT
+没/d/B-N2	给/p/M-N2	酱/n/E-N2	，/w/OT	很难/d/B-N1	吃/v/E-N1
+肉/n/I-E	多/m/I-P1	,/q/OT	不错/a/I-P1
+非常/d/B-P1	好吃/a/M-P1	的/u/E-P1	饼/n/OT
+将近/d/B-N2	两个/v/M-N2	小时/n/E-N2	才/d/OT	送到/v/OT	，/w/OT	差/v/B-N1	评/v/E-N1
+饼/n/I-E	还/d/B-P1	不错/a/E-P1	,/u/OT	粥/n/OT	是/v/OT	馊/v/OT	的/u/OT	,/n/OT	直接/d/OT	扔/v/OT
+原味/n/B-E	奶茶/w/E-E	没/d/B-N2	加/v/M-N2	椰果/n/E-N2	,/w/OT	而且/c/OT	上面/f/B-N2	的/u/M-N2	封/v/M-N2	模/ng/M-N2	破/v/M-N2	了/u/E-N2	
+特别/d/B-P1	棒/a/E-P1	，/w/OT	煎饼/n/OT	很/d/B-P1	好吃/a/E-P1	。/w/OT
+南瓜/n/I-P1	粥/n/OT	一如继往/n/OT	地/u/B-P1	好喝/n/E-P1	~/n/OT
+速度/n/I-E	快/a/I-P1	，/w/OT	量/n/I-E	多/a/I-P1	，/w/OT	很/d/B-P1	香/a/E-P1	
+今天/t/OT	比较/d/B-N1	慢/a/E-N1	，/w/OT	幸好/d/OT	同时/d/OT	订/v/OT	了/u/OT	别的/r/OT	，/w/OT	不至于/d/OT	饿/v/OT	着/u/OT
+还是/c/OT	很/d/B-P1	好/a/E-P1	，/w/OT	而且/c/OT	是非/n/OT	常/d/OT	热乎/v/OT	滴/v/OT
+肘子/r/OT	不如/v/OT	鸡腿/u/OT	好吃/a/I-P1	太油/n/OT	了/u/OT
+配送/v/I-E	很快/d/I-P1	，/w/OT	态度/n/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	五星/n/I-E	好评/n/I-P1
+优惠/n/B-E	活动/n/E-E	很/d/B-P1	超值/v/E-P1
+非常/d/B-P1	好/a/E-P1	，/w/OT	一元/d/OT	吃/v/OT	上高/m/OT	端/q/OT	卷饼/n/OT	，/w/OT	太/d/B-N1	霸气/v/E-N1
+分量/n/I-E	真/d/B-P1	足/a/E-P1	，/w/OT	就是/d/OT	微/ag/OT	贵/a/OT
+送餐员/n/B-E	素质/n/E-E	太/d/B-N1	低/a/E-N1	。/w/OT
+卷饼/n/OT	味道/n/I-E	有点/d/B-N1	淡/a/E-N1	，/w/OT	肘子/n/OT	瘦肉/w/OT	有点/d/B-N1	多/a/E-N1	，/w/OT	太/d/B-N1	有/v/E-N1	嚼/v/OT	劲/n/OT
+包装/n/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	很/d/B-P1	干净/a/E-P1
+配送/v/I-E	太/d/B-N1	慢/a/E-N1	，/w/OT	东西/n/I-E	没收/v/I-P1	到/v/OT	，/w/OT	就/d/OT	被/p/OT	确认/v/OT	收到/v/OT
+今天/t/OT	送/v/B-E	的/u/E-E	还/d/OT	挺/d/B-P1	快/a/E-P1	，/w/OT	就是/d/OT	让/v/OT	下楼/w/OT	拿/v/OT	不/d/OT	太/d/B-N1	爽/nr/E-N1
+挺/d/B-P1	好/a/M-P1	的/u/E-P1	,/n/OT	挺/d/B-P1	好喝/v/M-P1	的/u/E-P1	,/n/OT	不错/a/I-P1	
+一点/m/OT	十五/m/OT	才/d/OT	送到/v/OT	…/n/OT
+味道/n/I-E	和/c/OT	以前/f/OT	一样/a/OT	的/u/OT	,/n/OT	棒棒/n/OT	。/w/OT
+很/d/B-P1	好/a/E-P1	很/d/OT	强大/a/OT
+100/m/I-P1	分钟/q/OT	！/w/OT	！/w/OT	等/u/B-N2	死/a/M-N2	了/u/E-N2
+等/v/B-N2	了/u/M-N2	一个/m/M-N2	多/m/M-N2	小时/n/E-N2	，/w/OT	饮料/n/B-E	盖子/w/E-E	都/d/OT	破/v/B-N1	了/u/E-N1	
+包装/n/I-E	非常/d/B-P1	高大/a/E-P1	上/f/OT	，/w/OT	还/d/B-P1	专门/d/E-P1	配备/v/OT	了/u/OT	一次性/a/OT	手套/n/OT	，/w/OT	太/d/B-N1	贴心/a/M-N1	了/u/E-N1
+今天/t/OT	送/v/B-E	的/u/E-E	真/d/B-P2	快/a/E-P2	，/w/OT	好评/n/I-P1	
+宇宙速度/n/I-P1	，/w/OT	下单/v/OT	5/m/OT	分钟/q/OT	就/d/OT	到/v/OT	。/w/OT	味道/n/I-E	好/a/I-P1	，/w/OT	明天/t/OT	继续/v/OT	。/w/OT
+两个/n/M-N2	小时/n/E-N2	，/w/OT	醉/v/OT	了/u/OT
+真心/d/OT	不好/a/B-N1	吃/v/E-N1	,/u/OT	宇宙/n/OT	卷饼/n/OT	的/u/OT	口碑/n/OT	彻底/d/OT	毁/v/OT	在/p/OT	拌饭/n/OT	上了/n/OT
+送餐/p/I-E	慢/a/OT	，/w/OT	肉/n/I-E	少/a/I-P1	，/w/OT	味道/n/I-E	不好/a/B-N1
+好大/r/I-P1	一/m/OT	份/q/OT	啊/y/OT	，/w/OT	很/d/B-P1	好吃/a/E-P1
+味道/n/I-E	好/a/I-P1	，/w/OT	果子/n/OT	煎饼/w/OT	挺/d/B-P1	好/a/E-P1	的/u/OT	，/w/OT	套餐/n/OT	很/d/B-P1	划算/a/E-P1	。/w/OT
+很/d/B-P1	好/a/E-P1	，/w/OT	本次/r/OT	也/d/OT	很快/d/I-P1
+味道/n/I-E	棒棒/n/B-P1	嗒/n/E-P1
+味道/n/I-E	不错/a/I-P1	，/w/OT	就是/d/OT	送/v/B-N2	晚/a/M-N2	了/u/M-N2	半/m/M-N2	个/q/M-N2	多/a/M-N2	小时/n/E-N2
+非常/d/B-P1	干净/a/E-P1	,/u/OT	味道/n/I-E	也/d/OT	合适/a/OT	,/n/OT	满意/v/OT
+还好/v/I-P1	吧/y/OT	。/w/OT	饼/n/OT	的/u/OT	口味/n/I-E	差点儿/d/I-P1
+送餐/n/B-N2	的/u/M-N2	没/v/M-N2	手机/n/E-N2	，/w/OT	米饭/n/B-N2	全/d/M-N2	是/v/M-N2	黑斑/n/E-N2	，/w/OT	也/d/OT	不知/v/OT	道/v/OT	什么/r/OT	东西/n/OT	。/w/OT	鸡翅/d/I-E	炸/v/B-N2	的/u/M-N2	跟/v/M-N2	碳/w/M-N2	是的/l/E-N2	，/w/OT	只/d/OT	剩下/v/OT	黄焖/u/B-E	鸡/n/E-E	可以/v/OT	吃/v/OT	了/y/OT	，/w/OT	以后/f/B-N2	再也/d/M-N2	不会/m/M-N2	点/q/M-N2	单/a/E-N2	，/w/OT	更/d/OT	逗/v/OT	的/u/OT	点/n/B-N2	的/u/M-N2	百度/n/M-N2	外卖/w/M-N2	送来/v/M-N2	的/u/M-N2	却是/n/M-N2	饿/v/M-N2	了/y/M-N2	么/y/E-N2	，/w/OT	拼/v/OT	单子/v/OT	吗/y/OT	。/w/OT	晕/v/OT	
+酱/r/OT	太/d/B-N1	少/a/E-N1	了/y/OT	，/w/OT	没有/v/OT	味道/n/I-E	，/w/OT	菜/n/OT	也/d/OT	比/p/B-N2	从前/t/M-N2	少/a/E-N2	。/w/OT
+送/v/B-E	的/u/E-E	快/a/I-P1	，/w/OT	下单/d/OT	没/v/B-N2	多久/r/M-N2	就/d/M-N2	到/v/M-N2	了/u/E-N2
+送餐/n/B-E	速度/n/E-E	过/u/OT	慢/a/OT	，/w/OT	服务/n/B-E	人员/n/M-E	甚至/d/E-E	弄错/v/B-N1	了/u/E-N1	位置/n/OT	。/w/OT
+味道/n/I-E	还/d/B-P1	行/v/E-P1	，/w/OT	就是/d/OT	送餐/v/I-E	太/d/B-N1	慢/a/E-N1	了/u/OT	…/n/OT	…/n/OT
+还/d/B-P1	不错/a/E-P1	哦/e/OT	~/w/OT	推荐/v/OT	！/w/OT
+蛮/d/B-P1	好吃/a/M-P1	的/u/E-P1	就是/v/OT	饭/n/I-E	太/d/B-N2	少/a/M-N2	了/u/E-N2	
+很/d/B-P1	好/a/E-P1	，/w/OT	比/p/B-N2	肯德基/nz/E-N2	外卖/n/OT	还/d/B-P1	便宜/a/E-P1	。/w/OT
+今天/t/OT	实在/d/OT	是/v/OT	太/d/B-N1	慢/a/E-N1	了/y/OT	，/w/OT	但是/c/OT	服务/n/I-E	还好/n/I-P1
+百度/n/B-E	骑士/n/E-E	非常/d/B-P1	好/a/E-P1	，/w/OT	赞/j/OT	一个/m/B-N2
+太/d/B-N1	慢/a/E-N1	了/u/OT	～/n/OT	～/n/OT	～/n/OT	～/w/OT	～/d/OT	是不是/v/OT	临时/d/OT	杀/v/OT	的/u/OT	猪/n/OT
+量/n/I-E	很大/n/I-P1	，/w/OT	但是/c/OT	味道/n/I-E	真的/d/B-N1	一般/a/E-N1	。/w/OT	等/v/B-N2	了/u/M-N2	一个/m/M-N2	多/m/M-N2	小时/n/M-N2	才/d/M-N2	送到/v/E-N2	，/w/OT	达到/v/OT	了/u/OT	超时/n/OT	赔付/v/OT	的/u/OT	时间/n/OT	，/w/OT	感觉/n/OT	百度/w/B-E	超时/d/M-E	赔付/v/E-E	就是/v/B-N1	个/q/M-N1	摆设/n/E-N1	
+非常/d/B-P1	好/a/E-P1	，/w/OT	很/d/B-P1	喜欢/v/E-P1	，/w/OT	包装/n/I-E	很/d/B-P1	精致/a/E-P1
+送餐/n/B-E	师傅/n/E-E	棒棒/n/B-P1	哒/w/E-P1	,/d/OT	怕/v/OT	我/r/OT	冷/a/OT	,/u/OT	东西/n/I-E	送到/v/OT	大厅/n/OT	里/f/OT	,/v/OT	好/a/I-P1	贴心/a/OT	！/w/OT	！/w/OT	！/w/OT	！/w/OT
+速度/n/I-E	很快/d/I-P1	，/w/OT	很/d/B-P1	喜欢/v/E-P1	吃/v/OT	适合/v/OT	女生/n/OT	口味/n/I-E	的/u/OT
+饼/n/OT	粘糊糊/n/OT	的/u/OT	,/n/OT	里面/f/OT	的/u/OT	还/d/B-P1	行/v/E-P1
+味道/n/I-E	不错/a/I-P1	，/w/OT	但是/c/OT	送餐/n/I-E	第一次/w/OT	十一/m/OT	点/q/OT	45/m/OT	送/v/B-E	的/u/E-E	，/w/OT	我们/r/OT	定/v/OT	了/u/OT	4/m/OT	份/q/OT	，/w/OT	只/d/OT	送/v/B-N2	了/u/E-N2	一/m/OT	份/q/OT	，/w/OT	剩下/v/OT	的/u/OT	三/m/OT	份/q/OT	是/v/OT	12/m/OT	点/q/OT	10/m/OT	分送/v/OT	的/u/OT
+还是/d/OT	可以/v/OT	，/w/OT	希望/v/OT	^/u/OT	_/n/OT	^/w/OT	能/v/OT	按时/d/OT	送到/v/OT	就/d/OT	更好/v/OT	了/u/OT
+太油/r/B-N1	腻/v/M-N1	了/y/E-N1	，/w/OT	味道/n/I-E	一般/a/I-P1	，/w/OT	包装/n/I-E	不错/a/I-P1
+送/v/B-E	的/u/E-E	很快/d/I-P1	，/w/OT	就是/c/OT	味道/n/I-E	清淡/a/B-N1	了/u/E-N1	一点/m/OT
+八点/m/OT	点/q/OT	的/u/OT	快/a/I-P1	10/m/OT	点/q/OT	送到/v/OT	的/u/OT	真是/d/OT	耽误/v/OT	了/u/OT	很多/m/I-P1	事/n/OT	，/w/OT	打电话/v/OT	催/v/OT	了/u/OT	两次/n/OT	彻底/d/OT	服/v/OT	了/u/OT
+很/d/B-P1	不错/a/E-P1	，/w/OT	菜品/v/I-E	物美价廉/l/I-P1	～/u/OT	～/n/OT	～/n/OT	
+糟糕/r/I-N1	,/d/OT	继续/v/OT	努力/a/OT	吧/y/OT	
+送/v/B-E	的/u/E-E	挺/d/B-P1	快/a/E-P1	的/u/OT	，/w/OT	稍微/d/OT	有点/d/B-N1	腻/v/M-N1
+完全/d/B-N2	不值/v/M-N2	得/u/M-N2	信任/n/E-N2	，/w/OT	出尔反尔/i/I-N2	
+太/d/B-N1	慢/a/E-N1	，/w/OT	以后/f/B-N2	不会/w/M-N2	定/v/M-N2	了/y/E-N2	！/w/OT
+超/v/B-P1	好喝/n/E-P1	，/w/OT	快递/n/B-E	小哥/w/E-E	很/d/B-P1	热情/a/E-P1	，/w/OT	速度/n/I-E	很快/d/I-P1	…/v/OT	
+送餐/p/I-E	好/a/I-P1	慢/a/OT	好/a/I-P1	慢/a/OT	好/a/I-P1	慢/a/OT
+一个半/m/B-N2	小时/n/E-N2	才/d/OT	到/v/OT	～/w/OT	太/d/B-N1	耽误/v/E-N1	事情/n/OT	了/u/OT
+相当/d/B-P1	快/a/E-P1	的/u/OT	配送/v/I-E	！/w/OT	威武/a/OT	！/w/OT
+就/d/OT	吃/v/OT	这一/m/OT	次/q/OT	吧/y/OT	，/w/OT	不过/c/OT	送餐员/n/I-E	很/d/B-P1	好/a/E-P1	。/w/OT
+非常/d/B-P1	好/a/E-P1	，/w/OT	速度/n/I-E	快/a/I-P1	，/w/OT	态度/n/I-E	好/a/I-P1
+很/d/B-P1	好/a/E-P1	，/w/OT	分量/n/I-E	足/a/I-P1	，/w/OT	好吃/a/I-P1	，/w/OT	包装/n/I-E	严实/n/I-P1
+送/v/B-E	的/u/E-E	太/d/B-N1	慢/a/E-N1	，/w/OT	煎饼/n/OT	都/d/OT	凉/v/B-N1	了/u/E-N1
+应该/v/OT	是/v/OT	最后一/m/OT	次/q/OT	点/n/OT	。/w/OT	。/w/OT
+为什么/r/OT	不/d/B-N2	给/v/M-N2	管/v/M-N2	儿/ng/E-N2	？/w/OT	？/w/OT	？/w/OT	？/w/OT	撕开/n/OT	纸/n/OT	喝/v/OT	？/w/OT	？/w/OT	？/w/OT	？/w/OT	
+很/d/B-P1	喜欢/v/E-P1	吃/v/OT	,/m/OT	卷/q/OT	瓶/n/OT	很/d/B-P1	实惠/a/E-P1
+太/d/B-N1	慢/a/E-N1	啦/y/OT	！/w/OT	80/m/OT	多分钟/q/OT	才/d/OT	送到/v/OT	！/w/OT
+粥/n/OT	洒/v/OT	了/u/OT	很多/m/I-P1	，/w/OT	味道/n/I-E	一般/d/I-P1
+嗯/n/I-P1	，/w/OT	还/d/B-P1	不错/a/E-P1	。/w/OT
+皮/n/OT	太/d/B-N1	硬/a/E-N1	啦/y/OT	～/w/OT	,/d/OT	不好/a/B-N1	吃/v/E-N1	～/n/OT
+时间/n/OT	超长/a/OT	，/w/OT	给/v/OT	的/u/OT	超/v/B-N1	少/a/E-N1
+包装/n/I-E	好用/n/I-P1	心/n/OT	呀/y/OT	，/w/OT	点/v/OT	赞/vg/OT	！/w/OT
+kfc/n/OT	送餐/w/I-E	很/d/B-P1	及时/a/E-P1	，/w/OT	味道/n/I-E	当然/d/I-P1	和/c/OT	其他/r/OT	kfc/v/OT	一样/a/OT	，/w/OT	但是/c/OT	百度/v/B-E	的/u/M-E	客服/n/E-E	很/d/B-P1	不错/a/E-P1
+卷饼/r/I-E	都/d/OT	凉/v/B-N1	了/u/E-N1
+皮/n/OT	太/d/B-N1	厚/a/E-N1	，/w/OT	没有/v/OT	菜/n/I-E	太/d/B-N1	腻/v/M-N1
+大过/m/B-E	年的/q/E-E	辛苦/a/B-P1	了/u/E-P1
+味道/n/I-E	还是/c/OT	好吃/a/I-P1	，/w/OT	打/v/OT	你/r/OT	是/v/OT	今天/t/OT	送/v/B-E	的/u/E-E	好/a/I-P1	慢/a/OT	啊/y/OT
+这种/r/OT	口味/n/I-E	怎么/r/OT	有/v/OT	信心/n/OT	开店/n/OT	的/u/OT	，/w/OT	不改/d/OT	变/v/OT	就/d/OT	等/v/B-N2	着/u/M-N2	倒闭/v/E-N2	吧/y/OT
+支付/n/I-P1	就是/d/OT	一/m/OT	坨/q/OT	屎/n/OT
+小哥/p/I-E	不错/a/I-P1	,/n/OT	最后/f/OT	给/v/OT	送/v/B-N2	上来/v/M-N2	了/u/E-N2
+感觉/n/OT	太清/w/B-N1	淡/a/E-N1	，/w/OT	而且/c/OT	最好/d/OT	叫/v/OT	店家/n/OT	帮/v/OT	你/r/OT	拌/v/B-P1	好/a/E-P1	饭/n/OT
+3/m/B-N2	个/q/M-N2	小时送/n/E-N2	到/v/OT	！/w/OT
+味道/n/I-E	棒棒/n/B-P1	哒/n/E-P1
+味道/n/I-E	不错/a/I-P1	，/w/OT	就是/d/OT	量/v/I-E	挺/d/B-P1	少/a/E-P1	的/u/OT
+已经/d/B-P1	养成/v/E-P1	习惯/n/OT	在/p/OT	他们/r/OT	家/q/OT	订/v/OT	饭/n/I-E
+我/r/OT	去/v/OT	，/w/OT	，/w/OT	4/m/OT	、/w/OT	5/m/B-N2	个/q/M-N2	小时/n/E-N2	你/r/OT	猜/v/OT	来/v/OT	！/w/OT	！/w/OT	！/w/OT	真/d/B-P1	可以/v/E-P1	！/w/OT	！/w/OT	！/w/OT	都/d/OT	别来/v/OT	他家/r/OT	买/v/OT	了/y/OT	。/w/OT
+还好/r/I-P1	,/d/OT	很大/v/B-N2	一个/m/M-N2
+菜/n/I-E	太/d/B-N1	少/a/E-N1	了/y/OT	，/w/OT	饼/n/OT	有点/d/B-N1	厚/a/E-N1	，/w/OT	酱/v/OT	汁/u/OT	味道/n/I-E	浅/a/I-P1
+两小/r/I-P1	时/ng/OT	送到/v/OT	简直/d/OT	没/v/B-N2	谁/r/M-N2	了/u/E-N2
+非常/d/B-P1	好/a/E-P1	！/w/OT	第一次/d/OT	用/v/OT	百度/u/OT	外卖/n/OT	，/w/OT	送餐/n/I-E	很快/d/I-P1	，/w/OT	快递/n/B-E	小哥/w/E-E	也/d/OT	很/d/B-P1	礼貌/a/E-P1	。/w/OT	菜品/n/B-E	量/n/E-E	足/a/I-P1	，/w/OT	味道/n/I-E	不错/a/I-P1	，/w/OT	下次/t/B-P2	再/d/M-P2	来/v/E-P2	。/w/OT	
+东西/n/I-E	要/v/OT	什么/r/OT	没什么/l/OT	，/w/OT
+超级/a/B-P1	推荐/n/E-P1	香菇/n/OT	肉丝/n/OT	～/n/OT	～/n/OT	～/n/OT	～/w/OT	～/d/OT	凉拌/v/OT	木耳/n/OT	味道/n/I-E	不错/a/I-P1	～/u/OT	～/n/OT	～/n/OT
+包装/n/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	味道/n/I-E	也/d/OT	还/d/B-P1	可以/v/E-P1	，/w/OT	就是/c/OT	名字/n/OT	太/d/B-N1	俗/a/E-N1
+粥/n/OT	木/ng/OT	有/v/OT	勺子/n/OT
+肘子/m/OT	卷/q/OT	味道/n/I-E	一般/a/I-P1	，/w/OT	凉/v/OT	的/u/OT
+送餐/p/I-E	快/a/I-P1	，/w/OT	味道/n/I-E	好/a/I-P1	，/w/OT	，/w/OT	，/w/OT	，/w/OT	，/w/OT
+不会/r/B-N2	再/d/M-N2	吃/v/M-N2	了/u/E-N2
+超级/a/B-P1	美味/n/E-P1	！/w/OT	而且/c/OT	简直/d/OT	神速/a/OT	！/w/OT
+到/v/OT	很/d/B-P1	好吃/a/E-P1	，/w/OT	就是/d/OT	送/v/B-E	的/u/E-E	比较/d/B-N1	晚/a/E-N1
+速度/n/I-E	很/d/B-P1	赞/vg/E-P1	，/w/OT	服务/n/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	不错/a/I-P1
+东西/n/I-E	好吃/a/I-P1	,/n/OT	送餐/w/I-E	超级/a/B-N1	慢/a/E-N1	,/n/OT	送来/v/OT	都/d/OT	快/d/I-P1	死/v/OT	了/y/OT	,/w/OT	昨天/t/OT	挺/d/B-P1	快/a/E-P1	的/u/OT	今天/t/OT	慢/a/OT	的/u/OT	要死/n/OT	。/w/OT	。/w/OT	。/w/OT
+菜/n/I-E	太/d/B-N1	难吃/v/M-N1	了/u/E-N1
+炒饭/m/I-E	有点儿/q/B-N1	油/n/E-N1	，/w/OT	不过/c/OT	菜/n/I-E	还是/c/OT	很/d/B-P1	好/a/M-P1	的/u/E-P1	
+好吃/a/I-P1	，/w/OT	挺/d/B-P1	饱/a/E-P1	的/u/OT	～/n/OT
+很/d/B-P1	好吃/a/E-P1	，/w/OT	挺/d/B-P1	实惠/a/E-P1	的/u/OT	，/w/OT	女生/n/OT	买/v/OT	中号/w/OT	就/d/OT	行/v/OT	了/y/OT	！/w/OT	大号/n/OT	太/d/B-N1	大/a/E-N1
+很快/d/I-P1	，/w/OT	特别/d/B-P1	好/a/E-P1	
+好吃/a/I-P1	，/w/OT	总/a/B-P2	点/n/E-P2	，/w/OT	这么/r/B-P1	多/d/E-P1	够/v/B-P2	五个人/w/M-P2	吃/v/E-P2	。/w/OT	送/v/B-P2	的/u/M-P2	很快/d/E-P2	。/w/OT	
+送餐/r/I-E	太/d/B-N2	晚/a/M-N2	了/y/E-N2	，/w/OT	饿死/n/I-N2	！/w/OT	
+味道/n/I-E	不错/a/I-P1	～/u/OT	～/n/OT	～/w/OT	从/p/OT	订餐/v/OT	到/v/OT	吃/v/OT	～/u/OT	～/n/OT	～/n/OT	服务/n/I-E	也/d/OT	得/v/OT	周到/a/OT	超/v/B-P1	赞/vg/E-P1	！/w/OT	！/w/OT
+非常/d/B-P1	好吃/a/E-P1	，/w/OT	肉/n/I-E	特多/n/I-P1	，/w/OT	连着/v/B-N1	吃/v/E-N1	了/u/OT	两次/n/OT
+速度/n/I-E	需/v/I-P1	提升/v/OT	，/w/OT	再接再厉/i/OT
+不好意思/a/OT	，/w/OT	评论/v/B-N2	晚/tg/M-N2	了/y/E-N2	。/w/OT	。/w/OT	。/w/OT	。/w/OT
+味道/n/I-E	不错/a/I-P1	，/w/OT	口味/n/I-E	偏/d/B-N1	甜/a/M-N1
+挺/d/B-P1	好吃/a/M-P1	的/u/E-P1	，/w/OT	不错/a/I-P1	,/n/OT	送/v/B-E	的/u/E-E	很快/d/I-P2	
+白肉/r/I-E	多/m/I-P1	，/w/OT	腥味/d/OT	重/a/OT
+包装/n/I-E	超/v/B-P1	好/a/E-P1	,/u/OT	饼/n/OT	也/d/OT	很/d/B-P1	实惠/a/E-P1	！/w/OT
+卷饼/r/I-E	特别/d/B-P1	好吃/a/E-P1	～/n/OT
+点/v/OT	了/u/OT	两/m/OT	份/q/OT	米饭/n/I-E	放在/v/OT	两个/u/OT	餐盒/n/I-E	里/f/OT	，/w/OT	但/c/OT	都/d/OT	是/v/OT	装/v/B-N2	了不/w/M-N2	到/v/M-N2	一半/m/E-N2	，/w/OT	我/r/OT	点/q/OT	的/u/OT	锅/n/B-E	仔/n/M-E	鱼/n/M-E	籽/n/M-E	豆腐/n/E-E	，/w/OT	不是/c/OT	盖饭/n/I-E	！/w/OT	！/w/OT	菜/n/B-E	量/n/E-E	比/p/B-N2	之前/f/M-N2	的/u/M-N2	少/a/M-N2	太/d/M-N2	多/a/M-N2	了/y/E-N2	，/w/OT	不知/v/OT	道/v/OT	怎么/r/OT	是/v/OT	换/v/OT	厨子/v/I-E	了/u/OT	还是/d/OT	换/v/OT	老板/n/I-E	了/y/OT	，/w/OT	比/p/B-N2	第一次/m/M-N2	点/q/M-N2	的/u/M-N2	差/a/M-N2	太/d/M-N2	多/a/M-N2	了/u/E-N2	
+奇/nr/B-P1	难吃/nr/E-P1	，/w/OT	建议/n/OT	不要/d/OT	订/v/OT	！/w/OT
+味道/n/I-E	还好/v/I-P1	吧/y/OT
+超级/a/B-P1	快/a/E-P1	就/d/OT	送到/v/OT	了/y/OT	，/w/OT	这么/r/OT	冷/a/OT	的/u/OT	天气/n/OT	骑士/n/B-E	们/k/E-E	辛苦/a/B-P1	了/y/E-P1	。/w/OT	谢谢/v/B-P2	你们/r/E-P2	。/w/OT	麻辣/d/B-E	香/a/M-E	锅/n/E-E	依然/d/B-P1	很/d/M-P1	好吃/a/E-P1	。/w/OT	
+配送/v/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	联系/v/OT	不到/w/OT	我/r/OT	还/d/OT	等/v/B-N2	了/u/M-N2	好久/m/M-N2
+比上/m/I-P1	次/q/OT	慢/a/OT	了/u/OT	点/n/OT	，/w/OT	不过/c/OT	东西/n/I-E	还是/c/OT	很/d/B-P1	好/a/E-P1
+送/v/B-N2	错/v/M-N2	饮料/n/M-N2	了/u/E-N2
+辣/n/OT	！/w/OT	很/d/B-N1	辣/a/E-N1	！/w/OT	很/d/B-P1	过瘾/a/E-P1	的/u/OT	辣/n/OT	！/w/OT
+送餐/n/B-E	师傅/n/E-E	帅/vg/B-N1	爆/v/M-N1	了/u/E-N1	,/n/OT	赛/n/OT	晓明/nr/OT	超/nr/B-P1	霆锋/nr/E-P1
+等/v/B-N2	了/u/M-N2	2/m/M-N2	个/q/M-N2	半/m/M-N2	小时/n/E-N2	。/w/OT	。/w/OT	。/w/OT	饭菜/n/I-E	还/d/B-P1	不错/a/E-P1
+餐/ng/OT	到/v/OT	的/u/OT	挺/d/B-P1	快/a/E-P1	的/u/OT	，/w/OT	服务/n/B-E	态度/n/E-E	也好/y/I-P1	，/w/OT	卷饼/d/OT	应该/v/OT	也/d/OT	会/v/OT	很/d/B-P1	好吃/a/E-P1	~/n/OT	还/d/OT	送/v/B-N2	了/u/E-N2	手套/n/OT	，/w/OT	挺/d/B-P1	值/v/E-P1	的/u/OT	，/w/OT	卷饼/d/OT	中型/a/OT	的/u/OT	巨大/a/OT	~/n/OT	卷饼/w/I-E	好吃/a/I-P1	…/u/OT	…/n/OT
+送餐/p/I-E	好/a/I-P1	慢/a/OT	，/w/OT	菜/n/OT	的/u/OT	味道/n/I-E	还/d/B-P1	算不/v/E-P1	错/v/OT
+送/v/B-N2	了/u/M-N2	150/m/E-N2	分钟/q/OT	！/w/OT
+等/v/B-N2	了/u/M-N2	1/m/M-N2	个/q/M-N2	半/m/M-N2	小时/n/E-N2	，/w/OT	送餐员/n/B-E	态度/n/E-E	极/d/B-N1	差/a/E-N1	！/w/OT
+味道/n/I-E	一般/a/I-P1	！/w/OT	而且/c/OT	等/v/B-N2	了/u/M-N2	一个/m/M-N2	多/m/M-N2	小时/n/E-N2	。/w/OT
+非常/d/B-P1	好吃/a/E-P1	，/w/OT	味道/n/I-E	也/d/OT	很/d/B-P1	香/a/E-P1	，/w/OT	推荐/v/I-P2	！/w/OT	
+有点/d/OT	辣/a/OT	还/d/B-P1	行/v/E-P1	吧/y/OT	，/w/OT	米饭/n/I-E	少/a/I-P1
+真是/d/OT	把/p/OT	宇宙/n/OT	都/d/OT	卷/v/OT	包/v/OT	没/v/B-N2	了/u/M-N2
+第一次/r/OT	定/v/OT	,/w/OT	挺/d/B-P1	好吃/a/E-P1	的/u/OT	,/n/OT	就是/d/OT	有点/d/B-N1	慢/a/E-N1	,/n/OT	可能/v/OT	距离/p/OT	有些/r/B-N1	远/a/E-N1
+两个/n/M-N2	小时/n/E-N2	才/d/OT	送到/v/OT	，/w/OT	无语/v/OT	了/y/OT	，/w/OT	又/d/OT	很难/v/B-N1	吃/v/E-N1	，/w/OT	貌似/v/OT	都/d/OT	没/d/OT	放/v/OT	酱/n/OT	，/w/OT	再也/d/OT	不会/v/B-N2	定/v/M-N2	了/u/E-N2
+不错/a/I-P1	,/n/OT	满意/v/OT
+送餐/n/B-E	的/u/M-E	人/n/E-E	说到/v/B-N1	了/y/E-N1	，/w/OT	压根/n/OT	没/d/B-N2	见到/v/E-N2	人/n/OT	，/w/OT	还/d/B-P1	冲/v/E-P1	我/r/OT	吼吼/d/OT	吼/v/OT	！/w/OT
+配送/v/I-E	及时/a/I-P1	，/w/OT	态度/n/I-E	很/d/B-P1	好/a/E-P1	，/w/OT	五星/n/I-E	好评/n/I-P1
+好吃/a/I-P1	，/w/OT	就是/c/OT	米饭/n/I-E	少/a/I-P1	了/u/OT	点/n/OT
+配送/v/I-E	超级/a/B-P1	快/a/E-P1	，/w/OT	配送/v/B-E	员/q/M-E	态度/n/E-E	超级/a/B-P1	好/a/E-P1	，/w/OT	下次/t/B-P2	还/d/M-P2	来/v/E-P2	^/u/OT	_/n/OT	^/n/OT
+吃/v/OT	了/u/OT	很多/m/I-P1	次/q/OT
+鱼香肉丝/r/OT	没有/d/OT	一根/v/OT	肉/n/I-E	就算/d/B-N1	了/y/E-N1	！/w/OT	还/d/OT	吃出/v/OT	来/m/OT	根/q/OT	头发/n/OT	！/w/OT	我/r/OT	真是/d/OT	！/w/OT	！/w/OT	！/w/OT	气死/v/OT	了/y/OT	！/w/OT	！/w/OT	！/w/OT
+大号/n/OT	卷饼/w/I-E	太/d/B-N1	大/a/E-N1	。/w/OT	如果/c/OT	胃口/n/OT	比较/d/B-N1	大/a/E-N1	。/w/OT	推荐/v/B-N2	吃/v/M-N2	两个/n/M-N2	中/f/E-N2	。/w/OT
+口味/n/I-E	偏北/w/I-P1	方/nr/OT
+听闻/p/I-E	不错/a/I-P1	,/n/OT	亲自/d/OT	品尝/v/OT	,/u/OT	面的/n/OT	味道/n/I-E	确实/d/B-P1	可以/v/E-P1
+太/d/B-N1	慢/a/E-N1	了/y/OT	，/w/OT	等/v/B-N2	了/u/M-N2	80/m/E-N2	分钟/q/OT	才/d/OT	到/v/OT
+送餐/r/I-E	很快/d/I-P1	，/w/OT	卷饼/n/OT	里面/f/OT	感觉/n/OT	再/d/OT	多点/v/OT	酱/n/OT	汁/w/OT	比较/d/B-P1	好/a/E-P1
+太/d/B-N1	慢/a/E-N1	,/n/OT	太/d/B-N1	慢/a/E-N1	,/n/OT	太/d/B-N1	慢/a/E-N1	,/u/OT	不好/a/B-N1	吃/v/E-N1
+不和/a/I-P1	我的/u/OT	口味/n/I-E
+服务/n/B-E	态度/n/E-E	不错/a/I-P1	，/w/OT	骑手/d/I-E	辛苦/a/B-P1	啦/y/E-P1	~/w/OT	
+口味/n/I-E	还/d/B-P1	不错/a/E-P1	，/w/OT	挺/d/B-P1	满意/v/E-P1	的/u/OT	！/w/OT
+两个/r/M-N2	多/m/M-N2	小时送/q/E-N2	到/v/OT	，/w/OT	味道/n/I-E	一般/d/I-P1
+挺/d/B-P1	好吃/a/E-P1	，/w/OT	家乡/n/OT	的/u/OT	味道/n/I-E	～/n/OT	～/n/OT
+就是/d/OT	有点/d/B-N1	慢/a/E-N1
+低价/n/I-P1	，/w/OT	速度/n/I-E	快/a/I-P1	，/w/OT	味道/n/I-E	好/a/I-P1	、/w/OT	服务好/n/OT	。/w/OT
+高度/d/B-P1	评价/v/E-P1	！/w/OT
+有点/d/B-N1	淡/a/E-N1	，/w/OT	实在/d/OT	量/v/I-E	太小/v/B-N1	了/u/E-N1
+松仁/n/B-E	玉米/n/E-E	太/d/B-N1	难吃/v/M-N1	了/u/E-N1	这次/r/OT	的/u/OT
+味道/n/I-E	坏/a/I-P1	坏/a/OT	的/u/OT	，/w/OT	以后/f/B-N2	不要/d/M-N2	吃/v/M-N2	了/u/E-N2
+怎么/r/OT	还/d/OT	没/d/B-N2	到/v/M-N2
+分量/n/I-E	比较/d/B-P1	足/a/E-P1
+凉菜/p/I-E	不错/a/I-P1	～/n/OT
+很快/d/I-P1	，/w/OT	不过/c/OT
+很/d/B-P1	方便/a/E-P1	，/w/OT	很快/d/B-P2	就/d/M-P2	送到/v/M-P2	了/y/E-P2	。/w/OT	棒/a/I-P1	
+不好/a/B-N1	吃/v/E-N1	，/w/OT	不像/n/B-N2	厨师/n/M-N2	做/v/M-N2	的/u/E-N2	，/w/OT	连家/nr/B-N2	常/nr/M-N2	菜/n/M-N2	不如/v/E-N2	
+味道/n/I-E	不错/a/I-P1	，/w/OT	送到/v/OT	还是/d/OT	热/a/OT	的/u/OT	，/w/OT	快递/n/B-E	大哥/n/E-E	辛苦/a/B-P1	了/u/E-P1
+肘子/m/OT	卷饼/q/OT	辣/a/OT	的/u/OT	挺/nr/B-P1	爽/nr/E-P1	,/w/OT	鸡肉/n/I-E	卷/ng/OT	真/d/B-P1	不错/a/E-P1	,/n/OT	快递/v/B-E	员/q/M-E	态度/n/E-E	超/v/B-P1	好/a/E-P1	,/n/OT	赞/vg/OT
+第二次/m/OT	点/q/OT	，/w/OT	这次/r/OT	送/v/B-E	的/u/E-E	速/ng/B-P1	冲/v/E-P1	咖啡/n/OT	。/w/OT
+很/d/B-P1	不错/a/E-P1	，/w/OT	服务/n/I-E	非常/d/B-P1	好/a/E-P1	，/w/OT	很/d/B-P1	认真/d/E-P1
+挺/d/B-P1	好/a/M-P1	的/u/E-P1	,/n/OT	服务/n/B-E	态度/n/E-E	也/d/OT	挺/d/B-P1	好/a/M-P1	的/u/E-P1	
+每种/r/OT	口味/n/I-E	都喜欢/n/I-P1
+还/d/B-P1	行/v/E-P1	，/w/OT	就是/d/OT	吃不/v/OT	饱/a/OT	，/w/OT	下次/t/OT	订/v/OT	大/a/I-P1	份/q/OT
+真的/d/I-E	很/d/B-P1	好吃/a/E-P1	啊/y/OT
+特别/d/B-P1	好/a/E-P1	。/w/OT	味道/n/I-E	也好/y/I-P1	，/w/OT	送餐/n/I-E	很快/d/I-P1	。/w/OT
+送/v/B-E	的/u/M-E	速度/n/E-E	很快/d/I-P1	。/w/OT	外卖/v/B-E	的/u/E-E	价格合/n/B-P1	适/nr/E-P1	，/w/OT	门店/n/OT	二十/m/OT	就/d/OT	不买/v/OT	了/u/OT
+特别/d/B-P1	好吃/a/E-P1	，/w/OT	量/n/I-E	特大/a/I-P1	，/w/OT	而且/c/OT	送餐/n/I-E	特别快/n/I-P1	，/w/OT	特别/d/B-P1	特别/d/M-P1	棒/a/E-P1	
+等/v/B-N2	了/u/M-N2	两个/n/M-N2	小时/n/E-N2	。/w/OT
+没有/d/OT	到/v/OT	店/n/OT	好吃/a/I-P1	，/w/OT	区别/n/OT	好大/n/OT	，/w/OT
+不好/a/B-N1	吃/v/E-N1	还有/v/OT	货到/w/OT	都/d/OT	软/a/OT	了/u/OT
+菜品/r/I-E	还/d/B-P1	不错/a/E-P1	，/w/OT	不过/c/OT	送餐/n/I-E	太/d/B-N1	慢/a/E-N1	了/y/OT	，/w/OT	从/p/OT	下单/n/OT	到/v/OT	送到/v/OT	一共/d/OT	用/v/OT	了/u/OT	90/m/OT	多分钟/q/OT
+面皮/p/B-P1	好吃/a/E-P1	。/w/OT
+好吃/a/I-P1	，/w/OT	好吃/a/I-P1	，/w/OT	送/v/B-E	得/u/E-E	送/v/B-E	得/u/E-E	很快/d/I-P1
+包装/n/I-E	好/a/I-P1	，/w/OT	味道/n/I-E	好/a/I-P1	，/w/OT	很/d/B-P1	满意/v/E-P1	。/w/OT
+元旦/t/B-P1	美味/n/E-P1	！/w/OT	刀功/d/OT	细/a/OT	，/w/OT	菜/n/I-E	入味/n/I-P1	！/w/OT
+实在/d/OT	没/d/OT	话说/v/OT	，/w/OT	九点/d/OT	预订/v/OT	送到/v/OT	12/m/OT	点/q/OT	40/m/OT	才/d/OT	送到/v/OT	，/w/OT	电话/n/OT	就/d/OT	没/d/OT	打通/v/OT	过/u/OT	，/w/OT	饼/n/OT	挺/d/B-P1	好吃/a/E-P1	，/w/OT	但/c/OT	也/d/OT	不能/v/OT	这样/r/OT	啊/y/OT
+味道/n/I-E	好/a/I-P1	，/w/OT	香/a/OT	，/w/OT	量/n/I-E	也/d/OT	不少/m/OT
+魚/n/B-E	香油/n/E-E	太/d/B-N1	多/a/E-N1	，/w/OT	有/v/OT	點/u/OT	不好/a/B-N1	收拾/v/E-N1
+漏/v/B-N1	了/y/E-N1	，/w/OT	漏/v/OT	了/y/OT	，/w/OT	漏/v/OT	了/u/OT
+师傅/n/OT	速度/n/I-E	快/a/I-P1	，/w/OT	服务/n/B-E	态度/n/E-E	好/a/I-P1	，/w/OT	菜/n/I-E	好吃/a/I-P1	！/w/OT
+京/j/OT	酱肉/m/OT	丝/q/OT	还/d/B-P1	可以/v/E-P1
+不错/a/I-P1	,/n/OT	送货/v/I-E	快/a/I-P1	,/u/OT	包装/n/I-E	好/a/I-P1
+送餐/n/B-E	人员/n/M-E	态度/n/E-E	不好/a/OT	，/w/OT	很/d/OT	不/d/OT	客气/a/OT	，/w/OT	不/d/OT	就是/d/OT	没/d/B-N2	接到/v/M-N2	电话/n/E-N2	嘛/y/OT	，/w/OT	一点/m/OT	耐心/n/OT	都/d/OT	没有/v/OT
+送餐/n/B-E	的/u/E-E	重/a/OT	来不/n/OT	上楼/v/OT
+口味/n/I-E	不错/a/I-P1	，/w/OT	速度/n/I-E	挺/d/B-P1	快/a/E-P1	，/w/OT	还有/v/OT	手套/n/OT	送/v/OT	，/w/OT	想得/n/OT	很/d/B-P1	周到/a/E-P1	！/w/OT
+里面/f/OT	加/v/OT	肉/n/I-E	的/u/OT	有些/r/B-N1	腻/v/E-N1	，/w/OT	下次/t/OT	尝尝/v/OT	土豆丝/v/OT	的/u/OT	~/n/OT	~/w/OT	但是/c/OT	超级/a/B-P1	好吃/a/E-P1	~/u/OT	~/n/OT
+并/c/I-P1	不是/v/OT	太/d/B-N1	好吃/a/E-N1
+速度/n/I-E	快/a/I-P1	好多/m/OT	！/w/OT
+不好/a/B-N1	吃/v/E-N1	,/w/OT	有些/r/B-N1	吃/v/E-N1	生/v/OT	的/u/OT	感觉/n/OT
+好/a/I-P1	难吃/n/OT	，/w/OT	感觉/n/OT	酸/n/OT	了/u/OT
+真/d/B-P1	难吃/v/E-P1	，/w/OT	肉/n/I-E	上/f/OT	还有/v/OT	毛/nr/OT
+客服/n/B-E	态度/n/E-E	恶劣/a/OT	，/w/OT	打电话/v/OT	催/v/OT	单/d/OT	我/r/OT	还/d/OT	不/d/OT	乐意/v/OT	呢/y/OT	！/w/OT	这/r/OT	速度/n/I-E	简直/d/OT	了/y/OT	！/w/OT
+非常/d/B-P1	快/a/E-P1	。/w/OT	非常/d/B-P1	好/a/E-P1	。/w/OT
+周末/t/I-E	值班/v/B-P1	的/u/E-P1	首选/v/OT
+味道/n/I-E	真/d/B-P1	不错/a/E-P1
+好评/n/I-P1	！/w/OT	外卖/n/OT	袋子/n/OT	很/d/B-P1	不错/a/E-P1	哦/e/OT	~/w/OT
+没/d/B-N2	给/p/M-N2	任何/r/E-N2	餐具/n/OT	，/w/OT	可乐/nz/OT	还是/c/OT	热/a/OT	的/u/OT	。/w/OT	。/w/OT	。/w/OT	。/w/OT
+吃/v/OT	完满/a/OT	满/a/OT	正/a/OT	能量/n/OT
+味道/n/I-E	差点/d/I-P1	意思/v/OT	，/w/OT	汤/nr/OT	还/d/OT	撒/v/OT	了/u/OT	点/n/OT	，/w/OT	不过/c/OT	送餐/n/B-E	小哥/w/E-E	还是/c/OT	辛苦/a/B-P1	了/u/E-P1
+发货/v/B-E	速度/n/E-E	较/d/B-N1	慢/a/E-N1
+送/v/B-E	的/u/E-E	有点儿/n/B-N1	慢/a/E-N1	，/w/OT	不过/c/OT	还是/d/OT	挺/d/B-P1	好吃/a/E-P1	的/u/OT	。/w/OT
+味道/n/I-E	还/d/B-P1	可以/v/E-P1	,/w/OT	不过/c/OT	送餐/v/B-E	的/u/M-E	时间/n/E-E	好/a/I-P1	长/a/OT
+早餐/n/B-E	的/u/M-E	煎饼/n/E-E	种类/n/B-P1	好/a/E-P1	少/a/OT
+送餐/r/I-E	很快/d/I-P1	,/v/OT	味道/n/I-E	很/d/B-P1	好/a/E-P1
+一个/m/B-N2	纸盒/n/M-N2	王老吉/n/E-N2	定价/n/OT	5/m/OT	块/q/OT	,/w/OT	太/d/B-N1	黑/a/E-N1
+没想到/r/OT	是/v/OT	熏肉/n/OT	，/w/OT	不/d/OT	太/d/B-N1	喜欢/v/E-N1
+太/d/B-N1	腻/v/M-N1	了/y/E-N1	，/w/OT	而且/c/OT	量/n/I-E	少/a/I-P1
+慢/a/OT	点儿/q/OT	不过/d/OT	打电话/v/OT	说了/n/OT
+挺/d/B-P1	好/a/E-P1	的/u/OT	！/w/OT	包装/n/I-E	高大/a/I-P1	上/f/OT	！/w/OT
+送餐/n/B-E	速度/n/E-E	非常/d/B-P1	快/a/E-P1	，/w/OT	服务/n/B-E	态度/n/E-E	非常/d/B-P1	好/a/E-P1	。/w/OT
+挺/d/B-P1	好/a/E-P1	的/u/OT	，/w/OT	挺/d/B-P1	快/a/E-P1	的/u/OT
+送餐/p/I-E	慢/a/OT	了/u/OT	点/n/OT	，/w/OT	餐/ng/OT	还/d/B-P1	可以/v/E-P1
+饼/n/OT	里/f/OT	一点/m/OT	酱/q/OT	都/d/OT	没有/v/OT	，/w/OT	干巴巴/d/OT	的/u/OT	没味/m/OT	道/q/OT
+挺/d/B-P1	好吃/a/E-P1	的/u/OT	。/w/OT	非常/d/B-P1	喜欢/v/E-P1	。/w/OT
+京/j/OT	酱肉/m/OT	丝/q/OT	太/d/B-N1	咸/a/M-N1	了/y/E-N1	，/w/OT	建议/v/OT	下次/t/OT	淡/a/OT	一点/m/OT
+太/d/B-N1	慢/a/E-N1	了/y/OT	，/w/OT	俩/m/OT	小时/n/OT	连/u/B-N2	个/q/M-N2	解释/n/E-N2	也/d/OT	没有/v/OT
+送货/n/I-E	挺/d/B-P1	快/a/E-P1	，/w/OT	但/c/OT	味道/n/I-E	不如/v/OT	以前/f/OT	的/u/OT	好吃/a/I-P1	了/y/OT	！/w/OT
+2/m/B-N2	个/q/M-N2	小时/n/E-N2	才/d/OT	送到/v/OT	，/w/OT	也/d/OT	是/v/OT	醉/v/OT	了/y/OT	，/w/OT	取消/v/OT	订单/n/OT	都/d/OT	取消/v/OT	不了/n/OT
+非常/d/B-P1	好吃/a/E-P1	也/d/OT	很快/d/I-P1
+粥少/n/OT	肉/n/I-E	多/a/I-P1	，/w/OT	哈哈/o/OT
+非常/d/B-P1	好/a/E-P1	，/w/OT	第二次/m/OT	点/q/OT	了/u/OT
+这次/r/OT	很快/d/I-P1	，/w/OT	追加/v/OT	，/w/OT	希望/v/OT	下次/t/OT	也/d/OT	这么/r/B-P1	快/a/E-P1	，/w/OT	哈哈/o/OT
+还/d/B-P1	不错/a/E-P1	,/n/OT	就是/d/OT	一盘/v/OT	京/j/OT	将/p/OT	肉丝/n/OT
+好吃/a/I-P1	，/w/OT	撑/v/OT	！/w/OT
+非常/d/I-E	非常/d/B-P1	快/a/E-P1	,/u/OT	服务好/n/OT	,/w/OT	大/d/I-P1	赞/vg/OT
+鸡丝/m/B-E	凉面/q/E-E	不好/a/B-N1	吃/v/E-N1	，/w/OT	鸡柳/d/OT	煎饼/v/OT	的/u/OT	鸡柳/n/OT	在/p/OT	哪/r/OT	呢/y/OT	？/w/OT
+等/v/B-N2	了/u/M-N2	整整/d/M-N2	一个/m/M-N2	小时/n/E-N2	，/w/OT	都/d/OT	凉/v/B-N1	透/a/M-N1	了/y/E-N1	。/w/OT	变得/d/B-P1	好/a/E-P1	难吃/n/OT
+等/v/B-N2	了/u/M-N2	132/m/E-N2	分钟/q/OT
+好吃/a/I-P1	到/v/OT	停/v/OT	不下/n/OT	来/f/OT	./w/OT	./v/OT	./u/OT	好评/n/I-P1	！/w/OT	！/w/OT	！/w/OT
+很快/d/I-P1	,/v/OT	菜/n/OT	分量/n/I-E	足/d/I-P1	,/v/OT	超/v/B-P1	赞/j/E-P1
+送/v/B-E	的/u/E-E	太/d/B-N1	快/a/M-N1	啦/y/E-N1
+太/d/B-N1	咸/a/M-N1	了/y/E-N1	，/w/OT	太/d/B-N1	咸/a/M-N1	了/y/E-N1	，/w/OT	太/d/B-N1	咸/a/M-N1	了/y/E-N1	，/w/OT	重要/a/OT	的/u/OT	事情/n/OT	说三/m/OT	遍/q/OT	！/w/OT
+微/ag/B-N1	辣/n/E-N1	，/w/OT	还/d/B-P1	不错/a/E-P1
+饭菜/n/I-E	真/d/B-N1	差/a/E-N1	，/w/OT	一个半/m/B-N2	小时/n/E-N2	才/d/OT	送到/v/OT	，/w/OT	送餐员/n/B-E	人/n/E-E	还/d/B-P1	不错/a/E-P1
+快递/n/B-E	师傅/n/E-E	很/d/B-N1	好/a/E-N1	，/w/OT	可惜/v/OT	饭菜/n/I-E	配/v/OT	不上/u/OT	师傅/n/OT	的/u/OT	速度/n/OT	，/w/OT	太/d/B-N1	难吃/v/E-N1	，/w/OT	油/n/B-N1	大/a/E-N1	，/w/OT	卖相/n/I-E	极/d/B-N1	差/a/E-N1	，/w/OT	味道/n/I-E	也/d/B-N1	差/a/E-N1	，/w/OT	绝不/d/B-N2	再/d/M-N2	吃/v/E-N2	。/w/OT	
+你们/r/OT	家/q/OT	的/u/OT	卷饼/n/OT	是从/n/OT	冰箱/n/OT	里/f/OT	拿出/w/OT	来/v/OT	的/u/OT	么/y/OT	？/w/OT	一个月/v/OT	了/u/OT	没有/d/OT	一次/v/OT	是/v/OT	他妈/u/OT	热乎/n/OT	的/u/OT
+好/a/I-P1	咸/a/OT	的/u/OT	酱香/n/OT	鸡腿/v/OT	啊/y/OT	！/w/OT
+送/v/B-E	的/u/E-E	超级/a/B-N1	慢/a/E-N1	，/w/OT	竟然/d/OT	还/d/OT	让/v/OT	我/r/OT	去/v/OT	楼下/s/OT	拿/v/OT	，/w/OT	从来/d/OT	没/d/OT	遇到/v/OT	这样的/n/OT
+很/d/B-P1	好/a/E-P1	，/w/OT	很快/d/I-P1	就/d/OT	送来/v/OT	了/y/OT	，/w/OT	谢谢/v/I-P2
+味道/n/I-E	不错/a/I-P1	！/w/OT	
+速度/n/I-E	很快/d/I-P1	，/w/OT	大雾/n/OT	霾/w/OT	天外/d/OT	卖/v/OT	骑士/n/B-E	态度/n/E-E	都/d/OT	很/d/B-P1	好/a/E-P1	，/w/OT	赞赞/nr/B-P2	赞/vg/E-P2	！/w/OT	
+太/d/B-N1	慢/a/E-N1	了/y/OT	，/w/OT	建议/n/OT	提前/v/B-N2	两个/u/M-N2	小时/n/E-N2	定/v/OT	./u/OT	./n/OT	./n/OT
+送餐/r/I-E	非常/d/B-N1	慢/a/E-N1	，/w/OT	东西/n/I-E	又/d/B-P1	难吃/v/E-P1	，/w/OT	没有/d/OT	酱/v/OT
+准时/d/B-P1	送达/v/E-P1	，/w/OT	味道/n/I-E	非常/d/B-P1	鲜美/a/E-P1
+菜品/r/I-E	很/d/B-N1	一般/a/E-N1	，/w/OT	理念/n/B-P1	好/a/E-P1	，/w/OT	产品/n/OT	没/d/B-N2	搞好/v/E-N2	！/w/OT
+略/d/I-E	太/d/B-N1	甜/a/E-N1	，/w/OT	腻/v/OT
+感觉/n/OT	这是/w/OT	最/d/OT	赞/vg/OT	的一/m/OT	次/q/OT	外卖/n/OT
+一如既往/i/I-P1	，/w/OT	今天/t/OT	的/u/OT	状况/n/OT	理解/v/OT
+送餐/n/B-E	速度/n/E-E	超级/a/B-P1	超级/a/E-P1	慢/a/OT	…/u/OT	…/n/OT
+非常/d/B-N1	慢/a/E-N1	，/w/OT	其中/r/OT	催/v/B-N2	单/d/M-N2	也/d/E-N2	没/d/B-N1	人理/v/M-N1	会/v/E-N1	
+速度/n/I-E	很快/d/I-P1	，/w/OT	服务/n/B-E	态度/n/E-E	好/a/I-P1	。/w/OT
+下单/n/B-N2	后/f/M-N2	1/m/M-N2	小时/n/E-N2	54/m/OT	分钟/q/OT	送来/v/OT	的/u/OT	,/n/OT	还/d/OT	让/v/OT	我/r/OT	说/v/OT	啥/r/OT
+送餐/n/B-E	速度/n/E-E	太/d/B-N1	慢/a/E-N1	了/y/OT	，/w/OT	一个半/m/B-N2	小时/n/E-N2	的/u/OT	等待/n/OT
+二十分/t/B-P1	钟/n/E-P1	送到/v/OT	！/w/OT	神速/a/OT	！/w/OT
+挺/d/B-P1	好吃/a/E-P1	的/u/OT	，/w/OT	凉拌/v/OT	木耳/n/OT	味道/n/I-E	也/d/OT	很/d/B-P1	好/a/E-P1
+送货/n/B-E	速度/n/E-E	很快/d/I-P1	，/w/OT	一直/d/B-P2	定/v/M-P2	这家/r/E-P2	，/w/OT	赞/j/I-P2	
+米饭/n/I-E	好像/v/I-P1	不是/v/OT	新鲜/a/OT
+太/d/B-N1	快/a/M-N1	了/y/E-N1	。/w/OT	。/w/OT	。/w/OT	。/w/OT	比/p/B-N2	我/r/M-N2	定/v/M-N2	的/u/M-N2	时间/n/M-N2	快/a/M-N2	了/u/M-N2	一个/m/M-N2	小时/n/E-N2
+一直/d/B-P2	在/p/M-P2	订餐/v/E-P2	,/w/OT	还/d/B-P1	不错/a/E-P1	,/u/OT	好评/n/I-P1	
+不错/a/I-P1	，/w/OT	就/d/B-P2	定/v/M-P2	他们/r/M-P2	家/q/M-P2	的/u/E-P2	1/m/OT	!/q/OT	！/w/OT	！/w/OT	！/w/OT	！/w/OT	！/w/OT	！/w/OT	！/w/OT	
+非常/d/B-P1	难吃/v/E-P1	，/w/OT	面皮/n/OT	有点/d/B-N1	半生/m/E-N1
+这/r/OT	南瓜/n/I-P1	粥/n/OT	真是/d/OT	让/v/OT	人无/v/OT	语/ng/OT
+味道/n/I-E	不错/a/I-P1	，/w/OT	就是/d/OT	好/a/I-P1	辣/a/OT	啊/y/OT	！/w/OT	把/p/OT	辣椒/n/OT	拿出/w/OT	去/v/OT	又/d/OT	觉得/v/OT	有点/d/B-N1	腻/v/E-N1	，/w/OT	能/v/OT	吃/v/OT	辣/a/OT	的/u/OT	可以/v/OT	试试看/n/OT	！/w/OT
+这/r/OT	皮蛋/v/B-P1	瘦肉/u/E-P1	粥/n/OT	没/d/OT	放/v/OT	盐/n/OT	，/w/OT	真心/d/OT	难吃/v/OT	呀/y/OT
+土豆泥/n/B-E	以前/f/E-E	很/d/B-P1	好吃/a/M-P1	的/u/E-P1	，/w/OT	不知为/p/OT	什么/r/OT	这次/r/OT	特别/d/B-P1	干/v/E-P1	？/w/OT	！/w/OT
+送餐员/r/I-E	极其/d/I-P1	粗鲁/a/OT	，/w/OT	没/v/OT	礼貌/n/OT	，/w/OT	差/v/B-N1	评/v/E-N1
+很/d/B-P1	负责/v/E-P1	的/u/OT	送餐/n/B-E	师傅/n/E-E	！/w/OT
+最后/f/OT	五分钟/w/OT	订/v/OT	的/u/OT	，/w/OT	卖家/n/I-E	特别/d/B-P1	好/a/E-P1	接/v/OT	单/a/OT	了/y/OT	，/w/OT	谢谢/v/I-P2	。/w/OT	
+速度/n/I-E	太/d/B-N1	慢/a/E-N1	，/w/OT	要是/c/OT	太远/n/OT	派送/v/B-E	时间/n/E-E	无法/v/B-P1	保障/n/E-P1	，/w/OT	就/d/OT	不/d/OT	送/v/B-E	好了/n/E-E
+肉/n/I-E	臭/a/B-N1	了/y/E-N1	，/w/OT	态度/n/I-E	还/d/OT	十分/m/B-N1	恶劣/a/E-N1	，/w/OT	不/d/OT	处理/v/OT	，/w/OT	不要/d/B-N2	再/d/M-N2	定/v/M-N2	这家/r/M-N2	了/u/E-N2	
+配送/v/I-E	及时/a/I-P1	，/w/OT	味道/n/I-E	佳/a/I-P1	。/w/OT	湖北人/n/OT	必/d/OT	吃/v/OT
+肥肉/r/OT	略/d/B-N1	多/a/E-N1	啊/y/OT
+饼/n/OT	不值/w/OT	这个/r/OT	价钱/n/OT	，/w/OT	粥/n/OT	也/d/OT	做/v/OT	的/u/OT	不/d/OT	咋样/v/OT
+送餐/p/I-E	慢/a/OT	，/w/OT	味道/n/I-E	一般/a/I-P1	，/w/OT	一点/m/OT	都/d/OT	不值/v/OT	20/m/OT	块/q/OT	，/w/OT	牛肉/n/OT	的/u/OT	根本/a/OT	没出/n/OT	来/v/OT	肉/n/I-E	啊/y/OT
+送/v/B-E	的/u/E-E	太/d/B-N1	慢/a/E-N1	了/y/OT	,/w/OT	下次/t/B-P2	不点/v/M-P2	了/u/E-P2
+不/d/B-N2	给/v/M-N2	退/v/E-N2	，/w/OT	卧槽/v/OT
+很/d/B-P1	好吃/a/E-P1	！/w/OT	包装/n/I-E	也/d/OT	很/d/B-P1	用心/a/E-P1	！/w/OT
+好吃/a/I-P1	，/w/OT	希望/v/OT	速度/n/I-E	加快/v/I-P1
+吃/v/OT	到/v/OT	一半/m/OT	发现/v/OT	菜/n/B-N2	里/f/M-N2	有/v/M-N2	小强/n/E-N2	,/w/OT	简直/d/OT	了/u/OT	
+超级/a/B-P1	无敌/v/M-P1	好吃/a/E-P1
+卷饼/r/I-E	很/d/B-P1	实在/a/E-P1	，/w/OT	京/j/OT	酱肉/n/OT	丝都/n/OT	是/v/OT	瘦肉/n/OT	。/w/OT	南瓜/n/I-P1	粥/n/OT	一般/a/I-P1	。/w/OT
+很/d/B-P1	不错/a/E-P1	的/u/OT	味道/n/I-E
+口感/n/I-E	真心/d/OT	一般/a/I-P1	，/w/OT	下次/t/B-P2	不买/v/M-P2	了/u/E-P2
+菜/n/B-E	量/n/E-E	给/v/OT	的/u/OT	挺/d/B-P1	足/a/M-P1	的/u/E-P1	，/w/OT	很/d/B-P1	满意/v/E-P1	，/w/OT	就是/d/OT	墨鱼/v/B-E	丸/w/E-E	不/d/B-N1	太/d/M-N1	好/a/E-N1	，/w/OT	有/v/B-N2	股/n/M-N2	臭味/n/E-N2	，/w/OT	其他/r/I-E	都/d/OT	很/d/B-P1	好吃/a/E-P1	。/w/OT	
+准时/a/I-P1	，/w/OT	菜/n/OT	做/v/OT	的/u/OT	不错/a/I-P1	！/w/OT
+粥/n/I-E	特别/d/B-P1	实惠/a/E-P1	，/w/OT	还有/v/OT	卷饼/n/OT
+现在/t/OT	的/u/OT	送餐/n/B-E	速度/n/E-E	是/v/OT	越来越/d/B-N1	慢/a/E-N1
+大/a/I-P1	份/q/OT	太/d/B-N1	大/a/E-N1	了/u/OT
+鸡肉/n/I-E	卷/v/OT	肉/n/I-E	很多/m/I-P1	呀/y/OT	，/w/OT	味道/n/I-E	不错/a/I-P1
+失误/n/B-P1	难免/v/E-P1	，/w/OT	，/w/OT	以后/f/B-N2	请/v/M-N2	注意/v/E-N2	。/w/OT	。/w/OT
+太/d/B-N1	难吃/v/M-N1	了/y/E-N1	。/w/OT
+非常/d/I-E	非常/d/B-P1	好吃/a/E-P1	！/w/OT
+潜力/n/B-P1	股/n/E-P1	，/w/OT	你/r/OT	懂/v/OT	的/u/OT
+好吃/a/I-P1	！/w/OT	速度/n/I-E	快/a/I-P1	！/w/OT
+送餐/p/I-E	慢/a/OT	，/w/OT	超级/a/I-E	超级/a/B-P1	难吃/n/E-P1	，/w/OT	一点/m/OT	味道/n/I-E	都/d/OT	没有/v/OT
+配送/v/B-E	员/q/M-E	人/n/E-E	很/d/B-P1	好/a/E-P1	
+提前/v/I-P1	送到/v/OT	不错/a/I-P1	。/w/OT
+还/d/B-P1	可以/v/E-P1	就是/d/OT	送餐/v/B-E	速度/n/E-E	有点/d/B-N1	慢/a/E-N1
+挺/d/B-P1	好吃/a/E-P1	的/u/OT	，/w/OT	但是/c/OT	再也/d/OT	不买/v/OT	了/y/OT	，/w/OT	超时/v/OT	两个/m/OT	点/q/OT	。/w/OT
+送餐/r/I-E	太/d/B-N1	慢/a/E-N1	，/w/OT	2/m/B-N2	个/q/M-N2	小时/n/E-N2	左右/m/OT	，/w/OT	差/v/B-N1	评/v/E-N1	！/w/OT
+减量/v/B-N1	了/y/E-N1	吗/y/OT	，/w/OT	没有/d/B-N1	咸/a/M-N1	淡/a/E-N1	味/ng/OT	，/w/OT	菜/n/OT	也/d/OT	很少/v/OT	。/w/OT
+确定/v/B-N2	再也/d/M-N2	不会/v/M-N2	从/p/M-N2	网上订餐/n/M-N2	了/u/E-N2
+豆腐脑/r/OT	都/d/OT	凉/v/B-N1	了/y/E-N1	，/w/OT	豆腐/n/OT	上/f/OT	还有/v/OT	一根/u/OT	头发/n/OT	！/w/OT	！/w/OT	！/w/OT	！/w/OT	！/w/OT
+做/v/OT	的/u/OT	比较/d/B-P1	精致/a/E-P1	，/w/OT	就是/d/OT	卷/v/OT	的/u/OT	外包装/n/OT	名称/n/OT	写/v/OT	清楚/a/OT	了/y/OT	，/w/OT	不然/c/OT	不知/v/OT	是/v/OT	什么/r/OT	口味/n/I-E
+巨/ag/B-N1	慢/a/E-N1	,/u/OT	巨/ag/B-N1	少/a/E-N1	,/u/OT	巨/ag/B-N1	难吃/w/M-N1
+挺/d/B-P1	好/a/E-P1	的/u/OT	，/w/OT	包装/n/I-E	环保/j/I-P1	又/d/OT	有/v/OT	品/v/OT	。/w/OT
+很/d/B-P1	好吃/a/E-P1	,/n/OT	忘/v/OT	给/p/B-P2	筷子/n/M-P2	啦/y/E-P2
+好吃/a/I-P1	,/n/OT	就是/d/OT	慢/a/OT
+味道/n/I-E	很/d/B-N1	辣/a/E-N1	，/w/OT	偏/d/B-N1	辣/a/E-N1	的/u/OT
+好吃/a/I-P1	，/w/OT	真的/d/OT	是/v/OT	大/a/I-P1	肘子/u/OT	肉/n/I-E
+送餐/p/I-E	好/a/I-P1	慢/a/OT	啊/y/OT	,/w/OT	离/v/B-E	得/u/E-E	这么/r/B-P1	近/a/E-P1	居然/d/OT	送/v/B-N2	了/u/M-N2	一个/m/M-N2	小时/n/E-N2	！/w/OT	也/d/OT	不/d/OT	太/d/B-N1	好吃/a/E-N1	！/w/OT	难吃/d/OT	到/v/OT	嘴/n/OT	！/w/OT	特别/a/B-P1	油/n/E-P1	！/w/OT
+送餐/t/I-E	晚/tg/B-N2	了/u/M-N2	半/m/M-N2	个/q/M-N2	小时/n/E-N2	，/w/OT	也/d/OT	没/v/B-N2	报价/n/E-N2	。/w/OT	东西/n/I-E	都/d/OT	洒/v/OT	了/y/OT	。/w/OT
+味道/n/I-E	好/a/I-P1	，/w/OT	只不过/d/OT	比/p/B-N2	预约/v/M-N2	的/u/M-N2	时间/n/M-N2	早/a/M-N2	了/u/E-N2	四十/m/OT	多分钟/q/OT	，/w/OT	还好/p/I-P1	我/r/OT	在/p/OT
+两个/n/M-N2	小时/n/E-N2	才/d/OT	送到/v/OT	，/w/OT	慢/a/OT
+就是/d/OT	粥少/v/OT	了/u/OT	点/n/OT
+10/m/OT	点/q/OT	半/m/OT	下/f/OT	的/u/OT	单/a/OT	,/u/OT	12/m/OT	点/q/OT	18/m/OT	送到/v/OT	。/w/OT	速度/n/I-E	太/d/B-N1	快/a/M-N1	了/u/E-N1	./n/OT	./n/OT	./n/OT	味道/n/I-E	还/d/B-P1	可以/v/E-P1	,/w/OT	但/c/OT	因为/p/OT	送来/v/OT	的/u/OT	晚/tg/OT	凉/d/B-N1	掉/v/M-N1	了/u/E-N1	./n/OT	./n/OT	./n/OT
+太/d/B-N1	辣/a/M-N1	了/y/E-N1	，/w/OT	而且/c/OT	几乎/d/OT	没有/v/OT	肉/n/I-E	。/w/OT	。/w/OT	。/w/OT
+好吃/a/I-P1	，/w/OT	量/n/I-E	很/d/B-P1	足/a/E-P1	哦/e/OT	，/w/OT	送餐/n/B-E	速度/n/E-E	也/d/OT	够/v/B-P1	快/a/E-P1	，/w/OT	送来/v/OT	还/d/OT	很/d/B-P1	烫/v/E-P1	那/r/OT
+包装/n/I-E	太/d/B-N1	差/a/E-N1	。/w/OT	全/d/B-N2	洒/v/M-N2	了/y/E-N2	。/w/OT	送到/v/B-N2	只/d/M-N2	剩/v/M-N2	四分/w/M-N2	之一/r/M-N2	不到/n/E-N2	。/w/OT	
