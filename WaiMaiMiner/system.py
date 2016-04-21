@@ -3,7 +3,7 @@ from threading import Thread
 
 from WaiMaiMiner.crawler import crawl
 from WaiMaiMiner import visualization
-from WaiMaiMiner.mining import parse, write
+from WaiMaiMiner.mining import parse, write, train
 
 
 def get_result():
@@ -21,11 +21,8 @@ def analyse_button_event():
     t.start()
 
 
-def test_tag(parse_result, sentence, type_, foreground, i, check_tv):
-    j = 0
-    # indent = 7
+def test_tag(parse_result, sentence, type_, foreground, i, check_tv, j):
     index = 7
-    # print(parse_result)
     if check_tv.get():
         for a in parse_result[type_]:
             # print(a)
@@ -35,6 +32,7 @@ def test_tag(parse_result, sentence, type_, foreground, i, check_tv):
             text.tag_config("tag%d_%d" % (i, j), foreground=foreground)
             index += len(a)
             j += 1
+    return j
 
 
 def text_tag_config(sentence, i):
@@ -43,11 +41,11 @@ def text_tag_config(sentence, i):
     # print(sentence)
     if sentence:
         parse_result = parse(sentence[7:])
-        test_tag(parse_result, sentence, "entity", TOPIC_BG, i, check_tv1)
-        test_tag(parse_result, sentence, "pos1", POSITIVE_BG1, i, check_tv2)
-        test_tag(parse_result, sentence, "pos2", POSITIVE_BG2, i, check_tv3)
-        test_tag(parse_result, sentence, "neg1", NEGATIVE_BG1, i, check_tv4)
-        test_tag(parse_result, sentence, "neg2", NEGATIVE_BG2, i, check_tv5)
+        j = test_tag(parse_result, sentence, "entity", TOPIC_BG, i, check_tv1, 0)
+        j = test_tag(parse_result, sentence, "pos1", POSITIVE_BG1, i, check_tv2, j)
+        j = test_tag(parse_result, sentence, "pos2", POSITIVE_BG2, i, check_tv3, j)
+        j = test_tag(parse_result, sentence, "neg1", NEGATIVE_BG1, i, check_tv4, j)
+        test_tag(parse_result, sentence, "neg2", NEGATIVE_BG2, i, check_tv5, j)
 
 
 def all_button_event(which):
@@ -91,50 +89,73 @@ def all_button_event(which):
                     j += 1
 
         elif which == TASTE:
-            keywords = ["味", "口感", "吃"]
             j = 1
             for i in range(len(scores)):
-                for keyword in keywords:
+                for keyword in taste_keywords:
                     if keyword in comments[i]:
                         text_tag_config(comments[i], j)
                         j += 1
 
         elif which == SPEED:
-            keywords = ["速度", "送"]
             j = 1
             for i in range(len(scores)):
-                for keyword in keywords:
+                for keyword in speed_keywords:
                     if keyword in comments[i]:
                         text_tag_config(comments[i], j)
                         j += 1
 
         elif which == WEIGHT:
-            keywords = ["量"]
             j = 1
             for i in range(len(scores)):
-                for keyword in keywords:
+                for keyword in weight_keywords:
                     if keyword in comments[i]:
                         text_tag_config(comments[i], j)
                         j += 1
 
         elif which == SERVICE:
-            keywords = ["服务", "态度"]
             j = 1
             for i in range(len(scores)):
-                for keyword in keywords:
+                for keyword in service_keywords:
                     if keyword in comments[i]:
                         text_tag_config(comments[i], j)
                         j += 1
 
         elif which == OTHER:
-            pass
+            j = 1
+            yes = False
+            for i in range(len(scores)):
+                for keyword in taste_keywords:
+                    if keyword in comments[i]:
+                        yes = True
+                for keyword in speed_keywords:
+                    if keyword in comments[i]:
+                        yes = True
+                for keyword in weight_keywords:
+                    if keyword in comments[i]:
+                        yes = True
+                for keyword in service_keywords:
+                    if keyword in comments[i]:
+                        yes = True
+                if not yes:
+                    text_tag_config(comments[i], j)
+                    j += 1
 
 
 def write_into_file(sentence, which):
     if sentence:
         write(sentence, which)
-        error_tv.set("OK!")
+        error_tv.set("OK, 纠错成功!")
 
+
+def retrain_thread():
+    train()
+    error_tv.set("训练完毕 (*＾-＾*)")
+
+
+def retrain():
+    error_tv.set("正在重新训练模型，请稍等......")
+    t = Thread(target=retrain_thread)
+    t.start()
 
 # some variable
 ALL = "all comments"
@@ -152,6 +173,11 @@ POSITIVE_BG1 = "#f90b38"
 POSITIVE_BG2 = "#FF7F00"
 NEGATIVE_BG1 = "#00CD66"
 NEGATIVE_BG2 = "#0000EE"
+
+taste_keywords = ["味", "口感", "吃"]
+speed_keywords = ["速度", "送"]
+weight_keywords = ["量", "很多"]
+service_keywords = ["服务", "态度"]
 
 all_direction = tk.E + tk.N + tk.W + tk.S
 result = None
@@ -242,29 +268,38 @@ text.configure(yscrollcommand=scrollbar.set)
 
 # Frame 2: labelFrame
 row_num = 6
-frame2 = tk.LabelFrame(root, text="纠错面板")
+frame2 = tk.LabelFrame(root, text="改进面板")
 # frame2.grid(row=row_num, column=0, columnspan=11, sticky=all_direction)
 frame2.pack(fill=tk.BOTH, expand=tk.YES)
 
 # Entry
 error_tv = tk.StringVar()
-tk.Entry(frame2, textvariable=error_tv).grid(row=0, column=0, columnspan=11, sticky=all_direction)
+row_num = 0
+tk.Entry(frame2, textvariable=error_tv).grid(row=row_num, column=0, columnspan=12, sticky=all_direction)
 
 # Radiobutton
-columnspan = 2
+row_num = 1
+columnspan = 3
+padx = 15
 radio_iv = tk.IntVar()
-tk.Radiobutton(frame2, text="评价对象", variable=radio_iv, value=1).grid(
-    row=1, column=columnspan*0, columnspan=columnspan, sticky=all_direction, padx=2)
 tk.Radiobutton(frame2, text="正向评价", variable=radio_iv, value=2).grid(
-    row=1, column=columnspan*1, columnspan=columnspan, sticky=all_direction, padx=2)
+    row=row_num, column=columnspan*0, columnspan=columnspan, sticky=all_direction, padx=padx)
 tk.Radiobutton(frame2, text="正向描述", variable=radio_iv, value=3).grid(
-    row=1, column=columnspan*2, columnspan=columnspan, sticky=all_direction, padx=2)
+    row=row_num, column=columnspan*1, columnspan=columnspan, sticky=all_direction, padx=padx)
 tk.Radiobutton(frame2, text="负向评价", variable=radio_iv, value=4).grid(
-    row=1, column=columnspan*3, columnspan=columnspan, sticky=all_direction, padx=2)
+    row=row_num, column=columnspan*2, columnspan=columnspan, sticky=all_direction, padx=padx)
 tk.Radiobutton(frame2, text="负向描述", variable=radio_iv, value=5).grid(
-    row=1, column=columnspan*4, columnspan=columnspan, sticky=all_direction, padx=2)
-tk.Button(frame2, text="纠错", command=lambda: write_into_file(error_tv.get(), radio_iv.get())).grid(
-    row=1, column=columnspan*5, padx=2, sticky=all_direction)
+    row=row_num, column=columnspan*3, columnspan=columnspan, sticky=all_direction, padx=padx)
+
+row_num = 2
+tk.Radiobutton(frame2, text="评价对象", variable=radio_iv, value=1).grid(
+    row=row_num, column=columnspan*0, columnspan=columnspan, sticky=all_direction, padx=padx)
+tk.Radiobutton(frame2, text="其他", variable=radio_iv, value=6).grid(
+    row=row_num, column=columnspan*1, columnspan=columnspan, sticky=all_direction, padx=padx)
+tk.Button(frame2, text="    确定    ", command=lambda: write_into_file(error_tv.get(), radio_iv.get())).grid(
+    row=row_num, column=columnspan*2, padx=padx, sticky=all_direction)
+tk.Button(frame2, text="重新训练", command=lambda: retrain()).grid(
+    row=row_num, column=columnspan*3, padx=padx, sticky=all_direction)
 
 # Frame 3: LabelFrame
 frame3 = tk.LabelFrame(root, text="统计面板", padx=2, pady=2, relief=tk.GROOVE)
@@ -272,7 +307,7 @@ frame3.pack(fill=tk.BOTH, expand=tk.YES)
 
 # Buttons
 columnspan = 3
-padx = 10
+padx = 20
 tk.Button(frame3, text="店铺整体评分分布", command=lambda: visualization.score_detail(result)).grid(
     row=0, column=columnspan*0, columnspan=columnspan, sticky=all_direction, padx=padx, pady=3)
 tk.Button(frame3, text="商品质量评分分布", command=lambda: visualization.dish_score_detail(result)).grid(
@@ -289,6 +324,8 @@ tk.Button(frame3, text="商品推荐榜", command=lambda: visualization.recommen
     row=2, column=columnspan*0, columnspan=columnspan, sticky=all_direction, padx=padx, pady=3)
 tk.Button(frame3, text="送餐时间分布", command=lambda: visualization.cost_time(result)).grid(
     row=2, column=columnspan*1, columnspan=columnspan, sticky=all_direction, padx=padx, pady=3)
+tk.Button(frame3, text="各评价对象分布", command=lambda: visualization.topic(result)).grid(
+    row=2, column=columnspan*2, columnspan=columnspan, sticky=all_direction, padx=padx, pady=3)
 
 # main loop
 root.mainloop()

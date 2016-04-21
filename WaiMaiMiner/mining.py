@@ -10,6 +10,9 @@ The supervised fine-grain (aspect) opinion mining
 """
 
 
+root_filepath = os.path.dirname(os.path.realpath(__file__))
+
+
 class HMMCorpus:
     def __init__(self, runout_filepath):
         self.filepath = runout_filepath
@@ -361,73 +364,74 @@ class BootstrappingMaster:
 class OpinionMinerBasedOnHmm:
     def __init__(self):
         # the import parameters
-        self.__tags = {}
-        self.__init_prob = {}
-        self.__emit_prob = {}
-        self.__transition_prob = {}
+        self._tags = {}
+        self._init_prob = {}
+        self._emit_prob = {}
+        self._transition_prob = {}
 
         # the filepath parameters
-        self.__infinitesimal = 1e-100
-        self.__tag_num_filepath = "f_hmm/tag_num.txt"
-        self.__init_filepath = "f_hmm/init_prob.txt"
-        self.__emit_filepath = "f_hmm/emit_prob.txt"
-        self.__transition_filepath = "f_hmm/transition_prob.txt"
+        self._infinitesimal = 1e-100
+        self._tag_num_filepath = root_filepath + "/f_hmm/tag_num.txt"
+        self._init_filepath = root_filepath + "/f_hmm/init_prob.txt"
+        self._emit_filepath = root_filepath + "/f_hmm/emit_prob.txt"
+        self._transition_filepath = root_filepath + "/f_hmm/transition_prob.txt"
+        self._hmm_train_corpus = root_filepath + "/f_hmm/hmm_train_corpus.txt"
+        self._hmm_add_corpus = root_filepath + "/f_hmm/hmm_add_corpus.txt"
 
         # check if there exists the init file
         self._check()
 
     def _check(self):
         prob_file_exist = True
-        if not os.path.exists(self.__tag_num_filepath):
+        if not os.path.exists(self._tag_num_filepath):
             prob_file_exist = False
-        if not os.path.exists(self.__init_filepath):
+        if not os.path.exists(self._init_filepath):
             prob_file_exist = False
-        if not os.path.exists(self.__emit_filepath):
+        if not os.path.exists(self._emit_filepath):
             prob_file_exist = False
-        if not os.path.exists(self.__transition_filepath):
+        if not os.path.exists(self._transition_filepath):
             prob_file_exist = False
         if not prob_file_exist:
-            filepath = "f_hmm/hmm_train_corpus.txt"
-            self.train(filepath)
+            self.train()
         else:
             self._init()
 
     def _init(self):
-        with open(self.__tag_num_filepath, encoding="utf-8") as f:
+        with open(self._tag_num_filepath, encoding="utf-8") as f:
             for line in f:
                 splits = line.strip().split("\t")
                 word = splits[0]
                 num = int(splits[1])
-                self.__tags[word] = num
+                self._tags[word] = num
 
-        with open(self.__init_filepath, encoding="utf-8") as f:
+        with open(self._init_filepath, encoding="utf-8") as f:
             for line in f:
                 splits = line.strip().split("\t")
                 tag = splits[0]
                 prob = float(splits[1])
-                self.__init_prob[tag] = prob
+                self._init_prob[tag] = prob
 
-        with open(self.__emit_filepath, encoding="utf-8") as f:
+        with open(self._emit_filepath, encoding="utf-8") as f:
             for line in f:
                 splits = line.strip().split("\t")
                 tag = splits[0]
                 prob = float(splits[1])
                 word = splits[2]
-                if tag not in self.__emit_prob:
-                    self.__emit_prob[tag] = {}
-                self.__emit_prob[tag][word] = prob
+                if tag not in self._emit_prob:
+                    self._emit_prob[tag] = {}
+                self._emit_prob[tag][word] = prob
 
-        with open(self.__transition_filepath, encoding="utf-8") as f:
+        with open(self._transition_filepath, encoding="utf-8") as f:
             for line in f:
                 splits = line.strip().split("\t")
                 tag1 = splits[0]
                 prob = float(splits[1])
                 tag2 = splits[2]
-                if tag1 not in self.__transition_prob:
-                    self.__transition_prob[tag1] = {}
-                self.__transition_prob[tag1][tag2] = prob
+                if tag1 not in self._transition_prob:
+                    self._transition_prob[tag1] = {}
+                self._transition_prob[tag1][tag2] = prob
 
-    def train(self, filepath):
+    def train(self):
         # declare some variables
         tags_num = {}  # record the number of each tag
         init_num = {}  # record the number of the initial number
@@ -438,102 +442,103 @@ class OpinionMinerBasedOnHmm:
         pattern = re.compile("\s+")
 
         # open the file, read each line one by one
-        with open(filepath, encoding="utf-8") as f:
-            for line in f:
-                # split the line into the several splits
-                splits = pattern.split(line.strip())
+        for filepath in [self._hmm_train_corpus, self._hmm_add_corpus]:
+            with open(filepath, encoding="utf-8") as f:
+                for line in f:
+                    # split the line into the several splits
+                    splits = pattern.split(line.strip())
 
-                # establish two lists to record the word and the tag
-                line_words = []
-                line_poses = []
-                line_tags = []
+                    # establish two lists to record the word and the tag
+                    line_words = []
+                    line_poses = []
+                    line_tags = []
 
-                for a_split in splits:
-                    # split every previous split into word and tag
-                    results = a_split.split("/")
-                    line_words.append(results[0])
-                    line_poses.append(results[1])
-                    line_tags.append(results[2])
+                    for a_split in splits:
+                        # split every previous split into word and tag
+                        results = a_split.split("/")
+                        line_words.append(results[0])
+                        line_poses.append(results[1])
+                        line_tags.append(results[2])
 
-                # get the length of two lists
-                length = len(line_words)
-                assert length == len(line_tags)
+                    # get the length of two lists
+                    length = len(line_words)
+                    assert length == len(line_tags)
 
-                # count the number of init, emit and transition
+                    # count the number of init, emit and transition
 
-                # count the init
-                tag = line_tags[0]
-                init_num[tag] = init_num.get(tag, 0) + 1
+                    # count the init
+                    tag = line_tags[0]
+                    init_num[tag] = init_num.get(tag, 0) + 1
 
-                # count the transition
-                for i in range(length - 1):
-                    tag1 = line_tags[i]
-                    tag2 = line_tags[i + 1]
-                    if tag1 not in transition_num:
-                        transition_num[tag1] = {}
-                    transition_num[tag1][tag2] = transition_num[tag1].get(tag2, 0) + 1
+                    # count the transition
+                    for i in range(length - 1):
+                        tag1 = line_tags[i]
+                        tag2 = line_tags[i + 1]
+                        if tag1 not in transition_num:
+                            transition_num[tag1] = {}
+                        transition_num[tag1][tag2] = transition_num[tag1].get(tag2, 0) + 1
 
-                # count the emit and tag's number
-                for i in range(length):
-                    tag = line_tags[i]
-                    word = line_words[i]
-                    if tag not in emit_num:
-                        emit_num[tag] = {}
-                    emit_num[tag][word] = emit_num[tag].get(word, 0) + 1
-                    tags_num[tag] = tags_num.get(tag, 0) + 1
+                    # count the emit and tag's number
+                    for i in range(length):
+                        tag = line_tags[i]
+                        word = line_words[i]
+                        if tag not in emit_num:
+                            emit_num[tag] = {}
+                        emit_num[tag][word] = emit_num[tag].get(word, 0) + 1
+                        tags_num[tag] = tags_num.get(tag, 0) + 1
 
         # count the probability of the self.init_prob, self.emit_prob, self.transition_prob
         # and write them into the file
 
         # write the tag num
-        with open(self.__tag_num_filepath, mode="w", encoding="utf-8") as f:
-            self.__tags = tags_num
+        with open(self._tag_num_filepath, mode="w", encoding="utf-8") as f:
+            self._tags = tags_num
             for tag, num in sorted(tags_num.items()):
                 f.write("%s\t%d\n" % (tag, num))
 
         # write the init probability
-        with open(self.__init_filepath, mode="w", encoding="utf-8") as f:
+        with open(self._init_filepath, mode="w", encoding="utf-8") as f:
             total = sum(init_num.values())
             for tag, num in sorted(init_num.items()):
                 prob = num / total
-                self.__init_prob[tag] = prob
+                self._init_prob[tag] = prob
                 f.write("%s\t%.100f\t%d\n" % (tag, prob, num))
 
         # write the transition probability
-        with open(self.__transition_filepath, mode="w", encoding="utf-8") as f:
+        with open(self._transition_filepath, mode="w", encoding="utf-8") as f:
             # get the tag and the transition tag
             for tag1 in sorted(transition_num.keys()):
                 tag_dict = transition_num[tag1]
                 total = sum(tag_dict.values())
-                self.__transition_prob[tag1] = {}
+                self._transition_prob[tag1] = {}
                 for tag2 in sorted(tag_dict.keys()):
                     num = tag_dict[tag2]
                     prob = num / total
-                    self.__transition_prob[tag1][tag2] = prob
+                    self._transition_prob[tag1][tag2] = prob
                     f.write("%s\t%.100f\t%s\t%d\n" % (tag1, prob, tag2, num))
 
         # write the emit probability
-        with open(self.__emit_filepath, mode="w", encoding="utf-8") as f:
+        with open(self._emit_filepath, mode="w", encoding="utf-8") as f:
             for tag in sorted(emit_num.keys()):
                 tag_dict = emit_num[tag]
                 total = sum(tag_dict.values())
-                self.__emit_prob[tag] = {}
+                self._emit_prob[tag] = {}
                 for word in sorted(tag_dict.keys()):
                     num = tag_dict[word]
                     prob = num / total
-                    self.__emit_prob[tag][word] = prob
+                    self._emit_prob[tag][word] = prob
                     f.write("%s\t%.100f\t%s\t%d\n" % (tag, prob, word, num))
 
-    def __viterbi(self, observation):
+    def _viterbi(self, observation):
         # record the first path and first probability
         prob_a = {}
         path_a = {}
 
         # initialize
-        for tag in self.__tags.keys():
+        for tag in self._tags.keys():
             path_a[tag] = [tag]
-            prob_a[tag] = math.log(self.__init_prob.get(tag, self.__infinitesimal)) + \
-                math.log(self.__emit_prob[tag].get(observation[0], self.__infinitesimal))
+            prob_a[tag] = math.log(self._init_prob.get(tag, self._infinitesimal)) + \
+                          math.log(self._emit_prob[tag].get(observation[0], self._infinitesimal))
 
         # traversal the observation
         for i in range(1, len(observation)):
@@ -546,10 +551,10 @@ class OpinionMinerBasedOnHmm:
             prob_a = {}
 
             # get the previous max prob and corresponding tag
-            for tag in self.__tags.keys():
+            for tag in self._tags.keys():
                 max_prob, pre_tag = max(
-                    [(pre_prob + math.log(self.__transition_prob[pre_tag].get(tag, self.__infinitesimal)) +
-                      math.log(self.__emit_prob[tag].get(observation[i], self.__infinitesimal)),
+                    [(pre_prob + math.log(self._transition_prob[pre_tag].get(tag, self._infinitesimal)) +
+                      math.log(self._emit_prob[tag].get(observation[i], self._infinitesimal)),
                       pre_tag) for pre_tag, pre_prob in prob_b.items()])
 
                 prob_a[tag] = max_prob
@@ -566,9 +571,9 @@ class OpinionMinerBasedOnHmm:
         if not isinstance(sequence, list):
             print("Error. Not word list.")
         elif tag_only:
-            return self.__viterbi(sequence)
+            return self._viterbi(sequence)
         else:
-            return list(zip(sequence, self.__viterbi(sequence)))
+            return list(zip(sequence, self._viterbi(sequence)))
 
     def parse(self, sentence):
         analysis = {"entity": [], "pos1": [], "neg1": [], "pos2": [], "neg2": []}
@@ -680,6 +685,7 @@ class OpinionMinerBasedOnHmm:
 
 _hmm = OpinionMinerBasedOnHmm()
 parse = _hmm.parse
+train = _hmm.train
 
 
 def write(sentence, which):
@@ -697,24 +703,30 @@ def write(sentence, which):
         tag = "N1"
     elif which == 5:
         tag = "N2"
+    elif which == 6:
+        tag = "OT"
     else:
         return
 
-    if len(cuts) == 1:
-        output = "%s/%s/%s" % (cuts[0], tags[0], "I-" + tag)
+    if which != 6:
+        if len(cuts) == 1:
+            output = "%s/%s/%s" % (cuts[0], tags[0], "I-" + tag)
+        else:
+            i = 0
+            while True:
+                if i == 0:
+                    output = "%s/%s/%s\t" % (cuts[i], tags[i], "B-" + tag)
+                elif i + 1 == len(cuts):
+                    output += "%s/%s/%s\t" % (cuts[i], tags[i], "E-" + tag)
+                    break
+                else:
+                    output += "%s/%s/%s\t" % (cuts[i], tags[i], "M-" + tag)
+                i += 1
     else:
-        i = 0
-        while True:
-            if i == 0:
-                output = "%s/%s/%s\t" % (cuts[i], tags[i], "B-" + tag)
-            elif i + 1 == len(cuts):
-                output += "%s/%s/%s\t" % (cuts[i], tags[i], "E-" + tag)
-                break
-            else:
-                output += "%s/%s/%s\t" % (cuts[i], tags[i], "M-" + tag)
-            i += 1
+        for i in range(len(cuts)):
+            output += "%s/%s/%s\t" % (cuts[i], tags[i], "OT")
 
-    with open("f_hmm/hmm_train_corpus.txt", "a", encoding="utf-8") as f:
+    with open("f_hmm/hmm_add_corpus.txt", "a", encoding="utf-8") as f:
         f.write("%s\n" % output.strip())
 
 

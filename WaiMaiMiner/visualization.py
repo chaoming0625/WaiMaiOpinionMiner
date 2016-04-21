@@ -258,6 +258,27 @@ def cost_time(result):
         plt.show()
 
 
+def topic(result):
+    from random import randint
+    if result:
+        fig, ax = plt.subplots()
+
+        index = tuple(range(5))
+        h1 = []
+        h2 = []
+        for i in range(5):
+            h1.append(randint(20, 50))
+            h2.append(randint(-10, -2))
+
+        a = ax.barh(index, h1, color="r", alpha=.5)
+        b = ax.barh(index, h2, color="b", alpha=.5)
+        ax.set_yticks([i + 0.5 for i in index])
+        ax.set_yticklabels(("服务", "份量", "配送", "味道", "其他"))
+        ax.margins(0.2)
+        ax.legend((a[0], b[0]), ('好评', '差评'))
+        plt.show()
+
+
 def _test():
     from WaiMaiMiner import crawler
 
@@ -277,4 +298,7 @@ def _test():
 
 
 if __name__ == "__main__":
-    _test()
+    # _test()
+    topic(1)
+
+
