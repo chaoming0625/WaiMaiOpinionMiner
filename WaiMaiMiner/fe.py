@@ -37,3 +37,4 @@ class ChiSquare:
             return words[:num]
         else:
             return [word[0] for word in words[:num]]
+

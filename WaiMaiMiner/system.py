@@ -3,7 +3,7 @@ from threading import Thread
 
 from WaiMaiMiner.crawler import crawl
 from WaiMaiMiner import visualization
-from WaiMaiMiner.mining import parse, write, train
+from WaiMaiMiner.mining import parse, write_, train
 
 
 def get_result():
@@ -143,7 +143,7 @@ def all_button_event(which):
 
 def write_into_file(sentence, which):
     if sentence:
-        write(sentence, which)
+        write_(sentence, which)
         error_tv.set("OK, 纠错成功!")
 
 
