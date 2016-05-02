@@ -1,7 +1,7 @@
 from collections import defaultdict
 import numpy as np
 import os
-from WaiMaiMiner import seg
+from WaiMaiMiner import common_lib
 
 
 root_path = os.path.dirname(os.path.abspath(__file__))
@@ -15,7 +15,7 @@ class Corpus:
         with open(root_path + "/f_classifier/positive_corpus_v1.txt", encoding="utf-8") as f:
             i = 0
             while i < self._pos_length:
-                self._pos_doc_list.append(seg.cut(f.readline().strip()))
+                self._pos_doc_list.append(common_lib.cut(f.readline().strip()))
                 i += 1
 
         self._neg_doc_list = []
@@ -23,7 +23,7 @@ class Corpus:
         with open(root_path + "/f_classifier/negative_corpus_v1.txt", encoding="utf-8") as f:
             i = 0
             while i < self._neg_length:
-                self._neg_doc_list.append(seg.cut(f.readline().strip()))
+                self._neg_doc_list.append(common_lib.cut(f.readline().strip()))
                 i += 1
 
         runout_content = "You are using the waimai f_classifier version 1.0.\n"

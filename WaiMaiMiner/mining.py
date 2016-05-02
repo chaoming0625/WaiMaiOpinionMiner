@@ -1,14 +1,52 @@
-import math
 import os
 import re
-from oujago.seg import cut
+import math
 
-"""
-The supervised fine-grain (aspect) opinion mining
-"""
+from WaiMaiMiner import common_lib
 
 
-class OpinionMinerBasedOnHmm:
+class Attr:
+    def __init__(self, content=None, start=-1, end=-1):
+        self.content = content
+        self.start = start
+        self.end = end
+
+    def __str__(self):
+        return self.content
+
+    def __repr__(self):
+        return "%s(%s, %s, %s)" % (self.__class__, self.content, self.start, self.end)
+
+
+class Opinion:
+    def __init__(self, content=None, start=-1, end=-1, orient=2):
+        self.content = content
+        self.start = start
+        self.end = end
+        self.orient = orient
+
+    def __str__(self):
+        return self.content
+
+    def __repr__(self):
+        return "%s(%s, %s, %s, %s)" % (
+            self.__class__, self.content, self.start, self.end, self.orient)
+
+
+class Pair:
+    def __init__(self, sentence, attributions=None, opinions=None):
+        self.sentence = sentence
+        self.attributions = attributions
+        self.opinions = opinions
+
+    # def __str__(self):
+    #     pass
+
+
+class OpinionMinerHMM:
+    """
+    The supervised fine-grain (aspect) opinion mining
+    """
     def __init__(self):
         # the import parameters
         self._tags = {}
@@ -17,13 +55,13 @@ class OpinionMinerBasedOnHmm:
         self._transition_prob = {}
 
         # the filepath parameters
-        self._infinitesimal = 1e-100
-        self._tag_num_filepath = root_filepath + "/f_hmm/tag_num.txt"
-        self._init_filepath = root_filepath + "/f_hmm/init_prob.txt"
-        self._emit_filepath = root_filepath + "/f_hmm/emit_prob.txt"
-        self._transition_filepath = root_filepath + "/f_hmm/transition_prob.txt"
-        self._hmm_train_corpus = root_filepath + "/f_hmm/hmm_train_corpus2.txt"
-        self._hmm_add_corpus = root_filepath + "/f_hmm/hmm_add_corpus.txt"
+        self._infinitesimal = 1e-20
+        self._tag_num_filepath = common_lib.miner_hmm_tag_num_filepath
+        self._init_filepath = common_lib.miner_hmm_init_filepath
+        self._emit_filepath = common_lib.miner_hmm_emit_filepath
+        self._transition_filepath = common_lib.miner_hmm_transition_filepath
+        self._hmm_train_corpus = common_lib.miner_hmm_train_corpus_filepath
+        self._hmm_user_add_corpus = common_lib.miner_hmm_user_add_corpus_filepath
 
         # check if there exists the init file
         self._check()
@@ -89,7 +127,7 @@ class OpinionMinerBasedOnHmm:
         pattern = re.compile("\s+")
 
         # open the file, read each line one by one
-        for filepath in [self._hmm_train_corpus, self._hmm_add_corpus]:
+        for filepath in [self._hmm_train_corpus, self._hmm_user_add_corpus]:
             with open(filepath, encoding="utf-8") as f:
                 for line in f:
                     # split the line into the several splits
@@ -97,15 +135,13 @@ class OpinionMinerBasedOnHmm:
 
                     # establish two lists to record the word and the tag
                     line_words = []
-                    line_poses = []
                     line_tags = []
 
                     for a_split in splits:
                         # split every previous split into word and tag
                         results = a_split.split("/")
                         line_words.append(results[0])
-                        line_poses.append(results[1])
-                        line_tags.append(results[2])
+                        line_tags.append(results[1])
 
                     # get the length of two lists
                     length = len(line_words)
@@ -185,7 +221,7 @@ class OpinionMinerBasedOnHmm:
         for tag in self._tags.keys():
             path_a[tag] = [tag]
             prob_a[tag] = math.log(self._init_prob.get(tag, self._infinitesimal)) + \
-                          math.log(self._emit_prob[tag].get(observation[0], self._infinitesimal))
+                math.log(self._emit_prob[tag].get(observation[0], self._infinitesimal))
 
         # traversal the observation
         for i in range(1, len(observation)):
@@ -210,7 +246,7 @@ class OpinionMinerBasedOnHmm:
         final_tag, final_prob = max(prob_a.items(), key=lambda a_item: a_item[1])
         return path_a[final_tag]
 
-    def tag(self, sequence, tag_only=False):
+    def tag(self, sequence, tag_only=True):
         """
         This is viterbi algorithm
         """
@@ -225,7 +261,7 @@ class OpinionMinerBasedOnHmm:
     def parse(self, sentence):
         analysis = {"entity": [], "pos1": [], "neg1": [], "pos2": [], "neg2": []}
 
-        cuts = seg.cut(sentence)
+        cuts = common_lib.cut(sentence)
         tags = self.tag(cuts, tag_only=True)
 
         word = ""
@@ -331,14 +367,14 @@ class OpinionMinerBasedOnHmm:
         return analysis
 
 
-_hmm = OpinionMinerBasedOnHmm()
+_hmm = OpinionMinerHMM()
 parse = _hmm.parse
+hmm_tag = _hmm.tag
 train = _hmm.train
 
 
 def write_(sentence, which):
-    cuts = seg.cut(sentence)
-    tags = pos.tag(cuts, tag_only=True)
+    cuts = common_lib.cut(sentence)
     output = ""
 
     if which == 1:
@@ -358,49 +394,180 @@ def write_(sentence, which):
 
     if which != 6:
         if len(cuts) == 1:
-            output = "%s/%s/%s" % (cuts[0], tags[0], "I-" + tag)
+            output = "%s/%s" % (cuts[0], "I-" + tag)
         else:
             i = 0
             while True:
                 if i == 0:
-                    output = "%s/%s/%s\t" % (cuts[i], tags[i], "B-" + tag)
+                    output = "%s/%s\t" % (cuts[i], "B-" + tag)
                 elif i + 1 == len(cuts):
-                    output += "%s/%s/%s\t" % (cuts[i], tags[i], "E-" + tag)
+                    output += "%s/%s\t" % (cuts[i], "E-" + tag)
                     break
                 else:
-                    output += "%s/%s/%s\t" % (cuts[i], tags[i], "M-" + tag)
+                    output += "%s/%s\t" % (cuts[i], "M-" + tag)
                 i += 1
     else:
         for i in range(len(cuts)):
-            output += "%s/%s/%s\t" % (cuts[i], tags[i], "OT")
+            output += "%s/%s\t" % (cuts[i], "OT")
 
-    with open("f_hmm/hmm_add_corpus.txt", "a", encoding="utf-8") as f:
+    with open("f_hmm/hmm_user_add_corpus.txt", "a", encoding="utf-8") as f:
         f.write("%s\n" % output.strip())
 
 
-def _test_bootstrapping():
-    filepath = "f_hmm/hmm_train_corpus2.txt"
+def find_pos(clause, word, start=0, init=0):
+    try:
+        index = clause.index(word, start)
+    except ValueError:
+        return -1, -1
+    return index + init, index + len(word) + init
 
-    # get the hmm corpus
-    corpus = HMMCorpus(filepath)
-    corpus.get_corpus()
 
-    # bootstrapping
-    master = BootstrappingMaster(filepath)
-    master.bootstrapping()
+def analyse(sentence, f):
+    results = []
+    clauses = common_lib.re_clause_findall.findall(sentence)
+
+    start_position = 0
+    for clause in clauses:
+        position = 0
+        attributions = []
+        opinions = []
+
+        cuts = common_lib.cut(clause)
+        tags = hmm_tag(cuts)
+
+        f.write("%s\n" % cuts)
+        f.write("%s\n" % tags)
+
+        word = ""
+        length = len(cuts)
+        for i in range(length):
+            if "-" in tags[i]:
+                prefix, type_ = tags[i].split("-")
+
+                if type_ == "E":
+                    if prefix == "I":
+                        word = cuts[i]
+                        start, end = find_pos(clause, word, position, start_position)
+                        attributions.append(Attr(word, start, end))
+                        position = start - start_position
+                        word = ""
+                    elif prefix == "B":
+                        word = cuts[i]
+                    elif prefix == "E":
+                        word += cuts[i]
+                        start, end = find_pos(clause, word, position, start_position)
+                        attributions.append(Attr(word, start, end))
+                        position = start - start_position
+                        word = ""
+                    elif prefix == "M":
+                        if i + 1 < length and "-E" in tags[i + 1]:
+                            word += cuts[i]
+                        else:
+                            word += cuts[i]
+                            start, end = find_pos(clause, word, position, start_position)
+                            attributions.append(Attr(word, start, end))
+                            position = start - start_position
+                            word = ""
+                elif type_ == "P1":
+                    if prefix == "I":
+                        word = cuts[i]
+                        start, end = find_pos(clause, word, position, start_position)
+                        opinions.append(Opinion(word, start, end, 1))
+                        position = start - start_position
+                        word = ""
+                    elif prefix == "B":
+                        word = cuts[i]
+                    elif prefix == "E":
+                        word += cuts[i]
+                        start, end = find_pos(clause, word, position, start_position)
+                        opinions.append(Opinion(word, start, end, 1))
+                        position = start - start_position
+                        word = ""
+                    elif prefix == "M":
+                        if i + 1 < length and "-P1" in tags[i + 1]:
+                            word += cuts[i]
+                        else:
+                            word += cuts[i]
+                            start, end = find_pos(clause, word, position, start_position)
+                            opinions.append(Opinion(word, start, end, 1))
+                            position = start - start_position
+                            word = ""
+                elif type_ == "N1":
+                    if prefix == "I":
+                        word = cuts[i]
+                        start, end = find_pos(clause, word, position, start_position)
+                        opinions.append(Opinion(word, start, end, 0))
+                        position = start - start_position
+                        word = ""
+                    elif prefix == "B":
+                        word = cuts[i]
+                    elif prefix == "E":
+                        word += cuts[i]
+                        start, end = find_pos(clause, word, position, start_position)
+                        opinions.append(Opinion(word, start, end, 0))
+                        position = start - start_position
+                        word = ""
+                    elif prefix == "M":
+                        if i + 1 < length and "-N1" in tags[i + 1]:
+                            word += cuts[i]
+                        else:
+                            word += cuts[i]
+                            start, end = find_pos(clause, word, position, start_position)
+                            opinions.append(Opinion(word, start, end, 0))
+                            position = start - start_position
+                            word = ""
+
+            # position += len(cuts[i])
+        start_position += len(clause)
+        results.append(Pair(clause, attributions, opinions))
+
+    return results
 
 
 def _test_hmm():
-    # train hmm
-    miner = OpinionMinerBasedOnHmm()
-
     # simple test
     sen = "味道不错，价格便宜，量又足"
-    print(miner.parse(sen))
-    cuts = seg.cut(sen)
-    print(miner.tag(cuts))
+    print(parse(sen))
+    cuts = common_lib.cut(sen)
+    print(_hmm.tag(cuts))
 
+
+def _test_analyse():
+
+    origin_files = ["D:\\My Data\\NLP\\SA\\waimai\\positive_corpus_v1.txt",
+                    "D:\\My Data\\NLP\\SA\\waimai\\negative_corpus_v1.txt"]
+
+    runout_file = ['f_runout/test_analyse_positive.txt',
+                   'f_runout/test_analyse_negative.txt']
+
+    for k in range(2):
+        j = 0
+        with open(origin_files[k], encoding="utf-8") as readf:
+            with open(runout_file[k], "w", encoding="utf-8") as writef:
+                for line in readf:
+                    results = analyse(line.strip(), writef)
+
+                    writef.write("Origin :\t%s\n" % line)
+
+                    for i, pair in enumerate(results):
+                        writef.write("Clause %d: %s\n" % (i, pair.sentence))
+                        writef.write("Attributions:\n")
+                        for attr in pair.attributions:
+                            writef.write("\t%s\t%d\t%d\n" % (attr.content, attr.start, attr.end))
+                        writef.write("Opinions:\n")
+                        for op in pair.opinions:
+                            writef.write("\t%s\t%d\t%d\t%s\n" % (
+                                op.content, op.start, op.end, "positive" if op.orient else 'negative'))
+                        writef.write("\n")
+                    writef.write("\n\n\n")
+
+                    j += 1
+                    if j == 100:
+                        break
 
 if __name__ == "__main__":
-    # _test_bootstrapping()
-    _test_hmm()
+    pass
+    # _test_hmm()
+
+    # analyse("还可以~~而且有优惠很好哈哈~")
+    _test_analyse()

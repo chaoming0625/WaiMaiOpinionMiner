@@ -1,9 +1,0 @@
-很/d/B-P1	细腻/a/E-P1
-果仁/n/B-E	菠菜/n/E-E
-藕/n/I-E
-茄子/n/I-E
-肉片/n/I-E
-服务/n/I-E
-周到/a/I-P1
-服务周到/n/I-P1
-宫保/nr/B-E	鸡丁/nr/M-E	盖饭/nr/E-E

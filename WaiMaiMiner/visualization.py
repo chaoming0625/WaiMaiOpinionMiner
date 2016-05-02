@@ -298,7 +298,8 @@ def _test():
 
 
 if __name__ == "__main__":
-    # _test()
-    topic(1)
+    pass
+    _test()
+    # topic(1)
 
 

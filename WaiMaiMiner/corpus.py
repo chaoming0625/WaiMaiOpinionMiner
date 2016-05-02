@@ -1,17 +1,9 @@
-
+import math
 import os
 import re
-
-import math
 from random import choice
 
-from WaiMaiMiner import seg
-
-
-root_filepath = os.path.dirname(os.path.realpath(__file__))
-re_punctuation_split = re.compile(r"([a-zA-Z0-9:\u4e00-\u9fa5]+[，。%、！!？?,；～~.… ]*)")
-re_space_split = re.compile(r"\s+")
-re_han = re.compile('[\s\u4e00-\u9fa5]+')
+from WaiMaiMiner import common_lib
 
 
 class HMMCorpus:
@@ -19,15 +11,7 @@ class HMMCorpus:
         pass
 
     @staticmethod
-    def _find_final_position(tags, tag, start):
-        while start < len(tags):
-            if tags[start] != tag:
-                break
-            start += 1
-        return start - 1
-
-    @staticmethod
-    def get_corpus(runout_filepath):
+    def get_tagged_corpus_old(runout_filepath):
         """
             Purpose:
             Get the tagged corpus.
@@ -49,7 +33,7 @@ class HMMCorpus:
             """
         pattern = re.compile("\s+")
 
-        tag_root_filepath = os.path.normpath(os.path.join(root_filepath, "f_hmm/tag/"))
+        tag_root_filepath = os.path.normpath(os.path.join(common_lib.root_filepath, "f_hmm/tag/"))
 
         # list all the tagged corpus file
         with open(runout_filepath, "w", encoding="utf-8") as train_f:
@@ -87,7 +71,7 @@ class HMMCorpus:
                             if tags[i] == "":
                                 train_f.write("%s/%s\t" % (words[i], "OT"))
                             else:
-                                final_pos = HMMCorpus._find_final_position(tags, tags[i], i)
+                                final_pos = common_lib.final_tag_position(tags, tags[i], i)
                                 if final_pos != i:
                                     train_f.write("%s/%s\t" % (words[i], "B-" + tags[i]))
                                     seq_tag = True
@@ -105,7 +89,7 @@ class HMMCorpus:
 
     @staticmethod
     def get_tagged_corpus(corpus_filepath):
-        tag_root_filepath = os.path.normpath(os.path.join(root_filepath, "f_hmm/tag/"))
+        tag_root_filepath = os.path.normpath(os.path.join(common_lib.root_filepath, "f_hmm/tag/"))
 
         with open(corpus_filepath, "w", encoding='utf-8') as writef:
             for file in os.listdir(tag_root_filepath):
@@ -123,7 +107,7 @@ class HMMCorpus:
 
                     elif lines[line_no]:
                         # get words and tags
-                        splits = re_space_split.split(lines[line_no])
+                        splits = common_lib.re_space_split.split(lines[line_no])
                         words, tags = [], []
                         for a_split in splits:
                             if "/" in a_split:
@@ -138,7 +122,7 @@ class HMMCorpus:
                                 if tags[i] == "":
                                     runout += "%s/%s\t" % (words[i], "OT")
                                 else:
-                                    final_pos = HMMCorpus._find_final_position(tags, tags[i], i)
+                                    final_pos = common_lib.final_tag_position(tags, tags[i], i)
                                     if final_pos != i:
                                         runout += "%s/%s\t" % (words[i], "B-" + tags[i])
                                         seq_tag = True
@@ -151,7 +135,7 @@ class HMMCorpus:
                                 else:
                                     runout += "%s/%s\t" % (words[i], "M-" + tags[i])
 
-                        if runout and not re_han.match(words[-1]):
+                        if runout and not common_lib.re_han_match.match(words[-1]):
                             writef.write("%s\n" % runout.strip())
                             runout = ""
 
@@ -170,8 +154,11 @@ class HMMCorpus:
         origin_filepath = ["D:\\My Data\\NLP\\SA\\waimai\\negative_corpus_v2.txt",
                            "D:\\My Data\\NLP\\SA\\waimai\\positive_corpus_v2.txt"]
 
-        output_filepath = [os.path.normpath(os.path.join(root_filepath, "f_hmm/tag/negative_tag_corpus-%d.txt")),
-                           os.path.normpath(os.path.join(root_filepath, "f_hmm/tag/positive_tag_corpus-%d.txt"))]
+        output_filepath = [
+            os.path.normpath(os.path.join(
+                common_lib.root_filepath, "f_hmm/tag/negative_tag_corpus-%d.txt")),
+            os.path.normpath(os.path.join(
+                common_lib.root_filepath, "f_hmm/tag/positive_tag_corpus-%d.txt"))]
 
         for i in range(2):
             with open(origin_filepath[i], encoding="utf-") as readf:
@@ -184,9 +171,10 @@ class HMMCorpus:
                     clauses = HMMCorpus.sentence2clauses(line)
 
                     # write the clause's segments
-                    with open(output_filepath[i] % ((read_line_no - start) // gap), "a", encoding="utf-8") as writef:
+                    with open(output_filepath[i] % ((read_line_no - start) // gap),
+                              "a", encoding="utf-8") as writef:
                         for clause in clauses:
-                            segments = seg.cut(clause)
+                            segments = common_lib.cut(clause)
                             writef.write("%s\n" % "\t".join([segment + "/" for segment in segments]))
                         writef.write("\n" * 2)
 
@@ -196,7 +184,7 @@ class HMMCorpus:
 
     @staticmethod
     def sentence2clauses(sentence):
-        return re_punctuation_split.findall(sentence.strip())
+        return common_lib.re_clause_findall.findall(sentence.strip())
 
     @staticmethod
     def test_segments(start=0, end=1000):
@@ -212,14 +200,14 @@ class HMMCorpus:
                             line = readf1.readline()
                             clauses = HMMCorpus.sentence2clauses(line)
                             for clause in clauses:
-                                segments = list(seg.cut(clause))
+                                segments = list(common_lib.cut(clause))
                                 writef.write("%s\n" % segments)
                             writef.write("\n" * 2)
 
                             line = readf2.readline()
                             clauses = HMMCorpus.sentence2clauses(line)
                             for clause in clauses:
-                                segments = list(seg.cut(clause))
+                                segments = list(common_lib.cut(clause))
                                 writef.write("%s\n" % segments)
                             writef.write("\n" * 2)
 
@@ -347,7 +335,7 @@ class BootstrappingHmm:
         for tag in self.__tags.keys():
             path_a[tag] = [tag]
             prob_a[tag] = math.log(self.__init_prob.get(tag, self.__infinitesimal)) + \
-                math.log(self.__emit_prob[tag].get(observation[0], self.__infinitesimal))
+                          math.log(self.__emit_prob[tag].get(observation[0], self.__infinitesimal))
 
         # traversal the observation
         for i in range(1, len(observation)):
@@ -387,6 +375,7 @@ class BootstrappingHmm:
 
 class BootstrappingMaster:
     """BootstrappingMaster"""
+
     def __init__(self, train_corpus_filepath):
         self.hmm1 = BootstrappingHmm()
         self.hmm2 = BootstrappingHmm()
@@ -458,7 +447,7 @@ class BootstrappingMaster:
                     hmm2_tags = []
                     clauses = []
                     for clause in HMMCorpus.sentence2clauses(line.strip()):
-                        segments = seg.cut(clause)
+                        segments = common_lib.cut(clause)
                         clauses.append(segments)
                         hmm1_tags.append(self.hmm1.tag(segments, tag_only=True))
                         hmm2_tags.append(self.hmm2.tag(segments, tag_only=True))
@@ -482,6 +471,28 @@ class BootstrappingMaster:
             else:
                 # change the sate of self.added
                 self.added = False
+
+    @staticmethod
+    def get_bootstrapping_corpus():
+        """
+        Get the first 2000 corpus,
+        except the first 500 corpus for manually tagging.
+        """
+        bootstrapping_corpus_filepath = "f_corpus/hmm_bootstrapping_corpus.txt"
+
+        root_filepath = 'f_corpus/'
+        with open(root_filepath + 'negative_corpus.txt', encoding="utf-8") as neg_f:
+            with open(root_filepath + "positive_corpus.txt", encoding="utf-8") as pos_f:
+                with open(bootstrapping_corpus_filepath, "w", encoding="utf-8") as bootstrap_f:
+                    for i in range(2000):
+                        pos_line = pos_f.readline()
+                        neg_line = neg_f.readline()
+
+                        if i < 500:
+                            continue
+
+                        bootstrap_f.write(pos_line)
+                        bootstrap_f.write(neg_line)
 
 
 def _test1():
@@ -507,12 +518,12 @@ def _test3():
     """
     corpus_filepath = "f_hmm/hmm_train_corpus.txt"
     HMMCorpus.get_tagged_corpus(corpus_filepath)
-    # master = BootstrappingMaster(corpus_filepath)
-    # master.bootstrapping()
+    master = BootstrappingMaster(corpus_filepath)
+    master.bootstrapping()
 
 
 if __name__ == "__main__":
     pass
     # _test1()
-    # _test2()
-    _test3()
+    _test2()
+    # _test3()
