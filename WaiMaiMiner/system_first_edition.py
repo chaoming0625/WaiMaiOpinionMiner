@@ -263,7 +263,7 @@ row_num = 5
 text = tk.Text(frame1, height=20, width=60)
 text.grid(row=row_num, column=0, columnspan=10, padx=2, pady=2)
 scrollbar = tk.Scrollbar(frame1, orient=tk.VERTICAL, command=text.yview)
-scrollbar.grid(row=row_num, column=9, rowspan=1, sticky=all_direction)
+scrollbar.grid(row=row_num, column=10, rowspan=1, sticky=all_direction)
 text.configure(yscrollcommand=scrollbar.set)
 
 # Frame 2: labelFrame

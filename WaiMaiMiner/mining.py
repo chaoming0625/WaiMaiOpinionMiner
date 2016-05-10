@@ -1,7 +1,8 @@
 import os
 import re
 import math
-
+import requests
+import json
 from WaiMaiMiner import common_lib
 
 
@@ -18,7 +19,7 @@ class Attr:
         return "%s(%s, %s, %s)" % (self.__class__, self.content, self.start, self.end)
 
 
-class Opinion:
+class Op:
     def __init__(self, content=None, start=-1, end=-1, orient=2):
         self.content = content
         self.start = start
@@ -34,13 +35,30 @@ class Opinion:
 
 
 class Pair:
-    def __init__(self, sentence, attributions=None, opinions=None):
-        self.sentence = sentence
-        self.attributions = attributions
-        self.opinions = opinions
+    def __init__(self, attribution, opinion):
+        self.attribution = attribution
+        self.opinion = opinion
 
-    # def __str__(self):
-    #     pass
+    def __str__(self):
+        return "%s -> %s" % (self.attribution, self.opinion)
+
+    def __repr__(self):
+        return "%s(%s, %s)" % (
+            self.__class__, self.attribution, self.opinion)
+
+
+class Clause:
+    def __init__(self, clause, attribution, opinion):
+        self.clause = clause
+        self.attribution = attribution
+        self.opinion = opinion
+
+    def __str__(self):
+        return "%s (%s -> %s)" % (self.clause, self.attribution, self.opinion)
+
+    def __repr__(self):
+        return "%s(%s, %s, %s)" % (
+            self.__class__, self.clause, self.attribution, self.opinion)
 
 
 class OpinionMinerHMM:
@@ -367,6 +385,336 @@ class OpinionMinerHMM:
         return analysis
 
 
+class Analysis:
+    def __init__(self, url):
+        self.base_url = "http://waimai.baidu.com/waimai/comment/getshop?display=" \
+                        "json&shop_id=%s&page=%s&count=60"
+
+        # get the shop id
+        self._shop_id = ''
+        self._get_shop_id(url)
+
+        '''
+        init some variables
+        '''
+        self.page_num = 1
+
+        # contain all comments
+        self.comments = []
+        # contain all positive comment number
+        self.positive = []
+        # contain all negative comment number
+        self.negative = []
+        # contain all neutral comment number
+        self.neutral = []
+
+        # contain all service comments
+        self.service = []
+        # contain all delivery comments
+        self.delivery = []
+        # contain all taste comments
+        self.taste = []
+        # contain other comments
+        self.others = []
+
+        self.all = []
+
+        self.average_score = {}
+        self.score_detail = {}
+        self.weeks_score = {}
+        self.recommend_dishes = None
+        self.comment_num = 0
+
+        self.cost_time = []
+        self.service_score = []
+        self.dish_score = []
+        self.sfrom = []
+        self.score = []
+        self.create_time = []
+        self.arrive_time = []
+        self.useful_comment_id = []
+        self.rubbish_comment_id = []
+
+        # start crawl the comments
+        self.crawl()
+
+    def _get_shop_id(self, url):
+        if url is not None:
+            shop_id = re.search("\d+", url)
+            if shop_id is None:
+                raise ValueError("Not found shop id")
+
+            self.shop_id = shop_id.group()
+        else:
+            raise ValueError("Not found shop id")
+
+    def crawl(self):
+        # get the first page comment
+        i = 0
+        while i < self.page_num:
+            self._get_json_request(self.base_url % (self.shop_id, i + 1))
+            i += 1
+
+        self._filter()
+
+    def _get_json_request(self, url):
+        try:
+            result = requests.get(url)
+        except requests.ConnectionError:
+            raise ValueError("requests.ConnectionError")
+
+        content = json.loads(result.text)
+        result = content["result"]
+        if self.page_num == 1:
+            self._get_initial_info(result)
+
+        content = result["content"]
+
+        for a_json in content:
+            self._get_a_json_info(a_json)
+
+    def _get_initial_info(self, result):
+        # get the page number
+        self.page_num = result["comment_num"] // 60 + 1
+
+        # get the average score information
+        self.average_score["average_dish_score"] = float(result["average_dish_score"])
+        self.average_score["average_service_score"] = float(result["average_service_score"])
+        self.average_score["average_score"] = float(result["average_score"])
+
+        # get the score detail
+        self.score_detail = result["score_detail"]
+
+        # get the weeks score
+        for key, value in result["weeks_score"].items():
+            self.weeks_score[key] = float(value)
+
+        # get the recommend dished
+        self.recommend_dishes = result["recommend_dishes"]
+
+        # get the comment num
+        self.comment_num = result['comment_num']
+
+    def _get_a_json_info(self, a_json):
+        self.comments.append(a_json["content"])
+        self.cost_time.append(a_json["cost_time"])
+        self.service_score.append(int(a_json["service_score"]))
+        self.dish_score.append(int(a_json["dish_score"]))
+        self.score.append(int(a_json["score"]))
+        self.sfrom.append(a_json["sfrom"][3:] if "na-" in a_json["sfrom"] else a_json["sfrom"])
+        self.create_time.append(a_json["create_time"])
+        self.arrive_time.append(a_json["arrive_time"])
+
+    def _filter(self):
+        """
+        get the useful comment, get rid of rubbish comment.
+
+        We use the maximum entropy to classify the polarity of the comment.
+        maxEntClassifier's parameters are wrote into the file
+        """
+        for i, sentence in enumerate(self.comments):
+            rubbish_comment = False
+
+            if self._is_english(sentence):
+                rubbish_comment = True
+            elif self._is_numeric(sentence):
+                rubbish_comment = True
+            elif self._is_too_short(sentence):
+                rubbish_comment = True
+            elif self._is_word_repeat(sentence):
+                rubbish_comment = True
+
+            if rubbish_comment:
+                self.rubbish_comment_id.append(i)
+
+            else:
+                self.useful_comment_id.append(i)
+
+                if self.score[i] >= 4:
+                    self.positive.append(i)
+                elif self.score[i] >= 2:
+                    self.neutral.append(i)
+                else:
+                    self.negative.append(i)
+
+    @staticmethod
+    def _is_too_short(sentence):
+        """judge if the f_waimai is too short or the chinese characters are few
+            if True, write to the abandoned file
+            :param sentence: a f_waimai
+            :return: True or False
+            """
+        if len(sentence) < 5:
+            return True
+        if len(re.findall(r'[\u4e00-\u9fa5]', sentence)) <= len(sentence) * 0.4:
+            return True
+        return False
+
+    @staticmethod
+    def _is_numeric(sentence):
+        """judge if the f_waimai's characters are all or almost numbers
+            if True, write to the abandoned file
+            :param sentence: a f_waimai
+            :return: True or False
+            """
+        match = re.findall("\d+", sentence)
+        if match is not None and sum([len(m) for m in match]) >= len(sentence) * 0.75:
+            return True
+        return False
+
+    @staticmethod
+    def _is_english(sentence):
+        """judge if the f_waimai's characters are all English
+            if True, write to the abandoned file
+            :param sentence: a f_waimai
+            :return: True or False
+            """
+        match = re.findall("[a-zA-Z]+", sentence)
+        if match is not None and sum([len(m) for m in match]) >= len(sentence) * 0.75:
+            return True
+        return False
+
+    @staticmethod
+    def _is_word_repeat(sentence):
+        """check if the f_waimai is always the repeat word
+            :param sentence: a f_waimai
+            :return: True or False
+            """
+        repeat_words, length = [], 0
+        for word in sentence:
+            times = sentence.count(word)
+            if times >= 4 and word not in repeat_words:
+                repeat_words.append(word)
+                length += times
+        if length > len(sentence) / 2:
+            return True
+        return False
+
+    @staticmethod
+    def find_pos(clause, word, start=0):
+        try:
+            index = clause.index(word, start)
+        except ValueError:
+            return -1, -1
+        return index, index + len(word)
+
+    # def get_pair(self, attributions, opinions):
+    #     pass
+
+    def match(self, clause, attributions, opinions):
+        if len(attributions) == 1 and len(opinions) == 1:
+            self.all.append(Clause(clause, attributions[0], opinions[0]))
+        elif len(attributions) == 0 and len(opinions) == 1:
+            self.all.append(Clause(clause, None, opinions[0]))
+
+    def extract_from_sentence(self, sentence):
+        clauses = common_lib.re_clause_findall.findall(sentence)
+
+        start_position = 0
+        for clause in clauses:
+            position = 0
+            attributions = []
+            opinions = []
+
+            cuts = common_lib.cut(clause)
+            tags = hmm_tag(cuts)
+
+            word = ""
+            length = len(cuts)
+            for i in range(length):
+                if "-" in tags[i]:
+                    prefix, type_ = tags[i].split("-")
+
+                    if type_ == "E":
+                        if prefix == "I":
+                            word = cuts[i]
+                            start, end = self.find_pos(clause, word, position)
+                            # attributions.append(Attr(word, start + start_position, end + start_position))
+                            attributions.append(Attr(word, start, end))
+                            position = start
+                            word = ""
+                        elif prefix == "B":
+                            word = cuts[i]
+                        elif prefix == "E":
+                            word += cuts[i]
+                            start, end = self.find_pos(clause, word, position)
+                            # attributions.append(Attr(word, start + start_position, end + start_position))
+                            attributions.append(Attr(word, start, end))
+                            position = start
+                            word = ""
+                        elif prefix == "M":
+                            if i + 1 < length and "-E" in tags[i + 1]:
+                                word += cuts[i]
+                            else:
+                                word += cuts[i]
+                                start, end = self.find_pos(clause, word, position)
+                                # attributions.append(Attr(word, start + start_position, end + start_position))
+                                attributions.append(Attr(word, start, end))
+                                position = start
+                                word = ""
+                    elif type_ == "P1":
+                        if prefix == "I":
+                            word = cuts[i]
+                            start, end = self.find_pos(clause, word, position)
+                            # opinions.append(Op(word, start + start_position, end + start_position, 1))
+                            opinions.append(Op(word, start, end, 1))
+                            position = start
+                            word = ""
+                        elif prefix == "B":
+                            word = cuts[i]
+                        elif prefix == "E":
+                            word += cuts[i]
+                            start, end = self.find_pos(clause, word, position)
+                            # opinions.append(Op(word, start + start_position, end + start_position, 1))
+                            opinions.append(Op(word, start, end, 1))
+                            position = start
+                            word = ""
+                        elif prefix == "M":
+                            if i + 1 < length and "-P1" in tags[i + 1]:
+                                word += cuts[i]
+                            else:
+                                word += cuts[i]
+                                start, end = self.find_pos(clause, word, position)
+                                # opinions.append(Op(word, start + start_position, end + start_position, 1))
+                                opinions.append(Op(word, start, end, 1))
+                                position = start
+                                word = ""
+                    elif type_ == "N1":
+                        if prefix == "I":
+                            word = cuts[i]
+                            start, end = self.find_pos(clause, word, position)
+                            # opinions.append(Op(word, start + start_position, end + start_position, 0))
+                            opinions.append(Op(word, start, end, 0))
+                            position = start
+                            word = ""
+                        elif prefix == "B":
+                            word = cuts[i]
+                        elif prefix == "E":
+                            word += cuts[i]
+                            start, end = self.find_pos(clause, word, position)
+                            # opinions.append(Op(word, start + start_position, end + start_position, 0))
+                            opinions.append(Op(word, start, end, 0))
+                            position = start
+                            word = ""
+                        elif prefix == "M":
+                            if i + 1 < length and "-N1" in tags[i + 1]:
+                                word += cuts[i]
+                            else:
+                                word += cuts[i]
+                                start, end = self.find_pos(clause, word, position)
+                                # opinions.append(Op(word, start + start_position, end + start_position, 0))
+                                opinions.append(Op(word, start, end, 0))
+                                position = start
+                                word = ""
+
+            start_position += len(clause)
+            self.match(clause, attributions, opinions)
+
+    def extract_all(self):
+        for i in self.useful_comment_id:
+            self.extract_from_sentence(self.comments[i])
+
+
 _hmm = OpinionMinerHMM()
 parse = _hmm.parse
 hmm_tag = _hmm.tag
@@ -414,12 +762,19 @@ def write_(sentence, which):
         f.write("%s\n" % output.strip())
 
 
-def find_pos(clause, word, start=0, init=0):
+def find_pos(clause, word, start=0):
     try:
         index = clause.index(word, start)
     except ValueError:
         return -1, -1
-    return index + init, index + len(word) + init
+    return index, index + len(word)
+
+
+def match(attributions, opinions):
+    if len(attributions) == 1 and len(opinions) == 1:
+        return Pair(attributions[0], opinions[0])
+    else:
+        return None
 
 
 def analyse(sentence, f):
@@ -447,79 +802,79 @@ def analyse(sentence, f):
                 if type_ == "E":
                     if prefix == "I":
                         word = cuts[i]
-                        start, end = find_pos(clause, word, position, start_position)
-                        attributions.append(Attr(word, start, end))
-                        position = start - start_position
+                        start, end = find_pos(clause, word, position)
+                        attributions.append(Attr(word, start + start_position, end + start_position))
+                        position = start
                         word = ""
                     elif prefix == "B":
                         word = cuts[i]
                     elif prefix == "E":
                         word += cuts[i]
-                        start, end = find_pos(clause, word, position, start_position)
-                        attributions.append(Attr(word, start, end))
-                        position = start - start_position
+                        start, end = find_pos(clause, word, position)
+                        attributions.append(Attr(word, start + start_position, end + start_position))
+                        position = start
                         word = ""
                     elif prefix == "M":
                         if i + 1 < length and "-E" in tags[i + 1]:
                             word += cuts[i]
                         else:
                             word += cuts[i]
-                            start, end = find_pos(clause, word, position, start_position)
-                            attributions.append(Attr(word, start, end))
-                            position = start - start_position
+                            start, end = find_pos(clause, word, position)
+                            attributions.append(Attr(word, start + start_position, end + start_position))
+                            position = start
                             word = ""
                 elif type_ == "P1":
                     if prefix == "I":
                         word = cuts[i]
-                        start, end = find_pos(clause, word, position, start_position)
-                        opinions.append(Opinion(word, start, end, 1))
-                        position = start - start_position
+                        start, end = find_pos(clause, word, position)
+                        opinions.append(Op(word, start + start_position, end + start_position, 1))
+                        position = start
                         word = ""
                     elif prefix == "B":
                         word = cuts[i]
                     elif prefix == "E":
                         word += cuts[i]
-                        start, end = find_pos(clause, word, position, start_position)
-                        opinions.append(Opinion(word, start, end, 1))
-                        position = start - start_position
+                        start, end = find_pos(clause, word, position)
+                        opinions.append(Op(word, start + start_position, end + start_position, 1))
+                        position = start
                         word = ""
                     elif prefix == "M":
                         if i + 1 < length and "-P1" in tags[i + 1]:
                             word += cuts[i]
                         else:
                             word += cuts[i]
-                            start, end = find_pos(clause, word, position, start_position)
-                            opinions.append(Opinion(word, start, end, 1))
-                            position = start - start_position
+                            start, end = find_pos(clause, word, position)
+                            opinions.append(Op(word, start + start_position, end + start_position, 1))
+                            position = start
                             word = ""
                 elif type_ == "N1":
                     if prefix == "I":
                         word = cuts[i]
-                        start, end = find_pos(clause, word, position, start_position)
-                        opinions.append(Opinion(word, start, end, 0))
-                        position = start - start_position
+                        start, end = find_pos(clause, word, position)
+                        opinions.append(Op(word, start + start_position, end + start_position, 0))
+                        position = start
                         word = ""
                     elif prefix == "B":
                         word = cuts[i]
                     elif prefix == "E":
                         word += cuts[i]
-                        start, end = find_pos(clause, word, position, start_position)
-                        opinions.append(Opinion(word, start, end, 0))
-                        position = start - start_position
+                        start, end = find_pos(clause, word, position)
+                        opinions.append(Op(word, start + start_position, end + start_position, 0))
+                        position = start
                         word = ""
                     elif prefix == "M":
                         if i + 1 < length and "-N1" in tags[i + 1]:
                             word += cuts[i]
                         else:
                             word += cuts[i]
-                            start, end = find_pos(clause, word, position, start_position)
-                            opinions.append(Opinion(word, start, end, 0))
-                            position = start - start_position
+                            start, end = find_pos(clause, word, position)
+                            opinions.append(Op(word, start + start_position, end + start_position, 0))
+                            position = start
                             word = ""
 
-            # position += len(cuts[i])
         start_position += len(clause)
-        results.append(Pair(clause, attributions, opinions))
+
+        results.append(Clause(clause, attributions, opinions))
 
     return results
 

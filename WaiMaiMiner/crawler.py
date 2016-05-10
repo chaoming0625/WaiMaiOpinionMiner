@@ -1,7 +1,7 @@
 import re
 import json
 import requests
-from WaiMaiMiner import classifier
+# from WaiMaiMiner import classifier
 
 """
 First page url:
@@ -18,7 +18,7 @@ class Crawler:
                         "json&shop_id=%s&page=%s&count=60"
 
         self.shop_id = None
-        self.maxent = classifier
+        # self.maxent = classifier
         self.page_num = 1
 
         self.info = {}
@@ -31,7 +31,6 @@ class Crawler:
         i = 0
         while i < self.page_num:
             self._get_json_request(self.base_url % (self.shop_id, i + 1))
-
             i += 1
 
         # init the page_num variable and filter
@@ -149,7 +148,7 @@ class Crawler:
         try:
             result = requests.get(url)
         except requests.ConnectionError:
-            raise ValueError("Bad url")
+            raise ValueError("requests.ConnectionError")
 
         content = json.loads(result.text)
         result = content["result"]

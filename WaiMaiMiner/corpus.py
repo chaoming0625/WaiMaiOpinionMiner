@@ -154,11 +154,17 @@ class HMMCorpus:
         origin_filepath = ["D:\\My Data\\NLP\\SA\\waimai\\negative_corpus_v2.txt",
                            "D:\\My Data\\NLP\\SA\\waimai\\positive_corpus_v2.txt"]
 
+        # output_filepath = [
+        #     os.path.normpath(os.path.join(
+        #         common_lib.root_filepath, "f_hmm/tag/negative_tag_corpus-%d.txt")),
+        #     os.path.normpath(os.path.join(
+        #         common_lib.root_filepath, "f_hmm/tag/positive_tag_corpus-%d.txt"))]
+
         output_filepath = [
             os.path.normpath(os.path.join(
-                common_lib.root_filepath, "f_hmm/tag/negative_tag_corpus-%d.txt")),
+                common_lib.root_filepath, "f_hmm/tag2/negative_tag_corpus-%d.txt")),
             os.path.normpath(os.path.join(
-                common_lib.root_filepath, "f_hmm/tag/positive_tag_corpus-%d.txt"))]
+                common_lib.root_filepath, "f_hmm/tag2/positive_tag_corpus-%d.txt"))]
 
         for i in range(2):
             with open(origin_filepath[i], encoding="utf-") as readf:
@@ -524,6 +530,6 @@ def _test3():
 
 if __name__ == "__main__":
     pass
-    # _test1()
-    _test2()
+    _test1()
+    # _test2()
     # _test3()
