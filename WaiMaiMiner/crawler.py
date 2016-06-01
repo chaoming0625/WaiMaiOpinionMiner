@@ -1,7 +1,6 @@
 import re
 import json
 import requests
-# from WaiMaiMiner import classifier
 
 """
 First page url:
@@ -18,7 +17,6 @@ class Crawler:
                         "json&shop_id=%s&page=%s&count=60"
 
         self.shop_id = None
-        # self.maxent = classifier
         self.page_num = 1
 
         self.info = {}
@@ -65,17 +63,10 @@ class Crawler:
                     self.info["rubbish_comment_id"].append((i, 0))
 
             else:
-                result = self.maxent.classify(sentence)
                 if self.info["score"][i] >= 4:
-                    if result == 1:
-                        self.info["useful_comment_id"].append((i, 1))
-                    else:
-                        self.info["useful_comment_id"].append((i, 3))
+                    self.info["useful_comment_id"].append((i, 1))
                 else:
-                    if result == 0:
-                        self.info["useful_comment_id"].append((i, 0))
-                    else:
-                        self.info["useful_comment_id"].append((i, 2))
+                    self.info["useful_comment_id"].append((i, 0))
 
     @staticmethod
     def _is_too_short(sentence):

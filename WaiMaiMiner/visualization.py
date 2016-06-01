@@ -9,6 +9,8 @@ mpl.rcParams['axes.unicode_minus'] = False  # 解决保存图像是负号'-'显�
 
 def score_detail(result):
     if result is not None:
+        # plt.clf()
+
         label_scores = sorted(result["score_detail"].items())
 
         # labels
@@ -34,6 +36,8 @@ def score_detail(result):
 
 def dish_score_detail(result):
     if result is not None:
+        # plt.clf()
+
         label_scores = result["dish_score"]
 
         # labels
@@ -59,6 +63,8 @@ def dish_score_detail(result):
 
 def service_score_detail(result):
     if result is not None:
+        # plt.clf()
+
         label_scores = result["service_score"]
 
         # labels
@@ -101,6 +107,8 @@ def bar_auto_label(rects, suffix="分"):
 
 def average_score(result):
     if result is not None:
+        # plt.clf()
+
         average_scores = result["average_score"]
 
         title = "各项评价平均指标"
@@ -125,6 +133,8 @@ def average_score(result):
 
 def weeks_score(result):
     if result is not None:
+        # plt.clf()
+
         weeks_score_ = result["weeks_score"]
 
         title = "整体评价变化趋势"
@@ -147,6 +157,8 @@ def weeks_score(result):
 
 def s_from(result):
     if result is not None:
+        # plt.clf()
+
         sfrom = result["sfrom"]
         # title
         title = "订餐终端分布"
@@ -166,6 +178,8 @@ def s_from(result):
 
 def recommend_dishes1(result):
     if result is not None:
+        # plt.clf()
+
         recommend_dishes = sorted(result["recommend_dishes"].items(),
                                   key=lambda dish: dish[1], reverse=True)[:20]
         title = "菜品推荐榜"
@@ -205,6 +219,8 @@ def barh_auto_label(rects, suffix="次"):
 
 def recommend_dishes2(result):
     if result is not None:
+        # plt.clf()
+
         recommend_dishes = sorted(result["recommend_dishes"].items(),
                                   key=lambda dish: dish[1])[-30:]
         title = "菜品推荐榜(前30)"
@@ -225,6 +241,8 @@ def recommend_dishes2(result):
 
 def cost_time(result):
     if result is not None:
+        # plt.clf()
+
         cost_times = result["cost_time"]
 
         title = "送餐时间分布"
@@ -261,6 +279,7 @@ def cost_time(result):
 def topic(result):
     from random import randint
     if result:
+
         fig, ax = plt.subplots()
 
         index = tuple(range(5))
