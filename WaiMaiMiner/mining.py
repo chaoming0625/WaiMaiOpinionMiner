@@ -38,7 +38,7 @@ def write_(sentence, which):
         for i in range(len(cuts)):
             output += "%s/%s\t" % (cuts[i], "OT")
 
-    with open("f_corpus/hmm_user_add_corpus.txt", "a", encoding="utf-8") as f:
+    with open(common_lib.miner_hmm_user_add_corpus_filepath, "a", encoding="utf-8") as f:
         f.write("%s\n" % output.strip())
 
 

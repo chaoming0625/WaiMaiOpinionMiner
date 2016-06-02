@@ -8,7 +8,7 @@ class OpinionMinerHMM:
     """
     The supervised fine-grain (aspect) opinion mining
     """
-    def __init__(self, corpus_filename=None):
+    def __init__(self):
         # the import parameters
         self._tags = {}
         self._init_prob = {}
@@ -21,10 +21,8 @@ class OpinionMinerHMM:
         self._init_filepath = common_lib.miner_hmm_init_filepath
         self._emit_filepath = common_lib.miner_hmm_emit_filepath
         self._transition_filepath = common_lib.miner_hmm_transition_filepath
-        if corpus_filename is not None:
-            self._hmm_train_corpus = os.path.join(os.getcwd(), corpus_filename)
-        else:
-            self._hmm_train_corpus = None
+        self._hmm_train_corpus = common_lib.miner_hmm_train_corpus_filepath
+        self._hmm_user_add_corpus = common_lib.miner_hmm_user_add_corpus_filepath
 
         # check if there exists the init file
         self._check()
@@ -94,47 +92,51 @@ class OpinionMinerHMM:
         emit_num = {}  # record the number of the the emit numbers between word and tag
 
         # open the file, read each line one by one
-        with open(self._hmm_train_corpus, encoding="utf-8") as f:
-            for line in f:
-                # split the line into the several splits
-                splits = common_lib.re_space_split.split(line.strip())
+        for filepath in [self._hmm_train_corpus, self._hmm_user_add_corpus]:
+            if not os.path.exists(filepath):
+                continue
 
-                # establish two lists to record the word and the tag
-                line_words = []
-                line_tags = []
+            with open(filepath, encoding="utf-8") as f:
+                for line in f:
+                    # split the line into the several splits
+                    splits = common_lib.re_space_split.split(line.strip())
 
-                for a_split in splits:
-                    # split every previous split into word and tag
-                    results = a_split.split("/")
-                    line_words.append(results[0])
-                    line_tags.append(results[1])
+                    # establish two lists to record the word and the tag
+                    line_words = []
+                    line_tags = []
 
-                # get the length of two lists
-                length = len(line_words)
-                assert length == len(line_tags)
+                    for a_split in splits:
+                        # split every previous split into word and tag
+                        results = a_split.split("/")
+                        line_words.append(results[0])
+                        line_tags.append(results[1])
 
-                # count the number of init, emit and transition
+                    # get the length of two lists
+                    length = len(line_words)
+                    assert length == len(line_tags)
 
-                # count the init
-                tag = line_tags[0]
-                init_num[tag] = init_num.get(tag, 0) + 1
+                    # count the number of init, emit and transition
 
-                # count the transition
-                for i in range(length - 1):
-                    tag1 = line_tags[i]
-                    tag2 = line_tags[i + 1]
-                    if tag1 not in transition_num:
-                        transition_num[tag1] = {}
-                    transition_num[tag1][tag2] = transition_num[tag1].get(tag2, 0) + 1
+                    # count the init
+                    tag = line_tags[0]
+                    init_num[tag] = init_num.get(tag, 0) + 1
 
-                # count the emit and tag's number
-                for i in range(length):
-                    tag = line_tags[i]
-                    word = line_words[i]
-                    if tag not in emit_num:
-                        emit_num[tag] = {}
-                    emit_num[tag][word] = emit_num[tag].get(word, 0) + 1
-                    tags_num[tag] = tags_num.get(tag, 0) + 1
+                    # count the transition
+                    for i in range(length - 1):
+                        tag1 = line_tags[i]
+                        tag2 = line_tags[i + 1]
+                        if tag1 not in transition_num:
+                            transition_num[tag1] = {}
+                        transition_num[tag1][tag2] = transition_num[tag1].get(tag2, 0) + 1
+
+                    # count the emit and tag's number
+                    for i in range(length):
+                        tag = line_tags[i]
+                        word = line_words[i]
+                        if tag not in emit_num:
+                            emit_num[tag] = {}
+                        emit_num[tag][word] = emit_num[tag].get(word, 0) + 1
+                        tags_num[tag] = tags_num.get(tag, 0) + 1
 
         # count the probability of the self.init_prob, self.emit_prob, self.transition_prob
         # and write them into the file

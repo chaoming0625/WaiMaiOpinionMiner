@@ -39,9 +39,9 @@ def test_tag(parse_result, sentence, type_, foreground, i, check_tv, j):
 def text_tag_config(sentence, i):
     sentence = "%5d. %s" % (i, sentence.strip())
     text.insert(tk.END, "%s\n" % sentence)
-    # print(sentence)
     if sentence:
         parse_result = parse(sentence[7:])
+        print(i, parse_result['entity'])
         j = test_tag(parse_result, sentence, "entity", TOPIC_BG, i, check_tv1, 0)
         j = test_tag(parse_result, sentence, "pos1", POSITIVE_BG1, i, check_tv2, j)
         j = test_tag(parse_result, sentence, "pos2", POSITIVE_BG2, i, check_tv3, j)
@@ -55,8 +55,6 @@ def all_button_event(which):
 
         comments = result["content"]
         scores = result["score"]
-
-        # print(check_var.get())
 
         if check_var.get() is True:
             comments = [comments[a[0]] for a in result["useful_comment_id"]]
@@ -325,8 +323,8 @@ tk.Button(frame3, text="商品推荐榜", command=lambda: visualization.recommen
     row=2, column=columnspan*0, columnspan=columnspan, sticky=all_direction, padx=padx, pady=3)
 tk.Button(frame3, text="送餐时间分布", command=lambda: visualization.cost_time(result)).grid(
     row=2, column=columnspan*1, columnspan=columnspan, sticky=all_direction, padx=padx, pady=3)
-tk.Button(frame3, text="各评价对象分布", command=lambda: visualization.topic(result)).grid(
-    row=2, column=columnspan*2, columnspan=columnspan, sticky=all_direction, padx=padx, pady=3)
+# tk.Button(frame3, text="各评价对象分布", command=lambda: visualization.topic(result)).grid(
+#     row=2, column=columnspan*2, columnspan=columnspan, sticky=all_direction, padx=padx, pady=3)
 
 # main loop
 root.mainloop()

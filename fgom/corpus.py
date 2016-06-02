@@ -79,9 +79,12 @@ class GetTaggedCorpus:
                         words, tags = [], []
                         for a_split in splits:
                             if "/" in a_split:
-                                word, tag = a_split.split("/")
+                                try:
+                                    word, tag = a_split.split("/")
+                                except ValueError:
+                                    raise ValueError("Tag wrong! System cannot recognize it.")
                                 words.append(word)
-                                tags.append(tag)
+                                tags.append(tag.upper())
 
                         seq_tag = False
                         final_pos = -1
@@ -275,8 +278,12 @@ class BootstrappingMaster:
 
         self.train_corpus_filepath = os.path.join(root_path, origin_tag_filename)
         self.bootstrapping_corpus_filepath = os.path.join(root_path, bootstrapping_filename)
+        self.hmm_path = 'f_hmm/'
         self.hmm1_filepath = "f_hmm/hmm1_corpus.txt"
         self.hmm2_filepath = "f_hmm/hmm2_corpus.txt"
+
+        if not os.path.exists(self.hmm_path):
+            os.makedirs(self.hmm_path)
 
         self.bootstrap_contents = []
         self.added = False
@@ -287,6 +294,8 @@ class BootstrappingMaster:
             os.remove(self.hmm1_filepath)
         if os.path.exists(self.hmm2_filepath):
             os.remove(self.hmm2_filepath)
+        if os.path.exists(self.hmm_path):
+            os.rmdir(self.hmm_path)
 
     def load_bootstrap(self):
         with open(self.bootstrapping_corpus_filepath, encoding="utf-8") as bootstrap_f:
@@ -304,8 +313,6 @@ class BootstrappingMaster:
         """Distribute the tagged corpus."""
         if self.check_filepath(self.train_corpus_filepath):
             print("Distributing.")
-
-            os.makedirs("/".join(self.hmm1_filepath.split("/")[:-1]))
 
             hmm1_file = open(self.hmm1_filepath, "w", encoding="utf-8")
             hmm2_file = open(self.hmm2_filepath, "w", encoding="utf-8")
